@@ -849,6 +849,10 @@ a { color: inherit !important; }
 
 /*-/ about  -*/
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a233ca011c74bc8638f3ff9e6b70e4e5e8290f92
 /*-  portfolio  -*/
 
 /*  parte-a  */
@@ -937,9 +941,13 @@ a { color: inherit !important; }
 
 /*-/ portfolio  -*/
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a233ca011c74bc8638f3ff9e6b70e4e5e8290f92
 @media (max-width: 330px) {
   #recaptcha {
-    left              : 15px !important;
+    left              : 10px !important;
     -webkit-transform : scale(0.9) !important;
     -ms-transform     : scale(0.9) !important;
     -o-transform      : scale(0.9) !important;
@@ -954,6 +962,10 @@ a { color: inherit !important; }
   /*Services*/
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a233ca011c74bc8638f3ff9e6b70e4e5e8290f92
 
 @media (max-width: 499px) {
 
@@ -1005,6 +1017,10 @@ a { color: inherit !important; }
 
   .zonac-content .zonac-description-container { font-size: 16px; }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a233ca011c74bc8638f3ff9e6b70e4e5e8290f92
   .parte-a-tcontainer .parte-a-t1 { font-size: 50px; }
   .parte-a-tcontainer .parte-a-t2 { font-size: 45px; }
 
@@ -1015,6 +1031,10 @@ a { color: inherit !important; }
   /*Services*/
   .s-panel-text { font-size: 14px !important; }
   /*Services*/
+<<<<<<< HEAD
+=======
+
+>>>>>>> a233ca011c74bc8638f3ff9e6b70e4e5e8290f92
 
 }/*/(max-width: 499px)*/
 
