@@ -718,6 +718,15 @@ a { color: inherit !important; }
   color      : rgba(226,47,23,1);
   border     : 1px solid rgba(226,47,23,1);
 }
+.recaptcha-group { height: 80px; }
+.recaptcha-group #recaptcha {
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
 .contact-info { margin-top: 50px; margin-bottom: 20px; }
 .ci-title {
   font-size      : 20px;
@@ -837,6 +846,15 @@ a { color: inherit !important; }
 
 /*-/ about  -*/
 
+@media (max-width: 330px) {
+  #recaptcha {
+    left              : 15px !important;
+    -webkit-transform : scale(0.9) !important;
+    -ms-transform     : scale(0.9) !important;
+    -o-transform      : scale(0.9) !important;
+    transform         : scale(0.9) !important;
+  }
+}
 
 @media (max-width: 400px) {
   /*Services*/

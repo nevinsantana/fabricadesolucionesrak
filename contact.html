@@ -21,6 +21,19 @@
 		crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 		<script src="assets/js/js.js"></script>
+		
+		<!-- Google reCaptcha -->
+		<script src="https://www.google.com/recaptcha/api.js?hl=es&onload=renderCaptcha&render=explicit" async="async" defer="defer"></script>
+    <script>
+        var recaptcha;
+        var renderCaptcha = function() {
+            recaptcha = grecaptcha.render('recaptcha', {
+                'sitekey': '6LcKPgwUAAAAADuCtxWE4f2DyUWAYg2oaLtOgHqG',
+                'theme': 'light'
+            });
+        };
+    </script>
+    <!-- Google reCaptcha -->
 	</head>
 	<body>
 		<div class="allCont"><!--Inicia el contenido de toda la página-->
@@ -185,6 +198,10 @@
 						</div>
 						<div class="form-group col-sm-12">
 							<textarea name="mensaje" class="rak-contact rc-textarea" placeholder="Mensaje:" rows="5" required></textarea>
+						</div>
+
+						<div class="form-group col-sm-12 recaptcha-group">
+							<div id="recaptcha"></div>
 						</div>
 
 						<div class="btn-group text-center">
