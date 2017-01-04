@@ -641,17 +641,13 @@ a { color: inherit !important; }
   right             : 10px;
 }
 .s-square, .s-img-responsive { height: 400px; }
-.s-img-responsive { background-color: #ccc; margin-left: -15px; transition: 0.2s }
-.s-img-responsive:after {
-  content           : "1430 x 500";
-  position          : absolute;
-  top               : 50%;
-  left              : 50%;
-  font-size         : 50px;
-  -webkit-transform : translate(-50%,-50%);
-  -ms-transform     : translate(-50%,-50%);
-  -o-transform      : translate(-50%,-50%);
-  transform         : translate(-50%,-50%);
+.s-img-responsive {
+  background-image: url("../img/services/sec2-slide1.jpg");
+  margin-left: -15px;
+  transition: 0.2s;
+  background-position: center;
+  background-size: 1720px;
+  background-repeat: no-repeat;
 }
 .tnc-center { text-align: center !important; }
 .col-sm-3-cust { padding-right: 0; }
@@ -1102,6 +1098,12 @@ a { color: inherit !important; }
   /*Services*/
   .ss-inner { font-size: 14px; position: relative; left: 0; right: 0; }
   /*Services*/
+
+
+  .s-img-responsive {
+    background-size: 1200px !important;
+    background-position: -550px;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -1116,6 +1118,8 @@ a { color: inherit !important; }
   .col-sm-3-cust { width: 41.66666667%; }
   .col-sm-9-cust { width: 58.33333333%; }
   /*Services*/
+
+  .s-img-responsive { background-size: 1140px; }
 }
 
 @media (min-width: 768px) {
