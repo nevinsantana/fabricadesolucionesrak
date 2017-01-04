@@ -27,6 +27,8 @@ img { width: 100%; height: auto; }
 button:focus { border: none; box-shadow: none; outline: 0; }
 a:link { text-decoration: none; }
 a { color: inherit !important; }
+.row-nomargin { margin-right: 0; margin-left: 0; }
+.no-padding-col { padding-left: 0 !important; padding-right: 0 !important; }
 .m-bottom50 { margin-bottom: 50px; }
 .wh100 { width: 100%; height: 100%; }
 .allCont { position: absolute; width: 100%; height: 100%; }
@@ -95,6 +97,7 @@ a { color: inherit !important; }
 .dropdown, .dropdown * { transition: 0.2s; }
 .menu-sol, .dropdown-menu li a { color: white !important; text-align: center; }
 .menu-sol:hover, .dropdown-menu li:hover a { color: #c75000 !important; }
+.menu-sol.active { color: #c75000 !important; }
 .navbar-nav>li>.dropdown-menu { background: #e27933; }
 .dropdown-menu { min-width: 44px; }
 .navbar-right li { cursor: pointer; }
@@ -698,6 +701,62 @@ a { color: inherit !important; }
 
 /*-/ about  -*/
 
+/*-  portfolio  -*/
+
+/*  parte-a  */
+
+.parte-a-tcontainer   { text-align: center; }
+.parte-a-tcontainer * { text-shadow: 0 0 5px #7F7F7F; }
+.parte-a-tcontainer .parte-a-t1 {
+  font-family : PaytoneOne;
+  color       : white;
+  font-size   : 5.5vw;
+  margin-top  : 0px;
+}
+.parte-a-tcontainer .parte-a-t2 {
+  font-family : Cookie;
+  line-height : 20px;
+  font-size   : 5.6vw;
+  color       : white;
+}
+
+.carousel-indicators.parteb-carousel-selector li {
+  margin-right: 20px;
+  background-color: #fff;
+  border: none;
+}
+
+.carousel-indicators.parteb-carousel-selector .active {
+  background-color: #c75000;
+}
+
+.partec-title-container { color: #ff9700; text-align: center; }
+.partec-title-container h2 { font-size: 6vw; font-family: Cookie; }
+
+.portfolio-partec-outer-cuadro {
+  width: 100%;
+  height: auto;
+  background: #efefef;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.portfolio-partec-outer-cuadro:hover {
+  background: #f68730;
+}
+
+.portfolio-inner-cuadro {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-partec-carousel { margin-bottom: 5%; }
+/*/ parte-a  */
+
+/*-/ portfolio  -*/
+
 
 @media (max-width: 499px) {
 
@@ -748,6 +807,13 @@ a { color: inherit !important; }
   .zonac-content .zonac-square-title { font-size: 20px; }
 
   .zonac-content .zonac-description-container { font-size: 16px; }
+
+  .parte-a-tcontainer .parte-a-t1 { font-size: 50px; }
+  .parte-a-tcontainer .parte-a-t2 { font-size: 45px; }
+
+  .partec-title-container h2 { font-size: 40px; }
+
+  .portfolio-partec-outer-cuadro { padding: 5px; }
 
 }/*/(max-width: 499px)*/
 
