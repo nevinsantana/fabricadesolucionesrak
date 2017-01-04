@@ -730,6 +730,7 @@ a { color: inherit !important; }
 .ci-info p { margin: 0; }
 .ci-table > tbody > tr > td { border: none; }
 .left-orange-bar { border-left: 5px solid #EA7900; }
+.orange-bar { display: none; }
 /*Contact*/
 
 
@@ -915,7 +916,7 @@ a { color: inherit !important; }
   .ci-table { display: none; }
   .left-orange-bar { border-left: none; }
   .ci-table-show-on-mobile { display: block; }
-  .orange-bar { border-top: 3px solid #EA7900; width: 320px; }
+  .orange-bar { border-top: 3px solid #EA7900; width: 320px; display: block; }
   .rak-contact { width: 100%; }
   /*Services*/
 }
@@ -946,6 +947,7 @@ a { color: inherit !important; }
     -o-transform: translate (0,-50%);
     transform: translate(0,0);
     height: auto;
+}
   
   /*Services*/
   .top-a-contact { height: 300px; min-height: auto; }
@@ -975,7 +977,6 @@ a { color: inherit !important; }
   .cloud-01 img, .cloud-02 img { width: 200px; }
   .contact-title { margin-top: -80px; font-size: 40px; }
   /*Services*/
-}
 
 
 }/*/(max-width: 767px)*/
