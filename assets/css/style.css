@@ -849,7 +849,7 @@ a { color: inherit !important; }
 
 /*-/ about  -*/
 
-<<<<<<< HEAD
+
 /*-  portfolio  -*/
 
 /*  parte-a  */
@@ -906,10 +906,10 @@ a { color: inherit !important; }
 
 /*-/ portfolio  -*/
 
-=======
+
 @media (max-width: 330px) {
   #recaptcha {
-    left              : 15px !important;
+    left              : 10px !important;
     -webkit-transform : scale(0.9) !important;
     -ms-transform     : scale(0.9) !important;
     -o-transform      : scale(0.9) !important;
@@ -924,7 +924,7 @@ a { color: inherit !important; }
   /*Services*/
 }
 
->>>>>>> e1cfe8d3dd61008e267d60587bb40b7bd3eb804b
+
 
 @media (max-width: 499px) {
 
@@ -976,18 +976,18 @@ a { color: inherit !important; }
 
   .zonac-content .zonac-description-container { font-size: 16px; }
 
-<<<<<<< HEAD
+
   .parte-a-tcontainer .parte-a-t1 { font-size: 50px; }
   .parte-a-tcontainer .parte-a-t2 { font-size: 45px; }
 
   .partec-title-container h2 { font-size: 40px; }
 
   .portfolio-partec-outer-cuadro { padding: 5px; }
-=======
+
   /*Services*/
   .s-panel-text { font-size: 14px !important; }
   /*Services*/
->>>>>>> e1cfe8d3dd61008e267d60587bb40b7bd3eb804b
+
 
 }/*/(max-width: 499px)*/
 
