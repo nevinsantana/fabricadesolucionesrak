@@ -10,6 +10,8 @@
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
     <link href="assets/css/style.css" rel="stylesheet">
     <title>RAK</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
@@ -20,6 +22,7 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
   </head>
   <body>
     <div class="allCont"><!--Inicia el contenido de toda la página-->
@@ -142,58 +145,54 @@
         </div>
         <div class="row row-nomargin">
           <div class="col-md-12 no-padding-col">
-            <div id="portfolio-partec-carousel" class="carousel slide portfolio-partec-carousel" data-ride="carousel">
 
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <div class="row zonab-img-container">
-                    <div class="col-xs-2 col-xs-offset-2">
-                      <div class="portfolio-partec-outer-cuadro">
-                        <div class="portfolio-inner-cuadro">
-                          <img src="assets/img/partec-img1.png" alt="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="portfolio-partec-outer-cuadro">
-                        <div class="portfolio-inner-cuadro">
-                          <img src="assets/img/partec-img1.png" alt="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="portfolio-partec-outer-cuadro">
-                        <div class="portfolio-inner-cuadro">
-                          <img src="assets/img/partec-img1.png" alt="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="portfolio-partec-outer-cuadro">
-                        <div class="portfolio-inner-cuadro">
-                          <img src="assets/img/partec-img1.png" alt="">
-                        </div>
-                      </div>
-                    </div>
+            <div class="col-md-10 col-md-offset-1">
+            <div class="portfolio-partec-carousel2 owl-carousel owl-theme">
+                <div class="portfolio-partec-outer-cuadro">
+                  <div class="portfolio-inner-cuadro">
+                    <img src="assets/img/partec-img1.png" alt="">
                   </div>
                 </div>
-              </div>
-
-              <!-- Controls -->
-              <a class="left carousel-control" href="#portfolio-partec-carousel" role="button" data-slide="prev">
-                <div class="zonab-arrow-container">
-                  <img src="assets/img/zonab-arrow.png" alt="">
+                <div class="portfolio-partec-outer-cuadro">
+                  <div class="portfolio-inner-cuadro">
+                    <img src="assets/img/partec-img1.png" alt="">
+                  </div>
                 </div>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#portfolio-partec-carousel" role="button" data-slide="next">
-                <div class="zonab-arrow-container">
-                  <img src="assets/img/zonab-arrow.png" alt="">
+                <div class="portfolio-partec-outer-cuadro">
+                  <div class="portfolio-inner-cuadro">
+                    <img src="assets/img/partec-img1.png" alt="">
+                  </div>
                 </div>
-                <span class="sr-only">Next</span>
-              </a>
+                <div class="portfolio-partec-outer-cuadro">
+                  <div class="portfolio-inner-cuadro">
+                    <img src="assets/img/partec-img1.png" alt="">
+                  </div>
+                </div>
+                <div class="portfolio-partec-outer-cuadro">
+                  <div class="portfolio-inner-cuadro">
+                    <img src="assets/img/partec-img1.png" alt="">
+                  </div>
+                </div>
+                <div class="portfolio-partec-outer-cuadro">
+                  <div class="portfolio-inner-cuadro">
+                    <img src="assets/img/partec-img1.png" alt="">
+                  </div>
+                </div>
+                <div class="portfolio-partec-outer-cuadro">
+                  <div class="portfolio-inner-cuadro">
+                    <img src="assets/img/partec-img1.png" alt="">
+                  </div>
+                </div>
+                <div class="portfolio-partec-outer-cuadro">
+                  <div class="portfolio-inner-cuadro">
+                    <img src="assets/img/partec-img1.png" alt="">
+                  </div>
+                </div>
             </div>
+            </div>
+
+
+
           </div>
         </div>
         </section>
@@ -296,6 +295,33 @@
     <script src="assets/js/script.js"></script>
     <script>//Funciones llamadas en esta página
       $(document).ready(function(){
+        $(".portfolio-partec-carousel2").owlCarousel({
+          loop:true,
+          mouseDrag:true,
+          dots:false,
+          autoplay:false,
+          autoplayTimeout:3000,
+          autoplayHoverPause:true,
+          responsiveClass:true,
+          autoplaySpeed:1000,
+          navText: ["<img src='assets/img/zonab-arrow.png'>","<img src='assets/img/zonab-arrow.png'>"],
+          responsive:{
+              0:{
+                  items:1,
+                  nav:false
+              },
+              600:{
+                  items:3,
+                  nav:false
+              },
+              1000:{
+                  items:4,
+                  nav:true,
+                  loop:true,
+                  margin:50,
+              }
+          }
+        });
       });
       $(window).resize(function(){
       });

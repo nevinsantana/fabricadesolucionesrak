@@ -849,7 +849,6 @@ a { color: inherit !important; }
 
 /*-/ about  -*/
 
-<<<<<<< HEAD
 /*-  portfolio  -*/
 
 /*  parte-a  */
@@ -901,12 +900,43 @@ a { color: inherit !important; }
   height: auto;
 }
 
-.portfolio-partec-carousel { margin-bottom: 5%; }
+.portfolio-partec-carousel2 { margin-bottom: 5%; }
+.portfolio-partec-carousel2.owl-theme .owl-nav [class*='owl-'] {
+  color: black;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0;
+}
+.portfolio-partec-carousel2.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    left: -100px;
+    top: 35%;
+    -ms-transform: translate (0,-50%);
+    -webkit-transform: translate (0,-50%);
+    -moz-transform: translate (0,-50%);
+    -o-transform: translate (0,-50%);
+    transform: translate(0,0);
+    width: 4%;
+}
+.portfolio-partec-carousel2.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    right: -100px;
+    top: 35%;
+    -ms-transform: translate (0,-50%);
+    -webkit-transform: translate (0,-50%);
+    -moz-transform: translate (0,-50%);
+    -o-transform: translate (0,-50%);
+    transform: translate(0,0);
+    width: 4%;
+}
 /*/ parte-a  */
 
 /*-/ portfolio  -*/
 
-=======
 @media (max-width: 330px) {
   #recaptcha {
     left              : 15px !important;
@@ -924,7 +954,6 @@ a { color: inherit !important; }
   /*Services*/
 }
 
->>>>>>> e1cfe8d3dd61008e267d60587bb40b7bd3eb804b
 
 @media (max-width: 499px) {
 
@@ -976,18 +1005,16 @@ a { color: inherit !important; }
 
   .zonac-content .zonac-description-container { font-size: 16px; }
 
-<<<<<<< HEAD
   .parte-a-tcontainer .parte-a-t1 { font-size: 50px; }
   .parte-a-tcontainer .parte-a-t2 { font-size: 45px; }
 
   .partec-title-container h2 { font-size: 40px; }
 
   .portfolio-partec-outer-cuadro { padding: 5px; }
-=======
+
   /*Services*/
   .s-panel-text { font-size: 14px !important; }
   /*Services*/
->>>>>>> e1cfe8d3dd61008e267d60587bb40b7bd3eb804b
 
 }/*/(max-width: 499px)*/
 
@@ -1037,7 +1064,7 @@ a { color: inherit !important; }
     transform: translate(0,0);
     height: auto;
 }
-  
+
   /*Services*/
   .top-a-contact { height: 300px; min-height: auto; }
   .col-sm-3-cust, .col-sm-9-cust { width: 100% !important; padding-right: 15px; }
