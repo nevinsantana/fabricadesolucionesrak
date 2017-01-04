@@ -482,62 +482,42 @@
         }
       });
       popoverer();
-          window.sr = ScrollReveal();
-
-        sr.reveal('.objects-container img', {
-          duration: 3000,
-          /*delay: 500,
-          rotate: { x: 0, y: 0, z: 0 },
-          scale: 0,
-          easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-          reset: true,
-          viewFactor: 0.2,
+      window.sr = ScrollReveal();
+      sr.reveal('.objects-container img', {
+        duration: 3000,
+        /*delay: 500,
+        rotate: { x: 0, y: 0, z: 0 },
+        scale: 0,
+        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
+        reset: true,
+        viewFactor: 0.2,
+      });
+      sr.reveal('.outer-cuadro .image-container', {
+        duration: 1000,
+        reset: true,
+        viewFactor: 0.7,
+      });
+        sr.reveal('#bomb-img', {
+        duration: 1000,
+        scale: 1,
+        reset: true,
+        viewFactor: 0.6,
         });
-        sr.reveal('.outer-cuadro .image-container', {
-          duration: 1000,
-          /*delay: 500,
-          rotate: { x: 0, y: 0, z: 0 },
-          scale: 0,
-          easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-          reset: true,
-          viewFactor: 0.7,
-        });
-          sr.reveal('#bomb-img', {
-          duration: 1000,
-          scale: 1,
-          /*delay: 500,
-          rotate: { x: 0, y: 0, z: 0 },
-          easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-          reset: true,
-          viewFactor: 0.6,
-          });
-         sr.reveal('.tnuevo-container .tv-effect', {
-          duration: 1000,
-          /*delay: 500,
-          rotate: { x: 0, y: 0, z: 0 },
-          scale: 0,
-          easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-          reset: true,
-          viewFactor: 0.3,
-          }, 1);
-         sr.reveal('.tnuevo-container .box-effect', {
-          duration: 1000,
-          /*delay: 500,
-          rotate: { x: 0, y: 0, z: 0 },
-          scale: 0,
-          easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-          reset: true,
-          viewFactor: 0.3,
-          }, 1);
-         sr.reveal('.tnuevo-container .cafeina-effect', {
-          duration: 1000,
-          /*delay: 500,
-          rotate: { x: 0, y: 0, z: 0 },
-          scale: 0,
-          easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-          reset: true,
-          viewFactor: 0.3,
-          }, 1);
+       sr.reveal('.tnuevo-container .tv-effect', {
+        duration: 1000,
+        reset: true,
+        viewFactor: 0.3,
+        }, 1);
+       sr.reveal('.tnuevo-container .box-effect', {
+        duration: 1000,
+        reset: true,
+        viewFactor: 0.3,
+        }, 1);
+       sr.reveal('.tnuevo-container .cafeina-effect', {
+        duration: 1000,
+        reset: true,
+        viewFactor: 0.3,
+        }, 1);
     </script>
   </body>
 </html>
