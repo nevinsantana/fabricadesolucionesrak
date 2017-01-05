@@ -186,25 +186,25 @@
 				<div class="row text-center">
 					<form>
 						<div class="col-sm-12">
-							<div class="alert alert-success alert-dismissible alert-custom" role="alert">
-							  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							  Gracias por contactarnos.
+							<div id="my-alert" class="alert alert-dismissible alert-custom" role="alert">
+							  <button id="dismiss-my-alert" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							  <span id="alert-text"></span>
 							</div>
 						</div>
 						<div class="form-group col-sm-12">
-							<input id="nombre" type="text" class="rak-contact" name="nombre" placeholder="Nombre:" required>
+							<input id="nombre" type="text" class="rak-contact" name="nombre" placeholder="Nombre:">
 						</div>
 						<div class="form-group col-sm-12">
-							<input id="correo" type="text" class="rak-contact" name="correo" placeholder="E-mail:" required>
+							<input id="correo" type="text" class="rak-contact" name="correo" placeholder="E-mail:">
 						</div>
 						<div class="form-group col-sm-12">
-							<input id="telefono" type="text" class="rak-contact" name="telefono" placeholder="Tel&eacute;fono" required>
+							<input id="telefono" type="text" class="rak-contact" name="telefono" placeholder="Tel&eacute;fono">
 						</div>
 						<div class="form-group col-sm-12">
-							<input id="asunto" type="text" class="rak-contact" name="asunto" placeholder="Asunto:" required>
+							<input id="asunto" type="text" class="rak-contact" name="asunto" placeholder="Asunto:">
 						</div>
 						<div class="form-group col-sm-12">
-							<textarea id="mensaje" name="mensaje" class="rak-contact rc-textarea" placeholder="Mensaje:" rows="5" required></textarea>
+							<textarea id="mensaje" name="mensaje" class="rak-contact rc-textarea" placeholder="Mensaje:" rows="5"></textarea>
 						</div>
 
 						<div class="form-group col-sm-12 recaptcha-group">
@@ -376,24 +376,67 @@
 		<script src="assets/js/script.js"></script>
 		<script>
 			$(document).ready(function() {
-				$("#nombre").val("Ivan Ramírez");
-				$("#correo").val("ivan_amigue@hotmail.com");
-				$("#telefono").val("5518168896");
-				$("#asunto").val("Duda");
-				$("#mensaje").val("Mensaje sobre duda");
+				$("#my-alert").hide();
 
-				var nombre = $("#nombre").val();
-				var correo = $("#correo").val();
-				var telefono = $("#telefono").val();
-				var asunto = $("#asunto").val();
-				var mensaje = $("#mensaje").val();
+				var form_data = "nombre="+nombre+"&correo="+correo+"&telefono="+telefono+"&asunto="+asunto+"&mensaje="+mensaje+"'";
 
 				$("#btn-contact-submit").click(function(e) {
-					console.log(nombre)
-					console.log(correo)
-					console.log(telefono)
-					console.log(asunto)
-					console.log(mensaje)
+					var nombre = $("#nombre").val();
+					var correo = $("#correo").val();
+					var telefono = $("#telefono").val();
+					var asunto = $("#asunto").val();
+					var mensaje = $("#mensaje").val();
+
+					if( nombre=="" || correo=="" || telefono=="" || asunto=="" || mensaje=="" ) {
+						$("#my-alert").addClass("alert-warning");
+						$("#alert-text").text("Uno o varios campos están vacíos. Por favor llenalos.");
+						$("#my-alert").fadeIn(500);
+					} else {
+						$.ajax({
+							url: 'contact.php',
+							type: 'POST',
+							data: form_data,
+							success: function() {
+								$("#nombre").val("");
+								$("#correo").val("");
+								$("#telefono").val("");
+								$("#asunto").val("");
+								$("#mensaje").val("");
+								$("#my-alert").addClass("alert-success");
+								$("#my-alert").fadeIn(500);
+								$("#alert-text").text("Gracias por contactarnos.")
+							},
+							error: function(jqXHR, textStatus, errorThrown) {
+	              /*Si hay algun error, se mostrará también en un alert*/
+								$("#my-alert").addClass("alert-danger");
+	              $("#my-alert").fadeIn(500);
+	              if (jqXHR.status === 0) {
+	                $("#alert-text").text('Not connect: Verify Network');
+	              } else if (jqXHR.status == 404) {
+	                $("#alert-text").text('Requested page not found [404]');
+	              } else if (jqXHR.status == 500) {
+	                $("#alert-text").text('Internal Server Error [500]');
+	              } else if (textStatus === 'parsererror') {
+	                $("#alert-text").text('Requested JSON parse failed');
+	              } else if (textStatus === 'timeout') {
+	                $("#alert-text").text('Time out error');
+	              } else if (textStatus === 'abort') {
+	                $("#alert-text").text('Ajax request aborted');
+	              } else {
+	                $("#alert-text").text('Uncaught Error: ' + jqXHR.responseText);
+	              }
+	            }
+						});
+					}
+				});
+
+
+				$("#dismiss-my-alert").click(function(e) {
+					$("#my-alert").fadeOut(500);
+					$("#my-alert").removeClass("alert-success");
+					$("#my-alert").removeClass("alert-danger");
+					$("#my-alert").removeClass("alert-warning");
+					$("#alert-text").text("");
 				});
 
 
