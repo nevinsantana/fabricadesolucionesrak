@@ -895,6 +895,7 @@ a { color: inherit !important; }
 .portfolio-inner-cuadro {
   width: 100%;
   height: auto;
+  background: white;
 }
 
 .portfolio-partec-carousel2 { margin-bottom: 5%; }
@@ -1080,7 +1081,7 @@ a { color: inherit !important; }
   .orange-bar { width: 100%; }
   .telephone-img {
     position          : relative;
-    top               : -15%;
+    top               : -100px;
     margin            : 0 auto;
     left              : auto;
     text-align        : center;

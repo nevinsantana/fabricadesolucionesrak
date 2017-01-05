@@ -147,24 +147,25 @@
 			</section><!--/Primera sección-->
 
 
+			<div class="portimg-container">
+				<!-- Telephone -->
+				<div class="telephone-img">
+					<img src="assets/img/contact/contacto-phone.png" alt="Telephone">
+				</div>
+				<!-- Telephone -->
 
-			<!-- Telephone -->
-			<div class="telephone-img">
-				<img src="assets/img/contact/contacto-phone.png" alt="Telephone">
-			</div>
-			<!-- Telephone -->
+				<!-- Cloud 01 -->
+				<div class="cloud-01">
+					<img src="assets/img/contact/contacto-cloud.png" alt="Cloud01">
+				</div>
+				<!-- Cloud 01 -->
 
-			<!-- Cloud 01 -->
-			<div class="cloud-01">
-				<img src="assets/img/contact/contacto-cloud.png" alt="Cloud01">
+				<!-- Cloud 02 -->
+				<div class="cloud-02">
+					<img src="assets/img/contact/contacto-cloud.png" alt="Cloud02">
+				</div>
+				<!-- Cloud 02 -->
 			</div>
-			<!-- Cloud 01 -->
-
-			<!-- Cloud 02 -->
-			<div class="cloud-02">
-				<img src="assets/img/contact/contacto-cloud.png" alt="Cloud02">
-			</div>
-			<!-- Cloud 02 -->
 
 
 
@@ -394,7 +395,62 @@
 					console.log(asunto)
 					console.log(mensaje)
 				});
+
+
+			$(".tnue-right").css("height",$(".tnue-left").height()+"px");
+				if(parseInt($(window).width()) < 767) { $(".tnue-right").css("height","auto"); }
+				if(parseInt($(window).width()) < 931) {
+					$(".cuadro-contenedor").attr("class","col-xs-6 cuadro-contenedor")
+					$(".outer-cuadro").height($(".outer-cuadro").height()+$(".outer-cuadro .image-container").height()+"px");
+				}
+				else {
+				$(".outer-cuadro").height($(".outer-cuadro").height()+$(".outer-cuadro .image-container").height()+"px");
+					$(".cuadro-contenedor").attr("class","col-xs-3 cuadro-contenedor");
+				}
 			});
+			$(window).resize(function(){
+				$(".outer-cuadro").height("auto");
+				if(parseInt($(window).width()) < 931) {
+					$(".cuadro-contenedor").attr("class","col-xs-6 cuadro-contenedor");
+					$(".outer-cuadro").height($(".outer-cuadro").height()+$(".outer-cuadro .image-container").height()+"px");
+				}
+				else {
+				$(".outer-cuadro").height($(".outer-cuadro").height()+$(".outer-cuadro .image-container").height()+"px");
+					$(".cuadro-contenedor").attr("class","col-xs-3 cuadro-contenedor");
+				}
+				$(".tnue-right").css("height",$(".tnue-left").height()+"px");
+				if(parseInt($(window).width()) < 767) { $(".tnue-right").css("height","auto"); }
+			});
+			$(".outer-cuadro").click(function(){
+				var numCuadro = $(this).attr("id").substr($(this).attr("id").length - 1);
+				if($(this).parent().parent().attr("class") != "row s2-cuadros-container already") {
+					$(this).parent().parent().attr("class","row s2-cuadros-container already");
+					$("#initial-description").fadeOut('400',function() {
+						$("#description"+numCuadro).fadeIn('400', function() {});
+						$("#description"+numCuadro).addClass("active");
+					});
+				}
+				if($(this).attr("class") == "outer-cuadro active"){ return; };
+				$(".descriptions-parent .descriptions-container.active").fadeOut('400', function() {
+					$(".descriptions-parent .descriptions-container.active").attr("class","descriptions-container");
+					$("#description"+numCuadro).fadeIn('400', function() {});
+					$("#description"+numCuadro).addClass("active");
+				});
+				$(this).parent().parent().find(".outer-cuadro.active").attr("class","outer-cuadro");
+				$(this).addClass("active");
+				if(parseInt($(window).width()) < 931) {
+				$("html,body").animate({
+					scrollTop:($(".descriptions-parent").offset().top-($(".outer-cuadro").height()))
+				}, 500);
+				}
+			});
+
+				window.sr = ScrollReveal();
+				sr.reveal('.portimg-container img', {
+					duration: 2000,
+					reset: true,
+					viewFactor: 0.2,
+				});
 		</script>
 	</body>
 </html>
