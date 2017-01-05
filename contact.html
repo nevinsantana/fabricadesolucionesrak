@@ -67,9 +67,9 @@
 											<li><a href="index.html" class="menu-sol">INICIO</a></li>
 											<li><a href="services.html" class="menu-sol">SERVICIOS</a></li>
 											<li><a href="portfolio.html" class="menu-sol">PORTAFOLIO</a></li>
-											<li><a href="about.html" class="menu-sol active">ACERCA DE</a></li>
+											<li><a href="about.html" class="menu-sol">ACERCA DE</a></li>
 											<li>
-												<a href="#" class="menu-sol a-contactanos-menu">
+												<a href="#" class="menu-sol a-contactanos-menu active">
 													<p class="menucontactanos-topa">CONT&Aacute;CTANOS</p>
 												</a>
 											</li>
@@ -393,7 +393,7 @@
 				/*E-Mail only*/
 				$("#correo").change(function(e) {
 					var is_email = validateEmail( $(this).val() );
-					
+
 					if( !is_email ) {
 						$("#my-alert").addClass("alert-warning");
 						$("#alert-text").text("Ingresa un correo válido.");
@@ -408,7 +408,7 @@
 				function validateEmail(email) {
 					var email_pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/,
 							is_email = email_pattern.test(email);
-					
+
 					return is_email;
 				}
 				/*E-Mail only*/
@@ -420,7 +420,7 @@
 					if( (key<=57 && key>=48) || key==8 || key==37 || key==39 || key==9
 					 	|| key==46 )
 						return true;
-					else 
+					else
 						return false
 				});
 
