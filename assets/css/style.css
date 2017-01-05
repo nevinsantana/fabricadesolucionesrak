@@ -886,15 +886,14 @@ a { color: inherit !important; }
   height: auto;
   background: #efefef;
   padding: 15px;
-  cursor: pointer;
   position: relative;
   transition: background 0.2s;
 }
-
+/*
 .portfolio-partec-outer-cuadro:hover {
   background: #f68730;
 }
-
+*/
 .portfolio-inner-cuadro {
   width: 100%;
   height: auto;
@@ -938,6 +937,7 @@ a { color: inherit !important; }
 
 .sct, .zona-c-tcontainer { margin: 4% 0; }
 
+.logos-parent .col-sm-3 { padding-bottom: 15px; }
 /*/ parte-a  */
 
 /*-/ portfolio  -*/
