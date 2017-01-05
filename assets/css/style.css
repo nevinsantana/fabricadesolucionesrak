@@ -894,6 +894,7 @@ a { color: inherit !important; }
 .portfolio-inner-cuadro {
   width: 100%;
   height: auto;
+  background: white;
 }
 
 .portfolio-partec-carousel2 { margin-bottom: 5%; }
