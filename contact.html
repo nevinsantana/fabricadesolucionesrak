@@ -184,20 +184,26 @@
 
 				<div class="row text-center">
 					<form>
-						<div class="form-group col-sm-12">
-							<input type="text" class="rak-contact" name="nombre" placeholder="Nombre:" required>
+						<div class="col-sm-12">
+							<div class="alert alert-success alert-dismissible alert-custom" role="alert">
+							  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							  Gracias por contactarnos.
+							</div>
 						</div>
 						<div class="form-group col-sm-12">
-							<input type="text" class="rak-contact" name="correo" placeholder="E-mail:" required>
+							<input id="nombre" type="text" class="rak-contact" name="nombre" placeholder="Nombre:" required>
 						</div>
 						<div class="form-group col-sm-12">
-							<input type="text" class="rak-contact" name="telefono" placeholder="Tel&eacute;fono" required>
+							<input id="correo" type="text" class="rak-contact" name="correo" placeholder="E-mail:" required>
 						</div>
 						<div class="form-group col-sm-12">
-							<input type="text" class="rak-contact" name="asunto" placeholder="Asunto:" required>
+							<input id="telefono" type="text" class="rak-contact" name="telefono" placeholder="Tel&eacute;fono" required>
 						</div>
 						<div class="form-group col-sm-12">
-							<textarea name="mensaje" class="rak-contact rc-textarea" placeholder="Mensaje:" rows="5" required></textarea>
+							<input id="asunto" type="text" class="rak-contact" name="asunto" placeholder="Asunto:" required>
+						</div>
+						<div class="form-group col-sm-12">
+							<textarea id="mensaje" name="mensaje" class="rak-contact rc-textarea" placeholder="Mensaje:" rows="5" required></textarea>
 						</div>
 
 						<div class="form-group col-sm-12 recaptcha-group">
@@ -205,7 +211,7 @@
 						</div>
 
 						<div class="btn-group text-center">
-							<button type="button" class="rak-frm-btn">Enviar</button>
+							<button id="btn-contact-submit" type="button" class="rak-frm-btn">Enviar</button>
 						</div>
 					</form>
 				</div>
@@ -367,113 +373,28 @@
 		</footer>
 		</div><!--/Inicia el contenido de toda la página-->
 		<script src="assets/js/script.js"></script>
-		<script>//Funciones llamadas en esta página
-			$(document).ready(function(){
-				$(".tnue-right").css("height",$(".tnue-left").height()+"px");
-				if(parseInt($(window).width()) < 767) { $(".tnue-right").css("height","auto"); }
-				if(parseInt($(window).width()) < 931) {
-					$(".cuadro-contenedor").attr("class","col-xs-6 cuadro-contenedor")
-					$(".outer-cuadro").height($(".outer-cuadro").height()+$(".outer-cuadro .image-container").height()+"px");
-				}
-				else {
-				$(".outer-cuadro").height($(".outer-cuadro").height()+$(".outer-cuadro .image-container").height()+"px");
-					$(".cuadro-contenedor").attr("class","col-xs-3 cuadro-contenedor");
-				}
-			});
-			$(window).resize(function(){
-				$(".outer-cuadro").height("auto");
-				if(parseInt($(window).width()) < 931) {
-					$(".cuadro-contenedor").attr("class","col-xs-6 cuadro-contenedor");
-					$(".outer-cuadro").height($(".outer-cuadro").height()+$(".outer-cuadro .image-container").height()+"px");
-				}
-				else {
+		<script>
+			$(document).ready(function() {
+				$("#nombre").val("Ivan Ramírez");
+				$("#correo").val("ivan_amigue@hotmail.com");
+				$("#telefono").val("5518168896");
+				$("#asunto").val("Duda");
+				$("#mensaje").val("Mensaje sobre duda");
 
-				$(".outer-cuadro").height($(".outer-cuadro").height()+$(".outer-cuadro .image-container").height()+"px");
-					$(".cuadro-contenedor").attr("class","col-xs-3 cuadro-contenedor");
-				}
-				$(".tnue-right").css("height",$(".tnue-left").height()+"px");
-				if(parseInt($(window).width()) < 767) { $(".tnue-right").css("height","auto"); }
-			});
-			$(".outer-cuadro").click(function(){
-				var numCuadro = $(this).attr("id").substr($(this).attr("id").length - 1);
-				if($(this).parent().parent().attr("class") != "row s2-cuadros-container already") {
-					$(this).parent().parent().attr("class","row s2-cuadros-container already");
-					$("#initial-description").fadeOut('400',function() {
-						$("#description"+numCuadro).fadeIn('400', function() {});
-						$("#description"+numCuadro).addClass("active");
-					});
-				}
-				if($(this).attr("class") == "outer-cuadro active"){ return; };
-				$(".descriptions-parent .descriptions-container.active").fadeOut('400', function() {
-					$(".descriptions-parent .descriptions-container.active").attr("class","descriptions-container");
-					$("#description"+numCuadro).fadeIn('400', function() {});
-					$("#description"+numCuadro).addClass("active");
-				});
-				$(this).parent().parent().find(".outer-cuadro.active").attr("class","outer-cuadro");
-				$(this).addClass("active");
-				if(parseInt($(window).width()) < 931) {
-				$("html,body").animate({
-					scrollTop:($(".descriptions-parent").offset().top-($(".outer-cuadro").height()))
-				}, 500);
-				}
-			});
-			popoverer();
-					window.sr = ScrollReveal();
+				var nombre = $("#nombre").val();
+				var correo = $("#correo").val();
+				var telefono = $("#telefono").val();
+				var asunto = $("#asunto").val();
+				var mensaje = $("#mensaje").val();
 
-				sr.reveal('.objects-container img', {
-					duration: 3000,
-					/*delay: 500,
-					rotate: { x: 0, y: 0, z: 0 },
-					scale: 0,
-					easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-					reset: true,
-					viewFactor: 0.2,
+				$("#btn-contact-submit").click(function(e) {
+					console.log(nombre)
+					console.log(correo)
+					console.log(telefono)
+					console.log(asunto)
+					console.log(mensaje)
 				});
-				sr.reveal('.outer-cuadro .image-container', {
-					duration: 1000,
-					/*delay: 500,
-					rotate: { x: 0, y: 0, z: 0 },
-					scale: 0,
-					easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-					reset: true,
-					viewFactor: 0.7,
-				});
-					sr.reveal('#bomb-img', {
-					duration: 1000,
-					scale: 1,
-					/*delay: 500,
-					rotate: { x: 0, y: 0, z: 0 },
-					easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-					reset: true,
-					viewFactor: 0.6,
-					});
-				 sr.reveal('.tnuevo-container .tv-effect', {
-					duration: 1000,
-					/*delay: 500,
-					rotate: { x: 0, y: 0, z: 0 },
-					scale: 0,
-					easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-					reset: true,
-					viewFactor: 0.3,
-					}, 1);
-				 sr.reveal('.tnuevo-container .box-effect', {
-					duration: 1000,
-					/*delay: 500,
-					rotate: { x: 0, y: 0, z: 0 },
-					scale: 0,
-					easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-					reset: true,
-					viewFactor: 0.3,
-					}, 1);
-				 sr.reveal('.tnuevo-container .cafeina-effect', {
-					duration: 1000,
-					/*delay: 500,
-					rotate: { x: 0, y: 0, z: 0 },
-					scale: 0,
-					easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',*/
-					reset: true,
-					viewFactor: 0.3,
-					}, 1);
+			});
 		</script>
 	</body>
 </html>

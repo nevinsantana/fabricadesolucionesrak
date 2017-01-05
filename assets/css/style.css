@@ -684,6 +684,7 @@ a { color: inherit !important; }
   font-size     : 14px;
   line-height   : 1.42857143;
 }
+.alert-custom { width: 635px; margin: 0 auto; margin-bottom: 15px; }
 .rak-contact:focus {
   border-color       : #EC861E;
   outline            : 0;
@@ -1030,8 +1031,11 @@ a { color: inherit !important; }
   .left-orange-bar { border-left: none; }
   .ci-table-show-on-mobile { display: block; }
   .orange-bar { border-top: 3px solid #EA7900; width: 320px; display: block; }
-  .rak-contact { width: 100%; }
   /*Services*/
+
+  /*Contact*/
+  .rak-contact, .alert-custom { width: 100%; }
+  /*Contact*/
 }
 
 @media (max-width: 767px) {
