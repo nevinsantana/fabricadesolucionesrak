@@ -1,16 +1,13 @@
 <?php
-	/*$name = $_POST["nombre"];
+	$name = $_POST["nombre"];
 	$usr_mail = $_POST["correo"];
 	$phone = $_POST["telefono"];
 	$subject = $_POST["asunto"];
-	$msg = $_POST["mensaje"];*/
+	$msg = $_POST["mensaje"];
 
-	$name = "Ivan Ramírez";
-	$usr_mail = "ivan_amigue@hotmail.com";
-	$phone = "5518168896";
+
 	$subject_webmaster = "Duda";
-	$msg = "Mensaje sobre duda";
-	$subject_usr = "Gracias por contactar a Fabrica de Soluciones RAK."
+	$subject_usr = "Gracias por contactar a Fabrica de Soluciones RAK.";
 
 	$webmaster_mail = "iramirez@fabricadesoluciones.com";
 
@@ -38,18 +35,23 @@
 		</head>
 		<body>
 			<p>El usuario <b>$name</b> se puso en contacto contigo.</p>
+			<b>Mensaje:</b>
 			<p>\"$msg\"</p>
 		</body>
 		</html>
 	";
 
-	$headers_usr = "From: ".$webmaster_mail."\r\n".
+	$headers_usr = "MIME-Version: 1.0"."\r\n".
+								 "Content-type: text/html; charset=utf-8"."\r\n".
+								 "From: ".$webmaster_mail."\r\n".
 								 "Reply-To: ".$usr_mail."\r\n".
 								 "X-Mailer: PHP/".phpversion();
 
-	$headers_webmaster = "From: ".$usr_mail."\r\n".
-								 "Reply-To: ".$webmaster_mail."\r\n".
-								 "X-Mailer: PHP/".phpversion();
+	$headers_webmaster = "MIME-Version: 1.0"."\r\n".
+											 "Content-type: text/html; charset=utf-8"."\r\n".
+											 "From: ".$usr_mail."\r\n".
+											 "Reply-To: ".$webmaster_mail."\r\n".
+											 "X-Mailer: PHP/".phpversion();
 
 	/*Mail to user*/
 	$mail_usr = mail($usr_mail, $subject_usr, $body_msg_user, $headers_usr);
