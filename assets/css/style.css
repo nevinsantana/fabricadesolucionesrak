@@ -515,9 +515,9 @@ a { color: inherit !important; }
   text-align: center;
   color: white;
 }
-.top-c-title .col-md-12 h2 { font-size: 5vw; margin: 100px 0; }
+.top-c-title .col-md-12 h2 { font-size: 5.5vw; }
 .top-c-title .col-md-12 h2 span.sct1 { font-family: PaytoneOne; }
-.top-c-title .col-md-12 h2 span.sct2 { font-family: Cookie; font-size: 1.5em; }
+.top-c-title .col-md-12 h2 span.sct2 { font-family: Cookie; font-size: 5.6vw; }
 .tc-t2 { color: white !important; }
 /*/-top-c-*/
 
@@ -612,8 +612,8 @@ a { color: inherit !important; }
 .cookie-font { font-family: Cookie }
 .party-one-font { font-family: PaytoneOne; }
 .tbb-nobackground { background-image: none; }
-.s-title { color: #FFF; font-size: 60px; text-align: center; margin-top: 60px; }
-.s-title span { font-size: 80px; }
+.s-title { color: #FFF; font-size: 5.5vw; text-align: center; margin-top: 60px; }
+.s-title span { font-size: 5.6vw; }
 .s-panel-text {
   color         : #8F8F8F;
   font-size     : 20px;
@@ -759,7 +759,6 @@ a { color: inherit !important; }
   background-image :         linear-gradient(#fbb03b, #f36b28);
 }
 .zona-a-tcontainer   { text-align: right; }
-.zona-a-tcontainer * { text-shadow: 0 0 5px #7F7F7F; }
 .zona-a-tcontainer .zona-a-t1 {
   font-family : PaytoneOne;
   color       : white;
@@ -820,17 +819,16 @@ a { color: inherit !important; }
   padding: 10px 15px 10px 0;
 }
 .zona-c-tcontainer { text-align: center; }
-.zona-c-tcontainer * { text-shadow: 0 0 5px #7F7F7F; }
 .zona-c-tcontainer .zona-c-t1 {
   font-family : PaytoneOne;
   color       : white;
-  font-size   : 6.5vw;
+  font-size   : 5.5vw;
   margin-top  : 0px;
 }
 .zona-c-tcontainer .zona-c-t2 {
   font-family : Cookie;
   line-height : 30%;
-  font-size   : 6.1vw;
+  font-size   : 5.6vw;
   color       : white;
   margin-bottom: 3%;
 }
@@ -857,7 +855,6 @@ a { color: inherit !important; }
 /*  parte-a  */
 
 .parte-a-tcontainer   { text-align: center; }
-.parte-a-tcontainer * { text-shadow: 0 0 5px #7F7F7F; }
 .parte-a-tcontainer .parte-a-t1 {
   font-family : PaytoneOne;
   color       : white;
