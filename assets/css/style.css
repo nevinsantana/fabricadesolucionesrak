@@ -270,7 +270,12 @@ a { color: inherit !important; }
   margin: 40px 0;
   position: relative;
 }
-.tnc-img-container { position: absolute; top: -15%; }
+.tnc-img-container {
+  position: absolute;
+  top: -15%;
+  width: 70%;
+  left: 15%;
+}
 .tnc-title {
   text-align: center;
   font-family: Montserrat;
