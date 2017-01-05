@@ -379,54 +379,60 @@
 				$("#my-alert").hide();
 
 				$("#btn-contact-submit").click(function(e) {
-					var nombre = $("#nombre").val();
-					var correo = $("#correo").val();
-					var telefono = $("#telefono").val();
-					var asunto = $("#asunto").val();
-					var mensaje = $("#mensaje").val();
-
-					var form_data = "nombre="+nombre+"&correo="+correo+"&telefono="+telefono+"&asunto="+asunto+"&mensaje="+mensaje+"'";
-
-					if( nombre=="" || correo=="" || telefono=="" || asunto=="" || mensaje=="" ) {
+					var recaptcha_response = grecaptcha.getResponse();
+					if( recaptcha_response==0 ) { /*recaptcha verification not passed*/
 						$("#my-alert").addClass("alert-warning");
-						$("#alert-text").text("Uno o varios campos están vacíos. Por favor llenalos.");
+						$("#alert-text").text("Verifica que eres humano en el recaptcha.");
 						$("#my-alert").fadeIn(500);
-					} else {
-						$.ajax({
-							url: 'contact.php',
-							type: 'POST',
-							data: form_data,
-							success: function() {
-								$("#nombre").val("");
-								$("#correo").val("");
-								$("#telefono").val("");
-								$("#asunto").val("");
-								$("#mensaje").val("");
-								$("#my-alert").addClass("alert-success");
-								$("#my-alert").fadeIn(500);
-								$("#alert-text").text("Gracias por contactarnos.")
-							},
-							error: function(jqXHR, textStatus, errorThrown) {
-	              /*Si hay algun error, se mostrará también en un alert*/
-								$("#my-alert").addClass("alert-danger");
-	              $("#my-alert").fadeIn(500);
-	              if (jqXHR.status === 0) {
-	                $("#alert-text").text('Not connect: Verify Network');
-	              } else if (jqXHR.status == 404) {
-	                $("#alert-text").text('Requested page not found [404]');
-	              } else if (jqXHR.status == 500) {
-	                $("#alert-text").text('Internal Server Error [500]');
-	              } else if (textStatus === 'parsererror') {
-	                $("#alert-text").text('Requested JSON parse failed');
-	              } else if (textStatus === 'timeout') {
-	                $("#alert-text").text('Time out error');
-	              } else if (textStatus === 'abort') {
-	                $("#alert-text").text('Ajax request aborted');
-	              } else {
-	                $("#alert-text").text('Uncaught Error: ' + jqXHR.responseText);
-	              }
-	            }
-						});
+					} else { /*recaptcha verification passed*/
+						var nombre = $("#nombre").val();
+						var correo = $("#correo").val();
+						var telefono = $("#telefono").val();
+						var asunto = $("#asunto").val();
+						var mensaje = $("#mensaje").val();
+
+						var form_data = "nombre="+nombre+"&correo="+correo+"&telefono="+telefono+"&asunto="+asunto+"&mensaje="+mensaje+"'";
+						if( nombre=="" || correo=="" || telefono=="" || asunto=="" || mensaje=="" ) {
+							$("#my-alert").addClass("alert-warning");
+							$("#alert-text").text("Uno o varios campos están vacíos. Por favor llenalos.");
+							$("#my-alert").fadeIn(500);
+						} else {
+							$.ajax({
+								url: 'contact.php',
+								type: 'POST',
+								data: form_data,
+								success: function() {
+									$("#nombre").val("");
+									$("#correo").val("");
+									$("#telefono").val("");
+									$("#asunto").val("");
+									$("#mensaje").val("");
+									$("#my-alert").addClass("alert-success");
+									$("#my-alert").fadeIn(500);
+									$("#alert-text").text("Gracias por contactarnos.")
+								},
+								error: function(jqXHR, textStatus, errorThrown) {
+		              /*Si hay algun error, se mostrará también en un alert*/
+									$("#my-alert").addClass("alert-danger");
+		              $("#my-alert").fadeIn(500);
+		              if (jqXHR.status === 0) {
+		                $("#alert-text").text('Not connect: Verify Network');
+		              } else if (jqXHR.status == 404) {
+		                $("#alert-text").text('Requested page not found [404]');
+		              } else if (jqXHR.status == 500) {
+		                $("#alert-text").text('Internal Server Error [500]');
+		              } else if (textStatus === 'parsererror') {
+		                $("#alert-text").text('Requested JSON parse failed');
+		              } else if (textStatus === 'timeout') {
+		                $("#alert-text").text('Time out error');
+		              } else if (textStatus === 'abort') {
+		                $("#alert-text").text('Ajax request aborted');
+		              } else {
+		                $("#alert-text").text('Uncaught Error: ' + jqXHR.responseText);
+		              }
+		            }
+							});
+						}
 					}
 				});
 
