@@ -935,14 +935,18 @@ a { color: inherit !important; }
 }
 .portfolio-partec-background { position: absolute; }
 
-.sct, .zona-c-tcontainer { margin: 4% 0; }
+.sct, .zona-c-tcontainer { margin: 8% 0; }
 
 .logos-parent .col-sm-3 { padding-bottom: 15px; }
+
+.left-contact { padding-right:  }
 /*/ parte-a  */
 
 /*-/ portfolio  -*/
 
 .carousel-caption { text-shadow: 0 0 0 transparent !important; }
+
+.zonac-portfolio { padding: 4% 0; }
 
 @media (max-width: 330px) {
   #recaptcha {
