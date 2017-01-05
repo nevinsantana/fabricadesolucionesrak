@@ -935,9 +935,14 @@ a { color: inherit !important; }
     width: 4%;
 }
 .portfolio-partec-background { position: absolute; }
+
+.sct, .zona-c-tcontainer { margin: 4% 0; }
+
 /*/ parte-a  */
 
 /*-/ portfolio  -*/
+
+.carousel-caption { text-shadow: 0 0 0 transparent !important; }
 
 @media (max-width: 330px) {
   #recaptcha {
