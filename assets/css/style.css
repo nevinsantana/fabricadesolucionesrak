@@ -614,7 +614,7 @@ a { color: inherit !important; }
   font-size     : 20px;
   text-align    : center;
   margin-top    : 30px;
-  margin-bottom : 2%;
+  margin-bottom : 4%;
 }
 .s-margin-top { margin-top: 50px; }
 .s-margin-bottom { margin-bottom: 50px; }
@@ -652,7 +652,7 @@ a { color: inherit !important; }
 .tnc-center { text-align: center !important; }
 .col-sm-3-cust { padding-right: 0; }
 .ci-table-show-on-mobile { display: none; }
-.services-topb { padding: 4% 0; }
+.services-topb { padding: 2% 0 4% 0; }
 /*Services*/
 
 /*Contact*/
