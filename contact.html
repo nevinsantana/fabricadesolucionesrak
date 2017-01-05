@@ -389,11 +389,19 @@
 					$(this).val(str);
 				});
 				/*Capitalize name*/
+<<<<<<< HEAD
 
 				/*E-Mail only*/
 				$("#correo").change(function(e) {
 					var is_email = validateEmail( $(this).val() );
 
+=======
+
+				/*E-Mail only*/
+				$("#correo").change(function(e) {
+					var is_email = validateEmail( $(this).val() );
+					
+>>>>>>> 776bee33c99362a4618e651eada294bbb6f78f36
 					if( !is_email ) {
 						$("#my-alert").addClass("alert-warning");
 						$("#alert-text").text("Ingresa un correo válido.");
@@ -408,7 +416,11 @@
 				function validateEmail(email) {
 					var email_pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/,
 							is_email = email_pattern.test(email);
+<<<<<<< HEAD
 
+=======
+					
+>>>>>>> 776bee33c99362a4618e651eada294bbb6f78f36
 					return is_email;
 				}
 				/*E-Mail only*/
@@ -420,7 +432,11 @@
 					if( (key<=57 && key>=48) || key==8 || key==37 || key==39 || key==9
 					 	|| key==46 )
 						return true;
+<<<<<<< HEAD
 					else
+=======
+					else 
+>>>>>>> 776bee33c99362a4618e651eada294bbb6f78f36
 						return false
 				});
 
