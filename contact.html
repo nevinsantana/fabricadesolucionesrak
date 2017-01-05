@@ -28,7 +28,7 @@
         var recaptcha;
         var renderCaptcha = function() {
             recaptcha = grecaptcha.render('recaptcha', {
-                'sitekey': '6LcKPgwUAAAAADuCtxWE4f2DyUWAYg2oaLtOgHqG',
+                'sitekey': '6LebbwsUAAAAABC6h8tcsqOe4dDdIaIoIJQVDoL2',
                 'theme': 'light'
             });
         };
@@ -378,14 +378,14 @@
 			$(document).ready(function() {
 				$("#my-alert").hide();
 
-				var form_data = "nombre="+nombre+"&correo="+correo+"&telefono="+telefono+"&asunto="+asunto+"&mensaje="+mensaje+"'";
-
 				$("#btn-contact-submit").click(function(e) {
 					var nombre = $("#nombre").val();
 					var correo = $("#correo").val();
 					var telefono = $("#telefono").val();
 					var asunto = $("#asunto").val();
 					var mensaje = $("#mensaje").val();
+
+					var form_data = "nombre="+nombre+"&correo="+correo+"&telefono="+telefono+"&asunto="+asunto+"&mensaje="+mensaje+"'";
 
 					if( nombre=="" || correo=="" || telefono=="" || asunto=="" || mensaje=="" ) {
 						$("#my-alert").addClass("alert-warning");

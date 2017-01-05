@@ -37,6 +37,11 @@
 			<p>El usuario <b>$name</b> se puso en contacto contigo.</p>
 			<b>Mensaje:</b>
 			<p>\"$msg\"</p>
+			<b>Datos de contacto</b>
+			<p>
+				<b>Correo:</b> $usr_mail<br>
+				<b>Teléfono:</b> $phone
+			</p>
 		</body>
 		</html>
 	";
