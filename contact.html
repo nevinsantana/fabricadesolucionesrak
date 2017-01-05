@@ -393,9 +393,7 @@
 				/*E-Mail only*/
 				$("#correo").change(function(e) {
 					var is_email = validateEmail( $(this).val() );
-				/*E-Mail only*/
-				$("#correo").change(function(e) {
-					var is_email = validateEmail( $(this).val() );
+					
 					if( !is_email ) {
 						$("#my-alert").addClass("alert-warning");
 						$("#alert-text").text("Ingresa un correo válido.");
@@ -410,6 +408,7 @@
 				function validateEmail(email) {
 					var email_pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/,
 							is_email = email_pattern.test(email);
+					
 					return is_email;
 				}
 				/*E-Mail only*/
@@ -421,8 +420,7 @@
 					if( (key<=57 && key>=48) || key==8 || key==37 || key==39 || key==9
 					 	|| key==46 )
 						return true;
-					else
-					else
+					else 
 						return false
 				});
 
