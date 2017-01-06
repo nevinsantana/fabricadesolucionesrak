@@ -740,8 +740,8 @@ a { color: inherit !important; }
   text-transform : uppercase;
   margin-bottom  : 30px;
 }
-.ci-schedule { font-size: 20px; font-weight: 300; text-transform: uppercase; }
-.ci-info { font-size: 15px; font-weight: 300; }
+.ci-schedule { font-size: 19px; font-weight: 300; text-transform: uppercase; }
+.ci-info { font-size: 17px; font-weight: 300; }
 .ci-info p { margin: 0; }
 .ci-table > tbody > tr > td { border: none; }
 .ci-social > .social-icon-foot > .fa-stack-1x { background-color: #f00; }
@@ -950,6 +950,8 @@ a { color: inherit !important; }
 
 .zonac-portfolio { padding: 4% 0; }
 
+.orange-contact { color: #ea7900; }
+
 @media (max-width: 330px) {
   #recaptcha {
     left              : 10px !important;
@@ -1119,7 +1121,7 @@ a { color: inherit !important; }
 
 }/*/(max-width: 767px)*/
 
-@media (max-width: 791px) {
+@media (max-width: 861px) {
   /*Contact*/
   .orange-bar { border-top: 3px solid #EA7900; width: 100%; display: block; }
   .col-xs-custom { width: 100%; text-align: center; }
