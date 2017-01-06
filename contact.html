@@ -24,16 +24,16 @@
 
 		<!-- Google reCaptcha -->
 		<script src="https://www.google.com/recaptcha/api.js?hl=es&onload=renderCaptcha&render=explicit" async="async" defer="defer"></script>
-    <script>
-        var recaptcha;
-        var renderCaptcha = function() {
-            recaptcha = grecaptcha.render('recaptcha', {
-                'sitekey': '6LebbwsUAAAAABC6h8tcsqOe4dDdIaIoIJQVDoL2',
-                'theme': 'light'
-            });
-        };
-    </script>
-    <!-- Google reCaptcha -->
+		<script>
+			var recaptcha;
+			var renderCaptcha = function() {
+				recaptcha = grecaptcha.render('recaptcha', {
+					'sitekey': '6LebbwsUAAAAABC6h8tcsqOe4dDdIaIoIJQVDoL2',
+					'theme': 'light'
+				});
+			};
+		</script>
+		<!-- Google reCaptcha -->
 	</head>
 	<body>
 		<div class="allCont"><!--Inicia el contenido de toda la página-->
@@ -156,152 +156,104 @@
 				<!-- Cloud 02 -->
 			</div>
 
-
-
-		<section class="top-b tb-contact" id="top-b"><!--Segunda sección-->
-			<div class="top-b-back tbb-nobackground"></div><!--Fondo fixed-->
-			<div class="col-md-12 top-b-content"><!--Contenido top-b-->
-				<div class="row">
-					<div class="cookie-font contact-title">
-						Tu proyecto es nuestra solución
+			<section class="top-b tb-contact" id="top-b"><!--Segunda sección-->
+				<div class="top-b-back tbb-nobackground"></div><!--Fondo fixed-->
+				<div class="col-md-12 top-b-content"><!--Contenido top-b-->
+					<div class="row">
+						<div class="cookie-font contact-title">
+							Tu proyecto es nuestra solución
+						</div>
 					</div>
-				</div>
 
-				<div class="row text-center">
-					<form>
-						<div class="col-sm-12">
-							<div id="my-alert" class="alert alert-dismissible alert-custom" role="alert">
-							  <button id="dismiss-my-alert" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							  <span id="alert-text"></span>
+					<div class="row text-center">
+						<form>
+							<div class="col-sm-12">
+								<div id="my-alert" class="alert alert-dismissible alert-custom" role="alert">
+									<button id="dismiss-my-alert" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<span id="alert-text"></span>
+								</div>
 							</div>
-						</div>
-						<div class="form-group col-sm-12">
-							<input id="nombre" type="text" class="rak-contact" name="nombre" placeholder="Nombre:">
-						</div>
-						<div class="form-group col-sm-12">
-							<input id="correo" type="text" class="rak-contact" name="correo" placeholder="E-mail:">
-						</div>
-						<div class="form-group col-sm-12">
-							<input id="telefono" type="text" class="rak-contact" name="telefono" maxlength="14" placeholder="Tel&eacute;fono">
-						</div>
-						<div class="form-group col-sm-12">
-							<input id="asunto" type="text" class="rak-contact" name="asunto" placeholder="Asunto:">
-						</div>
-						<div class="form-group col-sm-12">
-							<textarea id="mensaje" name="mensaje" class="rak-contact rc-textarea" placeholder="Mensaje:" rows="5"></textarea>
-						</div>
+							<div class="form-group col-sm-12">
+								<input id="nombre" type="text" class="rak-contact" name="nombre" placeholder="Nombre:">
+							</div>
+							<div class="form-group col-sm-12">
+								<input id="correo" type="text" class="rak-contact" name="correo" placeholder="E-mail:">
+							</div>
+							<div class="form-group col-sm-12">
+								<input id="telefono" type="text" class="rak-contact" name="telefono" maxlength="14" placeholder="Tel&eacute;fono">
+							</div>
+							<div class="form-group col-sm-12">
+								<input id="asunto" type="text" class="rak-contact" name="asunto" placeholder="Asunto:">
+							</div>
+							<div class="form-group col-sm-12">
+								<textarea id="mensaje" name="mensaje" class="rak-contact rc-textarea" placeholder="Mensaje:" rows="5"></textarea>
+							</div>
 
-						<div class="form-group col-sm-12 recaptcha-group">
-							<div id="recaptcha"></div>
-						</div>
+							<div class="form-group col-sm-12 recaptcha-group">
+								<div id="recaptcha"></div>
+							</div>
 
-						<div class="btn-group text-center">
-							<button id="btn-contact-submit" type="button" class="rak-frm-btn">Enviar</button>
-						</div>
-					</form>
+							<div class="btn-group text-center">
+								<button id="btn-contact-submit" type="button" class="rak-frm-btn">Enviar</button>
+							</div>
+						</form>
+					</div>
 				</div>
 
-				<div class="cust-container contact-info">
+
+				<section class="zona-c-title col-md-12 zct-contact">
 					<div class="row">
-						<div class="col-sm-12 text-center ci-title">
-							Queremos escucharte
+						<div class="col-md-12 zona-c-tcontainer">
+							<span class="zona-c-t1">Queremos </span>
+							<span class="zona-c-t2">escucharte</span>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-4 col-xs-custom text-center">
-							<div class="ci-schedule">
-								Horarios
-							</div><br>
+				</section>
+
+				<div class="col-md-12">
+					<div class="cust-container contact-info">
+						<div class="row">
+							<div class="col-xs-4 col-xs-custom text-center">
+								<div class="ci-schedule">
+									Horarios
+								</div><br>
 
 
-							<div class="ci-info pr-custom">
-								<div class="row">
-									<div class="col-xs-6 text-right orange-contact">Lunes a Viernes</div>
-									<div class="col-xs-6 text-left">9 - 18 Hrs.</div>
+								<div class="ci-info pr-custom">
+									<div class="row">
+										<div class="col-xs-6 text-right orange-contact">Lunes a Viernes</div>
+										<div class="col-xs-6 text-left">9 - 18 Hrs.</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-6 text-right orange-contact">S&aacute;bado</div>
+										<div class="col-xs-6 text-left">Previa cita</div>
+									</div>
+									<hr class="orange-bar">
+								</div>
+							</div>
+
+							<div class="col-xs-4 col-xs-custom left-orange-bar right-orange-bar">
+								<div class="ci-schedule text-center">
+									Contactos
+								</div><br>
+								<div class="text-center ci-info pl-custom">
+									<p><span class="orange-contact">Teléfono</span> +52 (55) 5016-1705 y 06</p>
+									<p><span class="orange-contact">Ventas</span> 101</p>
+									<p><span class="orange-contact">Diseño</span> 108</p>
+									<p><span class="orange-contact">Marketing</span> 108</p>
+									<p><span class="orange-contact">Recepción</span> 100</p>
+									<p><span class="orange-contact">E-mail</span> info@fabricadesoluciones.com</p>
 								</div>
 
-								<div class="row">
-									<div class="col-xs-6 text-right orange-contact">S&aacute;bado</div>
-									<div class="col-xs-6 text-left">Previa cita</div>
-								</div>
 								<hr class="orange-bar">
 							</div>
-						</div>
 
-						<div class="col-xs-4 col-xs-custom left-orange-bar right-orange-bar">
-							<div class="ci-schedule text-center">
-								Contactos
-							</div><br>
-							<div class="text-center ci-info pl-custom">
-								<p><span class="orange-contact">Teléfono</span> +52 (55) 5016-1705 y 06</p>
-								<p><span class="orange-contact">Ventas</span> 101</p>
-								<p><span class="orange-contact">Diseño</span> 108</p>
-								<p><span class="orange-contact">Marketing</span> 108</p>
-								<p><span class="orange-contact">Recepción</span> 100</p>
-								<p><span class="orange-contact">E-mail</span> info@fabricadesoluciones.com</p>
-							</div>
+							<div class="col-xs-4 col-xs-custom text-center ci-social">
+								<div class="ci-schedule text-center">
+									Redes sociales
+								</div><br>
 
-							<hr class="orange-bar">
-						</div>
-
-						<div class="col-xs-4 col-xs-custom text-center ci-social">
-							<div class="ci-schedule text-center">
-								Redes sociales
-							</div><br>
-
-							<a href="https://www.facebook.com/FabricaDeSolucionesRak/?fref=ts"
-							target="_blank">
-								<span class="fa-stack fa-lg social-icon-foot">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-								</span>
-							</a>
-
-							<a href="https://twitter.com/fabricarak" target="_blank">
-								<span class="fa-stack fa-lg social-icon-foot">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-								</span>
-							</a>
-
-							<a href="https://www.linkedin.com/company/2019418?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2019418%2Cidx%3A3-1-3%2CtarId%3A1480464427766%2Ctas%3Afabrica%20de%20sol"
-							target="_blank">
-								<span class="fa-stack fa-lg social-icon-foot">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-		</section><!--/Segunda sección-->
-
-
-
-		<footer class="footer-principal" id="top-e">
-			<div class="col-md-12 black-space-foot"></div>
-			<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-3">
-						<div class="row">
-							<div class="col-md-2"></div>
-							<div class="col-md-8">
-								<div class="fo-izq-1">
-									<img src="assets/img/footer-logo.svg" alt="Logo RAK">
-								</div>
-							</div>
-							<div class="col-md-2"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-1"></div>
-							<div class="col-md-10 cont-tels-foot">
-								<p class="tels-foot">T: +52(55) 5016-1705 y 06</p>
-							</div>
-							<div class="col-md-1"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-2"></div>
-							<div class="col-md-8 text-center a-styler-social">
 								<a href="https://www.facebook.com/FabricaDeSolucionesRak/?fref=ts"
 								target="_blank">
 									<span class="fa-stack fa-lg social-icon-foot">
@@ -309,12 +261,14 @@
 										<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 									</span>
 								</a>
+
 								<a href="https://twitter.com/fabricarak" target="_blank">
 									<span class="fa-stack fa-lg social-icon-foot">
 										<i class="fa fa-circle fa-stack-2x"></i>
 										<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 									</span>
 								</a>
+
 								<a href="https://www.linkedin.com/company/2019418?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2019418%2Cidx%3A3-1-3%2CtarId%3A1480464427766%2Ctas%3Afabrica%20de%20sol"
 								target="_blank">
 									<span class="fa-stack fa-lg social-icon-foot">
@@ -323,56 +277,108 @@
 									</span>
 								</a>
 							</div>
-							<div class="col-md-2"></div>
 						</div>
 					</div>
-					<div class="col-md-1 disapare"><div class="vs-line"></div></div>
-					<div class="col-md-8 right-foot">
-						<div class="col-md-12 flcontainer-foot">
+			</section><!--/Segunda sección-->
+
+
+
+			<footer class="footer-principal" id="top-e">
+				<div class="col-md-12 black-space-foot"></div>
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-3">
 							<div class="row">
-								<div class="col-md-2 text-center">
-									<p class="nu-fort">¡NUESTRAS FORTALEZAS!</p>
-								</div>
-								<div class="col-md-2 logo-middler">
-									<div class="logo-foot">
-										<img src="assets/img/footer-r-2.svg" alt="Socio AMIPCI">
+								<div class="col-md-2"></div>
+								<div class="col-md-8">
+									<div class="fo-izq-1">
+										<img src="assets/img/footer-logo.svg" alt="Logo RAK">
 									</div>
 								</div>
-								<div class="col-md-2 logo-middler">
-									<div class="logo-foot">
-										<img src="assets/img/footer-r-3.svg" alt="Google Partner">
-									</div>
+								<div class="col-md-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-1"></div>
+								<div class="col-md-10 cont-tels-foot">
+									<p class="tels-foot">T: +52(55) 5016-1705 y 06</p>
 								</div>
-								<div class="col-md-2 logo-middler">
-									<div class="logo-foot">
-										<img src="assets/img/footer-r-4.svg" alt="Hotsuite">
-									</div>
+								<div class="col-md-1"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-8 text-center a-styler-social">
+									<a href="https://www.facebook.com/FabricaDeSolucionesRak/?fref=ts"
+									target="_blank">
+										<span class="fa-stack fa-lg social-icon-foot">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+									<a href="https://twitter.com/fabricarak" target="_blank">
+										<span class="fa-stack fa-lg social-icon-foot">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+									<a href="https://www.linkedin.com/company/2019418?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2019418%2Cidx%3A3-1-3%2CtarId%3A1480464427766%2Ctas%3Afabrica%20de%20sol"
+									target="_blank">
+										<span class="fa-stack fa-lg social-icon-foot">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
 								</div>
-								<div class="col-md-2 logo-middler">
-									<div class="logo-foot">
-										<img src="assets/img/footer-r-5.svg" alt="Amazon web services">
+								<div class="col-md-2"></div>
+							</div>
+						</div>
+						<div class="col-md-1 disapare"><div class="vs-line"></div></div>
+						<div class="col-md-8 right-foot">
+							<div class="col-md-12 flcontainer-foot">
+								<div class="row">
+									<div class="col-md-2 text-center">
+										<p class="nu-fort">¡NUESTRAS FORTALEZAS!</p>
 									</div>
-								</div>
-								<div class="col-md-2 logo-middler">
-									<div class="logo-foot">
-										<img src="assets/img/footer-r-6.svg" alt="Serverpoint">
+									<div class="col-md-2 logo-middler">
+										<div class="logo-foot">
+											<img src="assets/img/footer-r-2.svg" alt="Socio AMIPCI">
+										</div>
+									</div>
+									<div class="col-md-2 logo-middler">
+										<div class="logo-foot">
+											<img src="assets/img/footer-r-3.svg" alt="Google Partner">
+										</div>
+									</div>
+									<div class="col-md-2 logo-middler">
+										<div class="logo-foot">
+											<img src="assets/img/footer-r-4.svg" alt="Hotsuite">
+										</div>
+									</div>
+									<div class="col-md-2 logo-middler">
+										<div class="logo-foot">
+											<img src="assets/img/footer-r-5.svg" alt="Amazon web services">
+										</div>
+									</div>
+									<div class="col-md-2 logo-middler">
+										<div class="logo-foot">
+											<img src="assets/img/footer-r-6.svg" alt="Serverpoint">
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="advert-foot text-center">
-							<p>Aviso de privacidad.</p>
-							<p>
-								Todos los derechos reservados&copy; M&eacute;xico 2016.
-								F&aacute;brica de Soluciones RAK S.A. de C.V.
-							</p>
+							<div class="advert-foot text-center">
+								<p>Aviso de privacidad.</p>
+								<p>
+									Todos los derechos reservados&copy; M&eacute;xico 2016.
+									F&aacute;brica de Soluciones RAK S.A. de C.V.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="foot-yellow disapare"></div>
-		</footer>
+				<div class="foot-yellow disapare"></div>
+			</footer>
 		</div><!--/Inicia el contenido de toda la página-->
+
 		<script src="assets/js/script.js"></script>
 		<script>
 			$(document).ready(function() {
@@ -418,7 +424,7 @@
 					key = e.keyCode || e.which;
 
 					if( (key<=57 && key>=48) || key==8 || key==37 || key==39 || key==9
-					 	|| key==46 )
+						|| key==46 )
 						return true;
 					else
 						return false
@@ -471,25 +477,25 @@
 									$("#alert-text").text("Gracias por contactarnos.")
 								}, /*ajax success*/
 								error: function(jqXHR, textStatus, errorThrown) {
-		              /*Si hay algun error, se mostrará también en un alert*/
+									/*Si hay algun error, se mostrará también en un alert*/
 									$("#my-alert").addClass("alert-danger");
-		              $("#my-alert").fadeIn(500);
-		              if (jqXHR.status === 0) {
-		                $("#alert-text").text('Not connect: Verify Network');
-		              } else if (jqXHR.status == 404) {
-		                $("#alert-text").text('Requested page not found [404]');
-		              } else if (jqXHR.status == 500) {
-		                $("#alert-text").text('Internal Server Error [500]');
-		              } else if (textStatus === 'parsererror') {
-		                $("#alert-text").text('Requested JSON parse failed');
-		              } else if (textStatus === 'timeout') {
-		                $("#alert-text").text('Time out error');
-		              } else if (textStatus === 'abort') {
-		                $("#alert-text").text('Ajax request aborted');
-		              } else {
-		                $("#alert-text").text('Uncaught Error: ' + jqXHR.responseText);
-		              }
-		            } /*ajax error*/
+									$("#my-alert").fadeIn(500);
+									if (jqXHR.status === 0) {
+										$("#alert-text").text('Not connect: Verify Network');
+									} else if (jqXHR.status == 404) {
+										$("#alert-text").text('Requested page not found [404]');
+									} else if (jqXHR.status == 500) {
+										$("#alert-text").text('Internal Server Error [500]');
+									} else if (textStatus === 'parsererror') {
+										$("#alert-text").text('Requested JSON parse failed');
+									} else if (textStatus === 'timeout') {
+										$("#alert-text").text('Time out error');
+									} else if (textStatus === 'abort') {
+										$("#alert-text").text('Ajax request aborted');
+									} else {
+										$("#alert-text").text('Uncaught Error: ' + jqXHR.responseText);
+									}
+								} /*ajax error*/
 							}); /*AJAX*/
 						} /*IF ELSE*/
 					}/*IF ELSE reCAPTCHA*/
