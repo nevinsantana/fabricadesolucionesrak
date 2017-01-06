@@ -23,28 +23,28 @@
 /*/Fonts*/
 
 /*General*/
-img { width: 100%; height: auto; }
-button:focus { border: none; box-shadow: none; outline: 0; }
-a:link { text-decoration: none; }
-a { color: inherit !important; }
-.row-nomargin { margin-right: 0; margin-left: 0; }
+img             { width: 100%; height: auto; }
+button:focus    { border: none; box-shadow: none; outline: 0; }
+a:link          { text-decoration: none; }
+a               { color: inherit !important; }
+.row-nomargin   { margin-right: 0; margin-left: 0; }
 .no-padding-col { padding-left: 0 !important; padding-right: 0 !important; }
-.m-bottom50 { margin-bottom: 50px; }
-.wh100 { width: 100%; height: 100%; }
-.allCont { position: absolute; width: 100%; height: 100%; }
-.text-center { text-align: center; }
-.transp { background-color: rgba(0, 0, 0, 0) !important; border: none; }
-.dir-cont { width: 100%; }
-.relativer { position: relative; width: 100%; height: 100%; }
-.all-height { height: 100%; }
+.m-bottom50     { margin-bottom: 50px; }
+.wh100          { width: 100%; height: 100%; }
+.allCont        { position: absolute; width: 100%; height: 100%; }
+.text-center    { text-align: center; }
+.transp         { background-color: rgba(0, 0, 0, 0) !important; border: none; }
+.dir-cont       { width: 100%; }
+.relativer      { position: relative; width: 100%; height: 100%; }
+.all-height     { height: 100%; }
 .centrar {
-  position: absolute;
-  top: 50%;
-  -ms-transform: translate (0,-50%);
-  -webkit-transform: translate (0,-50%);
-  -moz-transform: translate (0,-50%);
-  -o-transform: translate (0,-50%);
-  transform: translate(0,-50%);
+  position          : absolute;
+  top               : 50%;
+  -ms-transform     : translate (0,-50%);
+  -webkit-transform : translate (0,-50%);
+  -moz-transform    : translate (0,-50%);
+  -o-transform      : translate (0,-50%);
+  transform         : translate(0,-50%);
 }
 .sec-selecter {
   height: auto;
