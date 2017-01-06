@@ -967,7 +967,6 @@ a { color: inherit !important; }
   /*Services*/
 }
 
-
 @media (max-width: 499px) {
 
   /*General*/
@@ -1031,6 +1030,12 @@ a { color: inherit !important; }
 
 }/*/(max-width: 499px)*/
 
+@media (max-width: 540px) {
+  /*Services*/
+  .ta-custom {height: 80vw !important; }
+  /*Services*/
+}
+
 @media (max-width: 650px) {
   /*Services*/
   .s-title { font-size: 6vw !important; }
@@ -1076,6 +1081,12 @@ a { color: inherit !important; }
 }
 
   /*Services*/
+  .ta2-services { z-index: 999; position: relative; }
+  .ta-custom {height: 550px; min-height: auto; }
+  .top-a-objects .objects-container { top: 64%; }
+  /*Services*/
+
+  /*Contact*/
   .top-a-contact { height: 300px; min-height: auto; }
   .col-sm-3-cust, .col-sm-9-cust { width: 100% !important; padding-right: 15px; }
   .s-img-responsive { margin-left: 0; }
@@ -1103,7 +1114,7 @@ a { color: inherit !important; }
   .cloud-01 img, .cloud-02 img { width: 200px; }
   .contact-title { margin-top: -80px; font-size: 40px; }
   .nav.navbar-nav *:not(.fa-stack-2x) { font-size: 16px; }
-  /*Services*/
+  /*Contact*/
 
 
 }/*/(max-width: 767px)*/
