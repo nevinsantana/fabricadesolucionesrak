@@ -15,7 +15,7 @@
 	/*FOOTER*/
 	/*HOME*/
 	define("PORTADA_00_HOME","the creative");
-	define("PORTADA_01_HOME","SOLUTIONES");
+	define("PORTADA_01_HOME","SOLUTIONS");
 	define("PORTADA_02_HOME","factory");
 	define("PORTADA_03_HOME","We generate creative and functional ideas.");
 
