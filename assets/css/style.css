@@ -975,7 +975,7 @@ z-index             : 201;
 	.oc-title-2 { top: -5px; }
 
 	.oc-title-3 { bottom: -10px !important; }
-	.oc-title-4 { bottom: -40px !important; }
+	.oc-title-4 { bottom: -55px !important; }
 	/*/General*/
 
 	/*Home-topa*/
@@ -1050,6 +1050,7 @@ z-index             : 201;
 	.creativas  { font-size: 8vw; }
 	.creades    { font-size: 2.5vw; }
 	.navbar-nav { font-size: 0.7vw; }
+	.top-a { min-height: 550px; height: auto; }
 	/*/Home-topa*/
 
 	.tnue-right .tnuevo-container {
@@ -1066,7 +1067,6 @@ z-index             : 201;
 	/*Services*/
 	.ta2-services { z-index: 40; position: relative; }
 	.ta-custom { height: 550px; min-height: auto; }
-	.top-a-objects .objects-container { top: 64%; }
 	/*Services*/
 
 	/*Contact*/
