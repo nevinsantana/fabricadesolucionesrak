@@ -9,6 +9,7 @@
 
 	/*FOOTER*/
 	define("FORT_FOOTER","¡NUESTRAS FORTALEZAS!");
+	define("PHONE_FOOTER","T: +52(55) 5016-1705 Y 06");
 	define("PRIVACY_00_FOOTER","Aviso de privacidad.");
 	define("PRIVACY_01_FOOTER","Todos los derechos reservados&copy; M&eacute;xico 2016. F&aacute;brica de Soluciones RAK S.A. de C.V.");
 	/*FOOTER*/
