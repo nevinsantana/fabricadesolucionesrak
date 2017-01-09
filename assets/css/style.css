@@ -80,6 +80,7 @@ a               { color: inherit !important; }
 .party-one-font { font-family: PaytoneOne; }
 .normal-font    { font-family: PlayfairDisplay; font-weight: 200; }
 .tbb-nobackground { background-image: none; }
+.s-title { color: #FFF; font-size: 5vw; text-align: center; margin-top: 60px; }
 .oc-title { color: #FFF; font-size: 5vw; text-align: center; }
 .oc-title-1, .oc-title-2 {
 	position          : absolute;
