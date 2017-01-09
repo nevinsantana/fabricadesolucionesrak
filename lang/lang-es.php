@@ -139,5 +139,10 @@
 	define("CONTACTS_05_CONTACT","Recepción");
 
 	define("SOCIAL_NETWORKS_CONTACT","Redes sociales");
+
+	define("VERIFY_HUMAN_CONTACT","Verifica que eres humano en el recaptcha.");
+	define("BLANK_FIELDS_CONTACT","Uno o varios campos están vacíos. Por favor llenalos.");
+	define("INVALID_MAIL_CONTACT","Ingresa un correo válido.");
+	define("THANKS_MSG_CONTACT","Gracias por contactarnos.");
 	/*CONTACT*/
 ?>
