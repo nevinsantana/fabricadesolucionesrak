@@ -383,10 +383,11 @@
 								$("#my-alert").fadeIn(500);
 						} else { /*Everithing has been validated*/
 							$.ajax({
-								url: 'contact-sender.php',
+								url: 'contact-sender-<?php echo $lang; ?>.php',
 								type: 'POST',
 								data: form_data,
 								success: function() {
+									grecaptcha.reset();
 									$("#nombre").val("");
 									$("#correo").val("");
 									$("#telefono").val("");
