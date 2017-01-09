@@ -6,8 +6,8 @@
 	$msg = $_POST["mensaje"];
 
 
-	$subject_webmaster = "Duda";
-	$subject_usr = "Gracias por contactar a Fabrica de Soluciones RAK.";
+	$subject_webmaster = "Recently someone has contacted you.";
+	$subject_usr = "Thanks for contact to Solutions Factory RAK.";
 
 	$webmaster_mail = "info@fabricadesoluciones.com";
 
@@ -15,13 +15,13 @@
 	"
 		<html>
 		<head>
-			<title>Gracias por contactarnos.</title>
+			<title>Thanks for contact us.</title>
 		</head>
 		<body>
-			<p>Hola <b>$name</b></p>
-			<p>Gracias por contactar a Fabrica de Soluciones RAK.</p>
-			<p>Pronto nos pondremos en contacto contigo para resolver tus dudas.</p>
-			<p>Buen día.</p>
+			<p>Hello <b>$name</b></p>
+			<p>Thanks for contact to Solutions Factory RAK.</p>
+			<p>Soon we will contact you to answer your questions.</p>
+			<p>Have a nice day.</p>
 		</body>
 		</html>
 	";
@@ -31,16 +31,16 @@
 		<!DOCTYPE html>
 		<html>
 		<head>
-			<title>Notificacion de contacto.</title>
+			<title>Notification.</title>
 		</head>
 		<body>
-			<p>El usuario <b>$name</b> se puso en contacto contigo.</p>
-			<b>Mensaje:</b>
+			<p>The user <b>$name</b> contacted you..</p>
+			<b>Message:</b>
 			<p>\"$msg\"</p>
-			<b>Datos de contacto</b>
+			<b>Contact data:</b>
 			<p>
-				<b>Correo:</b> $usr_mail<br>
-				<b>Teléfono:</b> $phone
+				<b>E-Mail:</b> $usr_mail<br>
+				<b>Phone:</b> $phone
 			</p>
 		</body>
 		</html>
