@@ -1096,6 +1096,9 @@ z-index             : 201;
 	.cloud-01 img, .cloud-02 img        { width: 200px; }
 	.contact-title                      { margin-top: -80px; font-size: 40px; }
 	.nav.navbar-nav *:not(.fa-stack-2x) { font-size: 16px; }
+	.index-vermas { font-size: 20px !important; }
+	.zonac-square-title { font-size: 20px !important; }
+	.zonac-content .zonac-description-container { font-size: 16px; }
 	/*Contact*/
 
 
