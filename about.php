@@ -58,7 +58,7 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-								<a class="navbar-brand" href="#">
+								<a class="navbar-brand" href="index.php<?php echo $nextLan; ?>">
 									<img src="assets/img/topa-menu-logo.svg" alt="Logo RAK">
 								</a>
 							</div>
@@ -66,12 +66,12 @@
 							id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
 								<li><a href="?lang=<?php echo $antilang; ?>" class="menu-sol"><?php echo LANG_NAVBAR; ?></a></li>
-									<li><a href="index.php" class="menu-sol"><?php echo HOME_NAVBAR; ?></a></li>
-									<li><a href="services.php" class="menu-sol"><?php echo SERV_NAVBAR; ?></a></li>
-									<li><a href="portfolio.php" class="menu-sol"><?php echo PORTF_NAVBAR; ?></a></li>
+									<li><a href="index.php<?php echo $nextLan; ?>" class="menu-sol"><?php echo HOME_NAVBAR; ?></a></li>
+									<li><a href="services.php<?php echo $nextLan; ?>" class="menu-sol"><?php echo SERV_NAVBAR; ?></a></li>
+									<li><a href="portfolio.php<?php echo $nextLan; ?>" class="menu-sol"><?php echo PORTF_NAVBAR; ?></a></li>
 									<li><a href="#" class="menu-sol active"><?php echo ABOUT_NAVBAR; ?></a></li>
 									<li>
-										<a href="contact.php" class="menu-sol a-contactanos-menu">
+										<a href="contact.php<?php echo $nextLan; ?>" class="menu-sol a-contactanos-menu">
 											<p class="menucontactanos-topa"><?php echo CONTACT_NAVBAR; ?></p>
 										</a>
 									</li>

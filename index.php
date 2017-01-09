@@ -70,10 +70,10 @@
 									<li><a href="?lang=<?php echo $antilang; ?>" class="menu-sol"><?php echo LANG_NAVBAR; ?></a></li>
 									<li><a href="#" class="menu-sol active"><?php echo HOME_NAVBAR; ?></a></li>
 									<li><a href="services.php<?php echo $nextLan; ?>" class="menu-sol"><?php echo SERV_NAVBAR; ?></a></li>
-									<li><a href="portfolio.php" class="menu-sol"><?php echo PORTF_NAVBAR; ?></a></li>
-									<li><a href="about.php" class="menu-sol"><?php echo ABOUT_NAVBAR; ?></a></li>
+									<li><a href="portfolio.php<?php echo $nextLan; ?>" class="menu-sol"><?php echo PORTF_NAVBAR; ?></a></li>
+									<li><a href="about.php<?php echo $nextLan; ?>" class="menu-sol"><?php echo ABOUT_NAVBAR; ?></a></li>
 									<li>
-										<a href="contact.php" class="menu-sol a-contactanos-menu">
+										<a href="contact.php<?php echo $nextLan; ?>" class="menu-sol a-contactanos-menu">
 											<p class="menucontactanos-topa"><?php echo CONTACT_NAVBAR; ?></p>
 										</a>
 									</li>
@@ -249,7 +249,7 @@
 						</div>
 					</div>
 					<div class="col-sm-2 col-sm-offset-5 s2-btn-container m-bottom50">
-						<a href="services.php"><button class="btn btn-default index-vermas"><?php echo P1_BTN_MORE_HOME; ?></button></a>
+						<a href="services.php<?php echo $nextLan; ?>"><button class="btn btn-default index-vermas"><?php echo P1_BTN_MORE_HOME; ?></button></a>
 					</div>
 				</div>
 		</section><!--/Segunda sección-->
@@ -279,7 +279,7 @@
 							<?php echo P2_BENCH_TEXT_HOME; ?>
 						</p>
 						<div class="tnc-link-container">
-							<a href="about.php" class="tnc-link">
+							<a href="about.php<?php echo $nextLan; ?>" class="tnc-link">
 								<?php echo P2_BENCH_LINK_HOME; ?>
 								<i class="fa fa-arrow-right"></i>
 							</a>
@@ -293,7 +293,7 @@
 							<?php echo P2_CLI_TEXT_HOME; ?>
 						</p>
 						<div class="tnc-link-container">
-							<a href="services.php" class="tnc-link">
+							<a href="services.php<?php echo $nextLan; ?>" class="tnc-link">
 								<?php echo P2_CLI_LINK_HOME; ?>
 								<i class="fa fa-arrow-right"></i>
 							</a>
@@ -309,7 +309,7 @@
 							<?php echo P2_COFFEY_TEXT_HOME; ?>
 						</p>
 						<div class="tnc-link-container">
-							<a href="portfolio.php" class="tnc-link">
+							<a href="portfolio.php<?php echo $nextLan; ?>" class="tnc-link">
 								<?php echo P2_COFFEY_LINK_HOME; ?>
 								<i class="fa fa-arrow-right"></i>
 							</a>

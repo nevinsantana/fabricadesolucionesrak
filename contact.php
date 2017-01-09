@@ -72,7 +72,7 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-								<a class="navbar-brand" href="index.php">
+								<a class="navbar-brand" href="index.php<?php echo $nextLan; ?>">
 									<img src="assets/img/topa-menu-logo.svg" alt="Logo RAK">
 								</a>
 							</div>
