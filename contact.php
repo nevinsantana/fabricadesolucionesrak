@@ -1,6 +1,21 @@
 <!doctype html>
 <html>
 	<head>
+		<?php
+			if( isset($_GET["lang"]) )
+				$lang = $_GET["lang"];
+			else 
+				$lang = "es";
+
+			switch($lang) {
+				case "es":
+					include("lang/lang-es.php");
+					break;
+				case "en":
+					include("lang/lang-en-us.php");
+					break;
+			}
+		?>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +38,7 @@
 		<script src="assets/js/js.js"></script>
 
 		<!-- Google reCaptcha -->
-		<script src="https://www.google.com/recaptcha/api.js?hl=es&onload=renderCaptcha&render=explicit" async="async" defer="defer"></script>
+		<script src="https://www.google.com/recaptcha/api.js?hl=<?php echo $lang; ?>&onload=renderCaptcha&render=explicit" async="async" defer="defer"></script>
 		<script>
 			var recaptcha;
 			var renderCaptcha = function() {
@@ -50,20 +65,20 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-								<a class="navbar-brand" href="index.html">
+								<a class="navbar-brand" href="index.php">
 									<img src="assets/img/topa-menu-logo.svg" alt="Logo RAK">
 								</a>
 							</div>
 							<div class="collapse navbar-collapse navbar-right"
 							id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li><a href="index.html" class="menu-sol">INICIO</a></li>
-									<li><a href="services.html" class="menu-sol">SERVICIOS</a></li>
-									<li><a href="portfolio.html" class="menu-sol">PORTAFOLIO</a></li>
-									<li><a href="about.html" class="menu-sol">ACERCA DE</a></li>
+									<li><a href="index.php" class="menu-sol"><?php echo HOME_NAVBAR; ?></a></li>
+									<li><a href="services.php" class="menu-sol"><?php echo SERV_NAVBAR; ?></a></li>
+									<li><a href="portfolio.php" class="menu-sol"><?php echo PORTF_NAVBAR; ?></a></li>
+									<li><a href="about.php" class="menu-sol"><?php echo ABOUT_NAVBAR; ?></a></li>
 									<li>
 										<a href="#" class="menu-sol a-contactanos-menu active">
-											<p class="menucontactanos-topa">CONT&Aacute;CTANOS</p>
+											<p class="menucontactanos-topa"><?php echo CONTACT_NAVBAR; ?></p>
 										</a>
 									</li>
 									<li class="dropdown text-center">
@@ -110,7 +125,7 @@
 				<div class="top-a-0"></div><!--Capa naranja-->
 				<div class="top-a-2"><!--Capa título top-a-->
 					<header class="menu-header"></header>
-					<div class="party-one-font s-title"> Cont&aacute;ctanos </div>
+					<div class="party-one-font s-title"> <?php echo PORTADA_TEXT_CONTACT; ?> </div>
 				</div><!--/Capa título top-a-->
 				<div class="top-a-3"><!--Capa menu y carousel-->
 					<div class="col-md-12 carouselcont-top-a"><!--Carousel-->
@@ -161,7 +176,7 @@
 				<div class="col-md-12 top-b-content"><!--Contenido top-b-->
 					<div class="row">
 						<div class="cookie-font contact-title">
-							Tu proyecto es nuestra solución
+							<?php echo P1_TITLE_CONTACT; ?>
 						</div>
 					</div>
 
@@ -174,19 +189,19 @@
 								</div>
 							</div>
 							<div class="form-group col-sm-12">
-								<input id="nombre" type="text" class="rak-contact" name="nombre" placeholder="Nombre:">
+								<input id="nombre" type="text" class="rak-contact" name="nombre" placeholder="<?php echo NAME_FRM_CONTACT; ?>:">
 							</div>
 							<div class="form-group col-sm-12">
-								<input id="correo" type="text" class="rak-contact" name="correo" placeholder="E-mail:">
+								<input id="correo" type="text" class="rak-contact" name="correo" placeholder="<?php echo MAIL_FRM_CONTACT; ?>:">
 							</div>
 							<div class="form-group col-sm-12">
-								<input id="telefono" type="text" class="rak-contact" name="telefono" maxlength="14" placeholder="Tel&eacute;fono">
+								<input id="telefono" type="text" class="rak-contact" name="telefono" maxlength="14" placeholder="<?php echo PHONE_FRM_CONTACT; ?>">
 							</div>
 							<div class="form-group col-sm-12">
-								<input id="asunto" type="text" class="rak-contact" name="asunto" placeholder="Asunto:">
+								<input id="asunto" type="text" class="rak-contact" name="asunto" placeholder="<?php echo SUBJECT_FRM_CONTACT; ?>:">
 							</div>
 							<div class="form-group col-sm-12">
-								<textarea id="mensaje" name="mensaje" class="rak-contact rc-textarea" placeholder="Mensaje:" rows="5"></textarea>
+								<textarea id="mensaje" name="mensaje" class="rak-contact rc-textarea" placeholder="<?php echo MESSAGE_FRM_CONTACT; ?>:" rows="5"></textarea>
 							</div>
 
 							<div class="form-group col-sm-12 recaptcha-group">
@@ -194,7 +209,7 @@
 							</div>
 
 							<div class="btn-group text-center">
-								<button id="btn-contact-submit" type="button" class="rak-frm-btn">Enviar</button>
+								<button id="btn-contact-submit" type="button" class="rak-frm-btn"><?php echo BTN_SUBMIT_FRM_CONTACT; ?></button>
 							</div>
 						</form>
 					</div>
@@ -204,8 +219,8 @@
 				<section class="zona-c-title col-md-12 zct-contact">
 					<div class="row">
 						<div class="col-md-12 zona-c-tcontainer">
-							<span class="zona-c-t1">Queremos </span>
-							<span class="zona-c-t2">escucharte</span>
+							<span class="zona-c-t1"><?php echo P2_T00_ORANGE_CONTACT; ?></span>
+							<span class="zona-c-t2"><?php echo P2_T01_ORANGE_CONTACT; ?></span>
 						</div>
 					</div>
 				</section>
@@ -215,19 +230,19 @@
 						<div class="row">
 							<div class="col-xs-4 col-xs-custom text-center">
 								<div class="ci-schedule">
-									Horarios
+									<?php echo SCHEDULE_00_CONTACT; ?>
 								</div><br>
 
 
 								<div class="ci-info pr-custom">
 									<div class="row">
-										<div class="col-xs-6 text-right orange-contact">Lunes a Viernes</div>
+										<div class="col-xs-6 text-right orange-contact"><?php echo SCHEDULE_01_CONTACT; ?></div>
 										<div class="col-xs-6 text-left">9 - 18 Hrs.</div>
 									</div>
 
 									<div class="row">
-										<div class="col-xs-6 text-right orange-contact">S&aacute;bado</div>
-										<div class="col-xs-6 text-left">Previa cita</div>
+										<div class="col-xs-6 text-right orange-contact"><?php echo SCHEDULE_02_CONTACT; ?></div>
+										<div class="col-xs-6 text-left"><?php echo SCHEDULE_03_CONTACT; ?></div>
 									</div>
 									<hr class="orange-bar">
 								</div>
@@ -235,14 +250,14 @@
 
 							<div class="col-xs-4 col-xs-custom left-orange-bar right-orange-bar">
 								<div class="ci-schedule text-center">
-									Contactos
+									<?php echo CONTACTS_00_CONTACT; ?>
 								</div><br>
 								<div class="text-center ci-info pl-custom">
-									<p><span class="orange-contact">Teléfono</span> +52 (55) 5016-1705 y 06</p>
-									<p><span class="orange-contact">Ventas</span> 101</p>
-									<p><span class="orange-contact">Diseño</span> 108</p>
-									<p><span class="orange-contact">Marketing</span> 108</p>
-									<p><span class="orange-contact">Recepción</span> 100</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_01_CONTACT; ?></span> +52 (55) 5016-1705 y 06</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_02_CONTACT; ?></span> 101</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_03_CONTACT; ?></span> 108</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_04_CONTACT; ?></span> 108</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_05_CONTACT; ?></span> 100</p>
 									<p><span class="orange-contact">E-mail</span> info@fabricadesoluciones.com</p>
 								</div>
 
@@ -251,7 +266,7 @@
 
 							<div class="col-xs-4 col-xs-custom text-center ci-social">
 								<div class="ci-schedule text-center">
-									Redes sociales
+									<?php echo SOCIAL_NETWORKS_CONTACT; ?>
 								</div><br>
 
 								<a href="https://www.facebook.com/FabricaDeSolucionesRak/?fref=ts"
@@ -281,102 +296,7 @@
 					</div>
 			</section><!--/Segunda sección-->
 
-
-
-			<footer class="footer-principal" id="top-e">
-				<div class="col-md-12 black-space-foot"></div>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="row">
-								<div class="col-md-2"></div>
-								<div class="col-md-8">
-									<div class="fo-izq-1">
-										<img src="assets/img/footer-logo.svg" alt="Logo RAK">
-									</div>
-								</div>
-								<div class="col-md-2"></div>
-							</div>
-							<div class="row">
-								<div class="col-md-1"></div>
-								<div class="col-md-10 cont-tels-foot">
-									<p class="tels-foot">T: +52(55) 5016-1705 y 06</p>
-								</div>
-								<div class="col-md-1"></div>
-							</div>
-							<div class="row">
-								<div class="col-md-2"></div>
-								<div class="col-md-8 text-center a-styler-social">
-									<a href="https://www.facebook.com/FabricaDeSolucionesRak/?fref=ts"
-									target="_blank">
-										<span class="fa-stack fa-lg social-icon-foot">
-											<i class="fa fa-circle fa-stack-2x"></i>
-											<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
-									<a href="https://twitter.com/fabricarak" target="_blank">
-										<span class="fa-stack fa-lg social-icon-foot">
-											<i class="fa fa-circle fa-stack-2x"></i>
-											<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
-									<a href="https://www.linkedin.com/company/2019418?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2019418%2Cidx%3A3-1-3%2CtarId%3A1480464427766%2Ctas%3Afabrica%20de%20sol"
-									target="_blank">
-										<span class="fa-stack fa-lg social-icon-foot">
-											<i class="fa fa-circle fa-stack-2x"></i>
-											<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
-								</div>
-								<div class="col-md-2"></div>
-							</div>
-						</div>
-						<div class="col-md-1 disapare"><div class="vs-line"></div></div>
-						<div class="col-md-8 right-foot">
-							<div class="col-md-12 flcontainer-foot">
-								<div class="row">
-									<div class="col-md-2 text-center">
-										<p class="nu-fort">¡NUESTRAS FORTALEZAS!</p>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-2.svg" alt="Socio AMIPCI">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-3.svg" alt="Google Partner">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-4.svg" alt="Hotsuite">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-5.svg" alt="Amazon web services">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-6.svg" alt="Serverpoint">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="advert-foot text-center">
-								<p>Aviso de privacidad.</p>
-								<p>
-									Todos los derechos reservados&copy; M&eacute;xico 2016.
-									F&aacute;brica de Soluciones RAK S.A. de C.V.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="foot-yellow disapare"></div>
-			</footer>
+			<?php include("structure/footer.php") ?>
 		</div><!--/Inicia el contenido de toda la página-->
 
 		<script src="assets/js/script.js"></script>

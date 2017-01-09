@@ -1,6 +1,21 @@
 <!doctype html>
 <html>
 	<head>
+		<?php
+			if( isset($_GET["lang"]) )
+				$lang = $_GET["lang"];
+			else 
+				$lang = "es";
+
+			switch($lang) {
+				case "es":
+					include("lang/lang-es.php");
+					break;
+				case "en":
+					include("lang/lang-en-us.php");
+					break;
+			}
+		?>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,13 +61,13 @@
 							<div class="collapse navbar-collapse navbar-right"
 							id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li><a href="index.html" class="menu-sol">INICIO</a></li>
-									<li><a href="services.html" class="menu-sol">SERVICIOS</a></li>
-									<li><a href="#" class="menu-sol active">PORTAFOLIO</a></li>
-									<li><a href="about.html" class="menu-sol">ACERCA DE</a></li>
+									<li><a href="index.php" class="menu-sol"><?php echo HOME_NAVBAR; ?></a></li>
+									<li><a href="services.php" class="menu-sol"><?php echo SERV_NAVBAR; ?></a></li>
+									<li><a href="#" class="menu-sol active"><?php echo PORTF_NAVBAR; ?></a></li>
+									<li><a href="about.php" class="menu-sol"><?php echo ABOUT_NAVBAR; ?></a></li>
 									<li>
-										<a href="contact.html" class="menu-sol a-contactanos-menu">
-											<p class="menucontactanos-topa">CONT&Aacute;CTANOS</p>
+										<a href="contact.php" class="menu-sol a-contactanos-menu">
+											<p class="menucontactanos-topa"><?php echo CONTACT_NAVBAR; ?></p>
 										</a>
 									</li>
 									<li class="dropdown text-center">
@@ -102,17 +117,17 @@
 						<div class="objects-container">
 							
 							<div class="cookie-font oc-title oc-title-1">
-								nuestros
+								<?php echo PORTADA_TEXT_00_PORTF; ?>
 							</div>
 							 <div class="party-one-font text-uppercase oc-title oc-title-2">
-							 	clientes
+							 	<?php echo PORTADA_TEXT_01_PORTF; ?>
 							 </div>
 
 							<div class="party-one-font oc-title-3 oc-title">
-								y aliados
+								<?php echo PORTADA_TEXT_02_PORTF; ?>
 							</div>
 							<div class="normal-font oc-title-4 oc-title">
-								Con quienes hemos compartido éxitos
+								<?php echo PORTADA_TEXT_03_PORTF; ?>
 							</div>
 
 							<img src="assets/img/portfolio/zona-a.png" alt="">
@@ -123,7 +138,7 @@
 			<section class="zona-c zonac-portfolio">
 				<div class="row row-nomargin">
 					<div class="col-md-12 partec-title-container">
-						<h2>¿Con quién hemos compartido éxitos?</h2>
+						<h2><?php echo P1_TITLE_PORTF; ?></h2>
 					</div>
 				</div>
 				<div class="row row-nomargin">
@@ -235,100 +250,9 @@
 					</div>
 				</div>
 				</section>
-			<footer class="footer-principal" id="top-e">
-				<div class="col-md-12 black-space-foot"></div>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="row">
-								<div class="col-md-2"></div>
-								<div class="col-md-8">
-									<div class="fo-izq-1">
-										<img src="assets/img/footer-logo.svg" alt="Logo RAK">
-									</div>
-								</div>
-								<div class="col-md-2"></div>
-							</div>
-							<div class="row">
-								<div class="col-md-1"></div>
-								<div class="col-md-10 cont-tels-foot">
-									<p class="tels-foot">T: +52(55) 5016-1705 y 06</p>
-								</div>
-								<div class="col-md-1"></div>
-							</div>
-							<div class="row">
-								<div class="col-md-2"></div>
-								<div class="col-md-8 text-center a-styler-social">
-									<a href="https://www.facebook.com/FabricaDeSolucionesRak/?fref=ts"
-									target="_blank">
-										<span class="fa-stack fa-lg social-icon-foot">
-											<i class="fa fa-circle fa-stack-2x"></i>
-											<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
-									<a href="https://twitter.com/fabricarak" target="_blank">
-										<span class="fa-stack fa-lg social-icon-foot">
-											<i class="fa fa-circle fa-stack-2x"></i>
-											<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
-									<a href="https://www.linkedin.com/company/2019418?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2019418%2Cidx%3A3-1-3%2CtarId%3A1480464427766%2Ctas%3Afabrica%20de%20sol"
-									target="_blank">
-										<span class="fa-stack fa-lg social-icon-foot">
-											<i class="fa fa-circle fa-stack-2x"></i>
-											<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
-								</div>
-								<div class="col-md-2"></div>
-							</div>
-						</div>
-						<div class="col-md-1 disapare"><div class="vs-line"></div></div>
-						<div class="col-md-8 right-foot">
-							<div class="col-md-12 flcontainer-foot">
-								<div class="row">
-									<div class="col-md-2 text-center">
-										<p class="nu-fort">¡NUESTRAS FORTALEZAS!</p>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-2.svg" alt="Socio AMIPCI">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-3.svg" alt="Google Partner">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-4.svg" alt="Hotsuite">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-5.svg" alt="Amazon web services">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-6.svg" alt="Serverpoint">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="advert-foot text-center">
-								<p>Aviso de privacidad.</p>
-								<p>
-									Todos los derechos reservados&copy; M&eacute;xico 2016.
-									F&aacute;brica de Soluciones RAK S.A. de C.V.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="foot-yellow disapare"></div>
-			</footer>
+
+			<?php include("structure/footer.php") ?>
+		
 		</div><!--/Inicia el contenido de toda la página-->
 		<script src="assets/js/script.js"></script>
 		<script>//Funciones llamadas en esta página

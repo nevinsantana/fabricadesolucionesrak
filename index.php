@@ -1,6 +1,23 @@
 <!doctype html>
 <html>
 	<head>
+		<?php
+			if( isset($_GET["lang"]) )
+				$lang = $_GET["lang"];
+			else 
+				$lang = "es";
+
+			switch($lang) {
+				case "es":
+					include("lang/lang-es.php");
+					$bomba_lang = "tcbomb-es";
+					break;
+				case "en":
+					include("lang/lang-en-us.php");
+					$bomba_lang = "tcbomb-en";
+					break;
+			}
+		?>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,13 +60,13 @@
 							<div class="collapse navbar-collapse navbar-right"
 							id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li><a href="#" class="menu-sol active">INICIO</a></li>
-									<li><a href="services.html" class="menu-sol">SERVICIOS</a></li>
-									<li><a href="portfolio.html" class="menu-sol">PORTAFOLIO</a></li>
-									<li><a href="about.html" class="menu-sol">ACERCA DE</a></li>
+									<li><a href="#" class="menu-sol active"><?php echo HOME_NAVBAR; ?></a></li>
+									<li><a href="services.php" class="menu-sol"><?php echo SERV_NAVBAR; ?></a></li>
+									<li><a href="portfolio.php" class="menu-sol"><?php echo PORTF_NAVBAR; ?></a></li>
+									<li><a href="about.php" class="menu-sol"><?php echo ABOUT_NAVBAR; ?></a></li>
 									<li>
-										<a href="contact.html" class="menu-sol a-contactanos-menu">
-											<p class="menucontactanos-topa">CONT&Aacute;CTANOS</p>
+										<a href="contact.php" class="menu-sol a-contactanos-menu">
+											<p class="menucontactanos-topa"><?php echo CONTACT_NAVBAR; ?></p>
 										</a>
 									</li>
 									<li class="dropdown text-center">
@@ -103,8 +120,8 @@
 				</div>
 				<div class="top-a-2"><!--Capa título top-a-->
 					<header class="menu-header"></header>
-					<p class="lafabrica tit1">la f&aacute;brica</p>
-					<p class="soluciones tit2">SOLUCIONES</p>
+					<p class="lafabrica tit1"><?php echo PORTADA_00_HOME; ?></p>
+					<p class="soluciones tit2"><?php echo PORTADA_01_HOME; ?></p>
 				</div><!--/Capa título top-a-->
 				<div class="top-a-3"><!--Capa menu y carousel-->
 					<div class="col-md-12 carouselcont-top-a"><!--Carousel-->
@@ -118,8 +135,8 @@
 												<div class="img-catopa"></div>
 											</div>
 											<div class="carousel-caption">
-												<p class="creativas tit5">creativas</p>
-												<p class="creades des1">Generamos ideas creativas y funcionales.</p>
+												<p class="creativas tit5"><?php echo PORTADA_02_HOME; ?></p>
+												<p class="creades des1"><?php echo PORTADA_03_HOME; ?></p>
 											</div>
 										</div>
 									</div>
@@ -135,9 +152,9 @@
 			<div class="col-md-12 top-b-content"><!--Contenido top-b-->
 				<div class="row">
 					<h2 class="s2-title">
-						<span class="s2t1">Somos los </span>
-						<span class="s2t2">amos y señores </span>
-						<span class="s2t1">de...</span>
+						<span class="s2t1"><?php echo P1_T00_HOME; ?></span>
+						<span class="s2t2"><?php echo P1_T01_HOME; ?></span>
+						<span class="s2t1"><?php echo P1_T02_HOME; ?></span>
 					</h2>
 				</div>
 				<div class="row s2-cuadros-container">
@@ -145,7 +162,7 @@
 						<div class="outer-cuadro" id="s2t1">
 							<div class="inner-cuadro">
 								<div class="s2-cuadros-title">
-									<h2>desarrollo web</h2>
+									<h2><?php echo P1_C01_HOME; ?></h2>
 								</div>
 								<div class="orange-line"></div>
 								<div class="image-container">
@@ -158,7 +175,7 @@
 						<div class="outer-cuadro" id="s2t2">
 							<div class="inner-cuadro">
 								<div class="s2-cuadros-title">
-									<h2>marketing digital</h2>
+									<h2><?php echo P1_C02_HOME; ?></h2>
 								</div>
 								<div class="orange-line"></div>
 								<div class="image-container">
@@ -171,7 +188,7 @@
 						<div class="outer-cuadro" id="s2t3">
 							<div class="inner-cuadro">
 								<div class="s2-cuadros-title">
-									<h2>diseño digital</h2>
+									<h2><?php echo P1_C03_HOME; ?></h2>
 								</div>
 								<div class="orange-line"></div>
 								<div class="image-container">
@@ -184,7 +201,7 @@
 						<div class="outer-cuadro" id="s2t4">
 							<div class="inner-cuadro">
 								<div class="s2-cuadros-title">
-									<h2>social media</h2>
+									<h2><?php echo P1_C04_HOME; ?></h2>
 								</div>
 								<div class="orange-line"></div>
 								<div class="image-container">
@@ -198,41 +215,33 @@
 					<div class="col-md-8 col-md-offset-2 descriptions-parent">
 						<div class="descriptions-container" id="initial-description">
 							<p class="description">
-								Nos especializamos en el uso de medios digitales, creatividad y
-								desarrollo, de tecnologías de información, cuyo fin es fabricar
-								soluciones que potencialicen los productos, marcas y servicios
-								de nuestros clientes.
+								<?php echo P1_C01_T01_HOME; ?>
 							</p>
 						</div>
 
 						<div class="descriptions-container" id="description1">
 							<p class="description">
-								Tenemos un equipazo multidisciplinario, juntos encontramos la
-								forma para que no sólo sea funcional, sino que también se vea
-								bonito.
+								<?php echo P1_C02_T02_HOME; ?>
 							</p>
 						</div>
 						<div class="descriptions-container" id="description2">
 							<p class="description">
-								La fábrica de software in house nos da un plus a la hora de la
-								verdad.
+								<?php echo P1_C03_T03_HOME; ?>
 							</p>
 						</div>
 						<div class="descriptions-container" id="description3">
 							<p class="description">
-								Realizamos campañas de redes sociales basadas en el uso de
-								contenidos para lograr la generación de prospectos.
+								<?php echo P1_C04_T04_HOME; ?>
 							</p>
 						</div>
 						<div class="descriptions-container" id="description4">
 							<p class="description">
-								Nuestra área de marketing esta compuesta por expertos en
-								generación en ideas para que tu proyecto sea todo un éxito.
+								<?php echo P1_C05_T05_HOME; ?>
 							</p>
 						</div>
 					</div>
 					<div class="col-sm-2 col-sm-offset-5 s2-btn-container m-bottom50">
-						<a href="services.html"><button class="btn btn-default index-vermas">ver más</button></a>
+						<a href="services.html"><button class="btn btn-default index-vermas"><?php echo P1_BTN_MORE_HOME; ?></button></a>
 					</div>
 				</div>
 		</section><!--/Segunda sección-->
@@ -241,8 +250,8 @@
 			<div class="col-md-12">
 				<div class="row">
 					<h2 class="sct">
-						<span class="sct1">Profesionales </span>
-						<span class="sct2">apasionados</span>
+						<span class="sct1"><?php echo P2_T00_ORANGE_HOME; ?></span>
+						<span class="sct2"><?php echo P2_T01_ORANGE_HOME; ?></span>
 					</h2>
 				</div>
 			</div>
@@ -256,32 +265,28 @@
 				<div class="col-sm-5 tnue-left">
 					<div class="tnuevo-container">
 						<div class="tnc-img-container tv-effect"><img src="assets/img/tnc1.png" alt=""></div>
-						<h2 class="tnc-title bench">benchmarking</h2>
+						<h2 class="tnc-title bench"><?php echo P2_BENCH_HOME; ?></h2>
 						<div class="orange-line"></div>
 						<p class="tnc-description">
-							Ofrecemos un estudio detallado y numérico de la situación actual
-							de tu competencia en los distintos medios digitales, haciendo frente
-							a todas las áreas de oportunidad que tengas.
+							<?php echo P2_BENCH_TEXT_HOME; ?>
 						</p>
 						<div class="tnc-link-container">
 							<a href="about.html" class="tnc-link">
-								Conoce más de nuestra historia
+								<?php echo P2_BENCH_LINK_HOME; ?>
 								<i class="fa fa-arrow-right"></i>
 							</a>
 						</div>
 					</div>
 					<div class="tnuevo-container">
 						<div class="tnc-img-container box-effect"><img src="assets/img/tnc2.png" alt=""></div>
-						<h2 class="tnc-title">cada cliente = un aliado</h2>
+						<h2 class="tnc-title"><?php echo P2_CLI_HOME; ?></h2>
 						<div class="orange-line"></div>
 						<p class="tnc-description">
-							Nos gusta crear relaciones de trabajo y proyectos, cada cliente es
-							parte de nuestra carpeta de trabajo y hace nuestra estrategia de
-							difusión más fuerte; voz a voz.
+							<?php echo P2_CLI_TEXT_HOME; ?>
 						</p>
 						<div class="tnc-link-container">
 							<a href="services.html" class="tnc-link">
-								Conoce nuestras lineas de servicio
+								<?php echo P2_CLI_LINK_HOME; ?>
 								<i class="fa fa-arrow-right"></i>
 							</a>
 						</div>
@@ -290,16 +295,14 @@
 				<div class="col-sm-5 col-sm-offset-2 tnue-right">
 					<div class="tnuevo-container">
 						<div class="tnc-img-container cafeina-effect"><img src="assets/img/tnc3.png" alt=""></div>
-						<h2 class="tnc-title">cafeína + energizante</h2>
+						<h2 class="tnc-title"><?php echo P2_COFFEY_HOME; ?></h2>
 						<div class="orange-line"></div>
 						<p class="tnc-description">
-							Nos organizamos y llegamos a un acuerdo para hacer frente al
-							trabajo que requiera entrega urgente, sin dejar atrás las entregas
-							puntuales.
+							<?php echo P2_COFFEY_TEXT_HOME; ?>
 						</p>
 						<div class="tnc-link-container">
 							<a href="portfolio.html" class="tnc-link">
-								Conoce nuestro portafolio
+								<?php echo P2_COFFEY_LINK_HOME; ?>
 								<i class="fa fa-arrow-right"></i>
 							</a>
 						</div>
@@ -314,107 +317,20 @@
 		<div class="top-c"><!--Tercera sección-->
 			<div class="tit-top-c">
 				<div class="dir-cont">
-					<p><span class="tit3">Nuestro</span><span class="tit4 tc-t2">proceso</span></p>
+					<p><span class="tit3"><?php echo P3_T00_HOME; ?></span><span class="tit4 tc-t2"><?php echo P3_T01_HOME; ?></span></p>
 				</div>
 			</div>
 			<div>
-				<img src="assets/img/tcbomb.png" alt="" id="bomb-img">
+				<?php
+					echo "
+						<img src='assets/img/".$bomba_lang.".png' alt='' id='bomb-img'>
+					";
+				?>
 			</div>
 		</div>
-		<footer class="footer-principal" id="top-e">
-			<div class="col-md-12 black-space-foot"></div>
-			<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-3">
-						<div class="row">
-							<div class="col-md-2"></div>
-							<div class="col-md-8">
-								<div class="fo-izq-1">
-									<img src="assets/img/footer-logo.svg" alt="Logo RAK">
-								</div>
-							</div>
-							<div class="col-md-2"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-1"></div>
-							<div class="col-md-10 cont-tels-foot">
-								<p class="tels-foot">T: +52(55) 5016-1705 y 06</p>
-							</div>
-							<div class="col-md-1"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-2"></div>
-							<div class="col-md-8 text-center a-styler-social">
-								<a href="https://www.facebook.com/FabricaDeSolucionesRak/?fref=ts"
-								target="_blank">
-									<span class="fa-stack fa-lg social-icon-foot">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-									</span>
-								</a>
-								<a href="https://twitter.com/fabricarak" target="_blank">
-									<span class="fa-stack fa-lg social-icon-foot">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-									</span>
-								</a>
-								<a href="https://www.linkedin.com/company/2019418?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2019418%2Cidx%3A3-1-3%2CtarId%3A1480464427766%2Ctas%3Afabrica%20de%20sol"
-								target="_blank">
-									<span class="fa-stack fa-lg social-icon-foot">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-									</span>
-								</a>
-							</div>
-							<div class="col-md-2"></div>
-						</div>
-					</div>
-					<div class="col-md-1 disapare"><div class="vs-line"></div></div>
-					<div class="col-md-8 right-foot">
-						<div class="col-md-12 flcontainer-foot">
-							<div class="row">
-								<div class="col-md-2 text-center">
-									<p class="nu-fort">¡NUESTRAS FORTALEZAS!</p>
-								</div>
-								<div class="col-md-2 logo-middler">
-									<div class="logo-foot">
-										<img src="assets/img/footer-r-2.svg" alt="Socio AMIPCI">
-									</div>
-								</div>
-								<div class="col-md-2 logo-middler">
-									<div class="logo-foot">
-										<img src="assets/img/footer-r-3.svg" alt="Google Partner">
-									</div>
-								</div>
-								<div class="col-md-2 logo-middler">
-									<div class="logo-foot">
-										<img src="assets/img/footer-r-4.svg" alt="Hotsuite">
-									</div>
-								</div>
-								<div class="col-md-2 logo-middler">
-									<div class="logo-foot">
-										<img src="assets/img/footer-r-5.svg" alt="Amazon web services">
-									</div>
-								</div>
-								<div class="col-md-2 logo-middler">
-									<div class="logo-foot">
-										<img src="assets/img/footer-r-6.svg" alt="Serverpoint">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="advert-foot text-center">
-							<p>Aviso de privacidad.</p>
-							<p>
-								Todos los derechos reservados&copy; M&eacute;xico 2016.
-								F&aacute;brica de Soluciones RAK S.A. de C.V.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="foot-yellow disapare"></div>
-		</footer>
+
+		<?php include("structure/footer.php") ?>
+
 		</div><!--/Inicia el contenido de toda la página-->
 		<script src="assets/js/script.js"></script>
 		<script>//Funciones llamadas en esta página

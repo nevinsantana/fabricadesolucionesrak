@@ -1,6 +1,21 @@
 <!doctype html>
 <html>
 	<head>
+		<?php
+			if( isset($_GET["lang"]) )
+				$lang = $_GET["lang"];
+			else 
+				$lang = "es";
+
+			switch($lang) {
+				case "es":
+					include("lang/lang-es.php");
+					break;
+				case "en":
+					include("lang/lang-en-us.php");
+					break;
+			}
+		?>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,13 +58,13 @@
 							<div class="collapse navbar-collapse navbar-right"
 							id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li><a href="index.html" class="menu-sol">INICIO</a></li>
-									<li><a href="services.html" class="menu-sol">SERVICIOS</a></li>
-									<li><a href="portfolio.html" class="menu-sol">PORTAFOLIO</a></li>
-									<li><a href="#" class="menu-sol active">ACERCA DE</a></li>
+									<li><a href="index.php" class="menu-sol"><?php echo HOME_NAVBAR; ?></a></li>
+									<li><a href="services.php" class="menu-sol"><?php echo SERV_NAVBAR; ?></a></li>
+									<li><a href="portfolio.php" class="menu-sol"><?php echo PORTF_NAVBAR; ?></a></li>
+									<li><a href="#" class="menu-sol active"><?php echo ABOUT_NAVBAR; ?></a></li>
 									<li>
-										<a href="contact.html" class="menu-sol a-contactanos-menu">
-											<p class="menucontactanos-topa">CONT&Aacute;CTANOS</p>
+										<a href="contact.php" class="menu-sol a-contactanos-menu">
+											<p class="menucontactanos-topa"><?php echo CONTACT_NAVBAR; ?></p>
 										</a>
 									</li>
 									<li class="dropdown text-center">
@@ -99,17 +114,17 @@
 						<div class="objects-container">
 							
 							<div class="cookie-font oc-title oc-title-1">
-								somos una
+								<?php echo PORTADA_TEXT_00_ABOUT; ?>
 							</div>
 							 <div class="party-one-font text-uppercase oc-title oc-title-2">
-							 	agencia
+							 	<?php echo PORTADA_TEXT_01_ABOUT; ?>
 							 </div>
 
 							<div class="party-one-font oc-title-3 oc-title">
-								digital
+								<?php echo PORTADA_TEXT_02_ABOUT; ?>
 							</div>
 							<div class="normal-font oc-title-4 oc-title">
-								Llevamos 13 años de atención personalizada
+								<?php echo PORTADA_TEXT_03_ABOUT; ?>
 							</div>
 
 							<img src="assets/img/about/zona-a.png" alt="">
@@ -120,10 +135,7 @@
 			<section class="zona-b">
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-1 zona-b-tdesc">
-						<p>Somos una Agencia Digital, especializada en el uso de medios
-						digitales, creatividad y desarrollo de tecnologías de información, cuyo
-						fin es fabricar soluciones que potencialicen los productos, marcas y
-						servicios de nuestros clientes.</p>
+						<p><?php echo P1_TEXT_00_ABOUT; ?></p>
 					</div>
 				</div>
 				<div class="row">
@@ -138,8 +150,10 @@
 									</div>
 									<div class="row">
 										<div class="col-md-12 zonab-desc-contianer">
-											<h4 class="zonab-year">2003 - 2005</h4>
-											<p class="zonab-desc">Desarollo de Software & soporte técnico</p>
+											<h4 class="zonab-year"><?php echo P1_CAROUSEL_YEAR_00; ?></h4>
+											<p class="zonab-desc">
+												<?php echo P1_CAROUSEL_CAPTION_00; ?>
+											</p>
 										</div>
 									</div>
 								</div>
@@ -149,10 +163,9 @@
 									</div>
 									<div class="row">
 										<div class="col-md-12 zonab-desc-contianer">
-											<h4 class="zonab-year">2006 - 2008</h4>
+											<h4 class="zonab-year"><?php echo P1_CAROUSEL_YEAR_01; ?></h4>
 											<p class="zonab-desc">
-												Desarrollo de Software y aplicaciones web enfocado a
-												comunicación y marketing
+												<?php echo P1_CAROUSEL_CAPTION_01; ?>
 											</p>
 										</div>
 									</div>
@@ -163,10 +176,9 @@
 									</div>
 									<div class="row">
 										<div class="col-md-12 zonab-desc-contianer">
-											<h4 class="zonab-year">2009 - 2011</h4>
+											<h4 class="zonab-year"><?php echo P1_CAROUSEL_YEAR_02; ?></h4>
 											<p class="zonab-desc">
-												Diseño y desarrollo web. Software corporativo. Diseño
-												UI/UX. Estrategias de marketing y contenidos
+												<?php echo P1_CAROUSEL_CAPTION_02; ?>
 											</p>
 										</div>
 									</div>
@@ -177,11 +189,9 @@
 									</div>
 									<div class="row">
 										<div class="col-md-12 zonab-desc-contianer">
-											<h4 class="zonab-year">2012 - 2016</h4>
+											<h4 class="zonab-year"><?php echo P1_CAROUSEL_YEAR_03; ?></h4>
 											<p class="zonab-desc">
-												Diseño y desarrollo web. Software corporativo. Móviles.
-												Diseño UI/UIX. Estrategias y marketing de contenidos.
-												eCommmerce B2B & B2C
+												<?php echo P1_CAROUSEL_CAPTION_03; ?>
 											</p>
 										</div>
 									</div>
@@ -209,8 +219,8 @@
 				<section class="zona-c-title">
 					<div class="row">
 						<div class="col-md-12 zona-c-tcontainer">
-							<span class="zona-c-t1">Nuestras metas </span>
-							<span class="zona-c-t2">en la vida</span>
+							<span class="zona-c-t1"><?php echo P2_T00_ORANGE_ABOUT; ?></span>
+							<span class="zona-c-t2"><?php echo P2_T01_ORANGE_ABOUT; ?></span>
 						</div>
 					</div>
 				</section>
@@ -221,13 +231,11 @@
 								<img src="assets/img/about/zonac-item1.png" alt="">
 							</div>
 							<div class="break"></div>
-							<h3 class="zonac-square-title">branding</h3>
+							<h3 class="zonac-square-title"><?php echo P2_BRAND_TITLE_ABOUT; ?></h3>
 							<div class="orange-line"></div>
 							<div class="col-sm-8 col-sm-offset-2 zonac-description-container">
 								<p>
-									Generar estrategias de marketing para el manejo adecuado de tu
-									marca en medios digitales, apoyándonos de diseño y el desarrollo
-									de tecnología.
+									<?php echo P2_BRAND_TEXT_ABOUT; ?>
 									</p>
 							</div>
 						</div>
@@ -236,13 +244,11 @@
 								<img src="assets/img/about/zonac-item2.png" alt="">
 							</div>
 							<div class="break"></div>
-							<h3 class="zonac-square-title">engagement</h3>
+							<h3 class="zonac-square-title"><?php echo P2_ENGAGE_TITLE_ABOUT; ?></h3>
 							<div class="orange-line"></div>
 							<div class="col-sm-8 col-sm-offset-2 zonac-description-container">
 								<p>
-									Desarrollar marketing de contenidos para que tus consumidores se
-									sientan identificados e interactúen con tu marca, productos y
-									servicios.
+									<?php echo P2_ENGAGE_TEXT_ABOUT; ?>
 								</p>
 							</div>
 						</div>
@@ -251,113 +257,20 @@
 								<img src="assets/img/about/zonac-item3.png" alt="">
 							</div>
 							<div class="break"></div>
-							<h3 class="zonac-square-title">conver$ione$</h3>
+							<h3 class="zonac-square-title"><?php echo P2_CONVER_TITLE_ABOUT; ?></h3>
 							<div class="orange-line"></div>
 							<div class="col-sm-8 col-sm-offset-2 zonac-description-container">
 								<p>
-									Unir esfuerzos y alinear todas nuestras actividades para lograr
-									cumplir tus objetivos (Posicionamiento, prospectación, branding
-									o ventas).
+									<?php echo P2_CONVER_TEXT_ABOUT; ?>
 								</p>
 							</div>
 						</div>
 					</div>
 				</section>
 			</section>
-			<footer class="footer-principal" id="top-e">
-				<div class="col-md-12 black-space-foot"></div>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="row">
-								<div class="col-md-2"></div>
-								<div class="col-md-8">
-									<div class="fo-izq-1">
-										<img src="assets/img/footer-logo.svg" alt="Logo RAK">
-									</div>
-								</div>
-								<div class="col-md-2"></div>
-							</div>
-							<div class="row">
-								<div class="col-md-1"></div>
-								<div class="col-md-10 cont-tels-foot">
-									<p class="tels-foot">T: +52(55) 5016-1705 y 06</p>
-								</div>
-								<div class="col-md-1"></div>
-							</div>
-							<div class="row">
-								<div class="col-md-2"></div>
-								<div class="col-md-8 text-center a-styler-social">
-									<a href="https://www.facebook.com/FabricaDeSolucionesRak/?fref=ts"
-									target="_blank">
-										<span class="fa-stack fa-lg social-icon-foot">
-											<i class="fa fa-circle fa-stack-2x"></i>
-											<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
-									<a href="https://twitter.com/fabricarak" target="_blank">
-										<span class="fa-stack fa-lg social-icon-foot">
-											<i class="fa fa-circle fa-stack-2x"></i>
-											<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
-									<a href="https://www.linkedin.com/company/2019418?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2019418%2Cidx%3A3-1-3%2CtarId%3A1480464427766%2Ctas%3Afabrica%20de%20sol"
-									target="_blank">
-										<span class="fa-stack fa-lg social-icon-foot">
-											<i class="fa fa-circle fa-stack-2x"></i>
-											<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
-								</div>
-								<div class="col-md-2"></div>
-							</div>
-						</div>
-						<div class="col-md-1 disapare"><div class="vs-line"></div></div>
-						<div class="col-md-8 right-foot">
-							<div class="col-md-12 flcontainer-foot">
-								<div class="row">
-									<div class="col-md-2 text-center">
-										<p class="nu-fort">¡NUESTRAS FORTALEZAS!</p>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-2.svg" alt="Socio AMIPCI">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-3.svg" alt="Google Partner">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-4.svg" alt="Hotsuite">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-5.svg" alt="Amazon web services">
-										</div>
-									</div>
-									<div class="col-md-2 logo-middler">
-										<div class="logo-foot">
-											<img src="assets/img/footer-r-6.svg" alt="Serverpoint">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="advert-foot text-center">
-								<p>Aviso de privacidad.</p>
-								<p>
-									Todos los derechos reservados&copy; M&eacute;xico 2016.
-									F&aacute;brica de Soluciones RAK S.A. de C.V.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="foot-yellow disapare"></div>
-			</footer>
+
+			<?php include("structure/footer.php") ?>
+		
 		</div><!--/Inicia el contenido de toda la página-->
 		<script src="assets/js/script.js"></script>
 		<script>//Funciones llamadas en esta página
