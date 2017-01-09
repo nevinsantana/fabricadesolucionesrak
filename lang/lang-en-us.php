@@ -1,5 +1,6 @@
 <?php
 	/*NAVBAR*/
+	define("LANG_NAVBAR", "ESPAÑOL");
 	define("HOME_NAVBAR", "HOME");
 	define("SERV_NAVBAR", "SERVICES");
 	define("PORTF_NAVBAR", "PORTFOLIO");
@@ -43,8 +44,8 @@
 	define("P2_CLI_TEXT_HOME","We like to create successful work relations that support the way we work and our projects. Every customer is an important part of our portfolio. Our most important advertisement strategy is Word of Mouth.");
 	define("P2_COFFEY_TEXT_HOME","We get to work and come to agreements to face the jobs which require to be delivered urgently. We always meet deadlines.");
 	define("P2_BENCH_LINK_HOME","Know more about our history");
-	define("P2_CLI_LINK_HOME","know our service lines");
-	define("P2_COFFEY_LINK_HOME","know our portfolio");
+	define("P2_CLI_LINK_HOME","Know our service lines");
+	define("P2_COFFEY_LINK_HOME","Know our portfolio");
 
 	define("P3_T00_HOME","Our");
 	define("P3_T01_HOME","process");
@@ -69,7 +70,7 @@
 
 	/*PORTFOLIO*/
 	define("PORTADA_TEXT_00_PORTF","our");
-	define("PORTADA_TEXT_01_PORTF","client");
+	define("PORTADA_TEXT_01_PORTF","clients");
 	define("PORTADA_TEXT_02_PORTF","and allies");
 	define("PORTADA_TEXT_03_PORTF","With whom have we shared success stories");
 

@@ -4,9 +4,12 @@
 		<?php
 			if( isset($_GET["lang"]) )
 				$lang = $_GET["lang"];
-			else 
+			else
 				$lang = "es";
-
+			if($lang == "es")
+				$antilang = "en";
+			else
+				$antilang = "es";
 			switch($lang) {
 				case "es":
 					include("lang/lang-es.php");
@@ -59,6 +62,7 @@
 							<div class="collapse navbar-collapse navbar-right"
 							id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
+									<li><a href="?lang=<?php echo $antilang; ?>" class="menu-sol"><?php echo LANG_NAVBAR; ?></a></li>
 									<li><a href="index.php" class="menu-sol"><?php echo HOME_NAVBAR; ?></a></li>
 									<li><a href="#" class="menu-sol active"><?php echo SERV_NAVBAR; ?></a></li>
 									<li><a href="portfolio.php" class="menu-sol"><?php echo PORTF_NAVBAR; ?></a></li>
@@ -306,7 +310,7 @@
 
 
 		<?php include("structure/footer.php") ?>
-		
+
 		</div><!--/Inicia el contenido de toda la página-->
 		<script src="assets/js/script.js"></script>
 		<script>//Funciones llamadas en esta página
