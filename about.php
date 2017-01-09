@@ -6,10 +6,14 @@
 				$lang = $_GET["lang"];
 			else
 				$lang = "es";
-			if($lang == "es")
+			if($lang == "es") {
+				$nextLan = "?lang=es";
 				$antilang = "en";
-			else
+			}
+			else {
+				$nextLan = "?lang=en";
 				$antilang = "es";
+			}
 			switch($lang) {
 				case "es":
 					include("lang/lang-es.php");
