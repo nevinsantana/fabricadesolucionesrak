@@ -167,13 +167,13 @@
 				<!-- Telephone -->
 
 				<!-- Cloud 01 -->
-				<div class="cloud-01">
+				<div class="cloud-01 thisCloud">
 					<img src="assets/img/contact/contacto-cloud.png" alt="Cloud01">
 				</div>
 				<!-- Cloud 01 -->
 
 				<!-- Cloud 02 -->
-				<div class="cloud-02">
+				<div class="cloud-02 thisCloud">
 					<img src="assets/img/contact/contacto-cloud.png" alt="Cloud02">
 				</div>
 				<!-- Cloud 02 -->
@@ -490,7 +490,7 @@
 			});
 
 				window.sr = ScrollReveal();
-				sr.reveal('.portimg-container img', {
+				sr.reveal('.portimg-container .thisCloud', {
 					duration: 2000,
 					reset: true,
 					viewFactor: 0.2,
