@@ -91,7 +91,7 @@
 	define("P1_CAROUSEL_YEAR_00","2003 - 2005");
 	define("P1_CAROUSEL_YEAR_01","2006 - 2008");
 	define("P1_CAROUSEL_YEAR_02","2009 - 2011");
-	define("P1_CAROUSEL_YEAR_03","2012 - 2016");
+	define("P1_CAROUSEL_YEAR_03","2012 - 2017");
 	define("P1_CAROUSEL_CAPTION_00","Software Development & Support");
 	define("P1_CAROUSEL_CAPTION_01","Software development and web applications focused on communication and marketing");
 	define("P1_CAROUSEL_CAPTION_02","Web design and development . Corporate Software. Design UI/UX . Marketing strategies and content");

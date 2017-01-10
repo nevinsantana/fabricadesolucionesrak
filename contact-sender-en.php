@@ -9,8 +9,8 @@
 	$subject_webmaster = "Recently someone has contacted you.";
 	$subject_usr = "Thanks for contact to Solutions Factory RAK.";
 
-	$webmaster_mail = "iramirez@fabricadesoluciones.com";
-	$webmaster_mail_cc = "nevsantana@fabricadesoluciones.com";
+	$webmaster_mail = "info@fabricadesoluciones.com";
+	$webmaster_mail_cc = "kreyes@fabricadesoluciones.com";
 
 	$body_msg_user =
 	"
@@ -56,8 +56,8 @@
 	$headers_webmaster = "MIME-Version: 1.0"."\r\n".
 											 "Content-type: text/html; charset=utf-8"."\r\n".
 											 "From: ".$usr_mail."\r\n".
-											 "Cc: ".$webmaster_mail_cc."\r\n".
 											 "To: ".$webmaster_mail."\r\n".
+											 "Cc: ".$webmaster_mail_cc."\r\n".
 											 "X-Mailer: PHP/".phpversion();
 
 	/*Mail to user*/

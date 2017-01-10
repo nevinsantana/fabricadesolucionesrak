@@ -92,7 +92,7 @@
 	define("P1_CAROUSEL_YEAR_00","2003 - 2005");
 	define("P1_CAROUSEL_YEAR_01","2006 - 2008");
 	define("P1_CAROUSEL_YEAR_02","2009 - 2011");
-	define("P1_CAROUSEL_YEAR_03","2012 - 2016");
+	define("P1_CAROUSEL_YEAR_03","2012 - 2017");
 	define("P1_CAROUSEL_CAPTION_00","Desarollo de Software & soporte técnico");
 	define("P1_CAROUSEL_CAPTION_01","Desarrollo de Software y aplicaciones web enfocado a comunicación y marketing");
 	define("P1_CAROUSEL_CAPTION_02","Diseño y desarrollo web. Software corporativo. Diseño UI/UX. Estrategias de marketing y contenidos");
