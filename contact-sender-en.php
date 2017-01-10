@@ -9,7 +9,8 @@
 	$subject_webmaster = "Recently someone has contacted you.";
 	$subject_usr = "Thanks for contact to Solutions Factory RAK.";
 
-	$webmaster_mail = "info@fabricadesoluciones.com";
+	$webmaster_mail = "nevsantana@fabricadesoluciones.com".", ";
+	$webmaster_mail .= "iramirez@fabricadesoluciones.com";
 
 	$body_msg_user =
 	"
