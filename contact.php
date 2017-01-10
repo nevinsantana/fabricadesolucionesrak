@@ -261,11 +261,12 @@
 									<?php echo CONTACTS_00_CONTACT; ?>
 								</div><br>
 								<div class="text-center ci-info pl-custom">
-									<p><span class="orange-contact"><?php echo CONTACTS_01_CONTACT; ?></span> +52 (55) 5016-1705 & 06</p>
-									<p><span class="orange-contact"><?php echo CONTACTS_02_CONTACT; ?></span> 101</p>
-									<p><span class="orange-contact"><?php echo CONTACTS_03_CONTACT; ?></span> 105</p>
-									<p><span class="orange-contact"><?php echo CONTACTS_04_CONTACT; ?></span> 108</p>
-									<p><span class="orange-contact"><?php echo CONTACTS_05_CONTACT; ?></span> 100</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_PHONE_CONTACT; ?></span> +52 (55) 5016-1705 & 06</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_RECEPTION_CONTACT; ?></span> 100</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_DEV_CONTACT; ?></span> 101</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_SALES_CONTACT; ?></span> 102</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_DESIGN_CONTACT; ?></span> 103</p>
+									<p><span class="orange-contact"><?php echo CONTACTS_MKT_CONTACT; ?></span> 108</p>
 									<p><span class="orange-contact">E-mail</span> info@fabricadesoluciones.com</p>
 								</div>
 

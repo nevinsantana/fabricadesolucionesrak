@@ -116,6 +116,7 @@
 	define("P1_TITLE_CONTACT","Your project, our solution");
 
 	define("NAME_FRM_CONTACT","Name");
+
 	define("MAIL_FRM_CONTACT","E-mail");
 	define("PHONE_FRM_CONTACT","Phone number");
 	define("SUBJECT_FRM_CONTACT","Subject");
@@ -132,11 +133,13 @@
 	define("SCHEDULE_03_CONTACT","Make an appointment");
 
 	define("CONTACTS_00_CONTACT","Contact");
-	define("CONTACTS_01_CONTACT","Phone");
-	define("CONTACTS_02_CONTACT","Sales");
-	define("CONTACTS_03_CONTACT","Design");
-	define("CONTACTS_04_CONTACT","MKT");
-	define("CONTACTS_05_CONTACT","Reception");
+
+	define("CONTACTS_PHONE_CONTACT","Phone");
+	define("CONTACTS_DEV_CONTACT","Development");
+	define("CONTACTS_SALES_CONTACT","Sales");
+	define("CONTACTS_DESIGN_CONTACT","Design");
+	define("CONTACTS_MKT_CONTACT","MKT");
+	define("CONTACTS_RECEPTION_CONTACT","Reception");
 
 	define("SOCIAL_NETWORKS_CONTACT","Social profiles");
 

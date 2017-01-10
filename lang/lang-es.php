@@ -133,11 +133,12 @@
 	define("SCHEDULE_03_CONTACT","Previa cita");
 
 	define("CONTACTS_00_CONTACT","Contactos");
-	define("CONTACTS_01_CONTACT","Teléfono");
-	define("CONTACTS_02_CONTACT","Ventas");
-	define("CONTACTS_03_CONTACT","Diseño");
-	define("CONTACTS_04_CONTACT","Marketing");
-	define("CONTACTS_05_CONTACT","Recepción");
+	define("CONTACTS_PHONE_CONTACT","Teléfono");
+	define("CONTACTS_DEV_CONTACT","Desarrollo");
+	define("CONTACTS_SALES_CONTACT","Ventas");
+	define("CONTACTS_DESIGN_CONTACT","Diseño");
+	define("CONTACTS_MKT_CONTACT","Marketing");
+	define("CONTACTS_RECEPTION_CONTACT","Recepción");
 
 	define("SOCIAL_NETWORKS_CONTACT","Redes sociales");
 	/*CONTACT*/
