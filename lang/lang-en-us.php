@@ -12,7 +12,7 @@
 	define("FORT_FOOTER","¡OUR STRENGHS!");
 	define("PHONE_FOOTER","P: +52(55) 5016-1705 & 06");
 	define("PRIVACY_00_FOOTER","Privacy policy.");
-	define("PRIVACY_01_FOOTER","COPYRIGHT © MÉXICO 2016. FÁBRICA DE SOLUCIONES RAK, S.A. DE C.V.");
+	define("PRIVACY_01_FOOTER","COPYRIGHT © MÉXICO 2017. FÁBRICA DE SOLUCIONES RAK, S.A. DE C.V.");
 	/*FOOTER*/
 	/*HOME*/
 	define("PORTADA_00_HOME","the creative");
@@ -59,7 +59,7 @@
 	define("PORTADA_TEXT_02_SERV","and values");
 	define("PORTADA_TEXT_03_SERV","We are lords and masters of…");
 
-	define("P1_TEXT_00","For 13 years now we've been offering personalized attention. We know that when we establish a direct and personal rapport to our customers, we gain a deeper and comprehensive understanding of their needs.");
+	define("P1_TEXT_00","For 14 years now we've been offering personalized attention. We know that when we establish a direct and personal rapport to our customers, we gain a deeper and comprehensive understanding of their needs.");
 	define("P1_TEXT_01","We specialize in the use of digital media, creativity and development, of information technologies, whose purpose is to manufacture solutions that enhance the products, brands and services of our customers.");
 
 	define("P2_T00_ORANGE_SERV","Our added ");

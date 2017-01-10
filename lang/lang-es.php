@@ -12,7 +12,7 @@
 	define("FORT_FOOTER","¡NUESTRAS FORTALEZAS!");
 	define("PHONE_FOOTER","T: +52(55) 5016-1705 Y 06");
 	define("PRIVACY_00_FOOTER","Aviso de privacidad.");
-	define("PRIVACY_01_FOOTER","Todos los derechos reservados&copy; M&eacute;xico 2016. F&aacute;brica de Soluciones RAK S.A. de C.V.");
+	define("PRIVACY_01_FOOTER","Todos los derechos reservados&copy; M&eacute;xico 2017. F&aacute;brica de Soluciones RAK S.A. de C.V.");
 	/*FOOTER*/
 	/*HOME*/
 	define("PORTADA_00_HOME","la f&aacute;brica");
@@ -59,7 +59,7 @@
 	define("PORTADA_TEXT_02_SERV","y valores");
 	define("PORTADA_TEXT_03_SERV","Somos los amos y señores de...");
 
-	define("P1_TEXT_00","Llevamos 13 años ofreciendo atención personalizada, sabemos que al involucrarnos con un trato directo y humano con nuestros clientes, logramos una mayor comprensión integral de sus necesidades.");
+	define("P1_TEXT_00","Llevamos 14 años ofreciendo atención personalizada, sabemos que al involucrarnos con un trato directo y humano con nuestros clientes, logramos una mayor comprensión integral de sus necesidades.");
 	define("P1_TEXT_01","Nos especializamos en el uso de medios digitales, creatividad y desarrollo, de tecnologías de información, cuyo fin es fabricar soluciones que potencialicen los productos, marcas y servicios de nuestros clientes.");
 
 	define("P2_T00_ORANGE_SERV","Nuestro valor ");
