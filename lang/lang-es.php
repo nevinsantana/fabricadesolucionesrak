@@ -141,4 +141,19 @@
 
 	define("SOCIAL_NETWORKS_CONTACT","Redes sociales");
 	/*CONTACT*/
+
+	/*PRIVACY*/
+	define("TITPRINC_PRIVACY","Pol&iacute;tica de privacidad");
+
+	define("LIST1_PRIVACY","Nombre");
+	define("LIST2_PRIVACY","RFC");
+	define("LIST3_PRIVACY","Nacionalidad");
+	define("LIST4_PRIVACY","Domicilio");
+	define("LIST5_PRIVACY","Teléfono particular");
+	define("LIST6_PRIVACY","Teléfono celular");
+	define("LIST7_PRIVACY","Correo electrónico");
+	define("LIST8_PRIVACY","Información fiscal");
+	define("LIST9_PRIVACY","Cuentas bancarias");
+	define("LIST10_PRIVACY","Referencias comerciales");
+	/*PRIVACY*/
 ?>

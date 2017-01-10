@@ -931,6 +931,19 @@ z-index             : 201;
 
 /*-/ portfolio  -*/
 
+
+
+/*Privacy*/
+.privacy-text { color: #3E3C3C; }
+.p-href { color: #ad655f !important; }
+.privacy-text p, .privacy-text ul, 
+.p-href { font-size: 14px; font-weight: 300; }
+@media( min-width: 1300px ) {
+	.privacy-text p, .privacy-text ul, 
+	.p-href { font-size: 17px; }
+}
+/*Privacy*/
+
 .carousel-caption   { text-shadow: 0 0 0 transparent !important; }
 .zonac-portfolio    { padding: 4% 0; }
 .orange-contact     { color: #ea7900; }
