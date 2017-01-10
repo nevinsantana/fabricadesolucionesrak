@@ -963,9 +963,7 @@ z-index             : 201;
 	}
 }
 
-@media (max-width: 350px) {
-	.oc-title-4 { bottom: -30px; }
-}
+
 
 @media (max-width: 400px) {
 
@@ -1030,6 +1028,12 @@ z-index             : 201;
 	.s-panel-text                               { font-size: 14px !important; }
 
 }/*/(max-width: 499px)*/
+
+@media (max-width: 350px) {
+	.top-a-objects .objects-container { width: 100%; left: 0; top: 45%; }
+	.oc-title-2, .oc-title-3 { font-size: 27px !important; }
+	.oc-title-4 { bottom: -30px; }
+}
 
 @media (max-width: 540px) { .ta-custom { height: 80vw !important; } }
 
