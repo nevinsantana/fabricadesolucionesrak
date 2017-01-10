@@ -12,7 +12,7 @@
 	define("FORT_FOOTER","¡NUESTRAS FORTALEZAS!");
 	define("PHONE_FOOTER","T: +52(55) 5016-1705 Y 06");
 	define("PRIVACY_00_FOOTER","Aviso de privacidad.");
-	define("PRIVACY_01_FOOTER","Todos los derechos reservados&copy; M&eacute;xico 2017. F&aacute;brica de Soluciones RAK S.A. de C.V.");
+	define("PRIVACY_01_FOOTER","Todos los derechos reservados &copy; M&eacute;xico 2017. F&aacute;brica de Soluciones RAK S.A. de C.V.");
 	/*FOOTER*/
 	/*HOME*/
 	define("PORTADA_00_HOME","la f&aacute;brica");
@@ -84,7 +84,7 @@
 	define("PORTADA_TEXT_00_ABOUT","somos una");
 	define("PORTADA_TEXT_01_ABOUT","agencia");
 	define("PORTADA_TEXT_02_ABOUT","digital");
-	define("PORTADA_TEXT_03_ABOUT","Llevamos 13 años de atención personalizada");
+	define("PORTADA_TEXT_03_ABOUT","Llevamos 14 años de atención personalizada");
 
 	define("P1_TEXT_00_ABOUT","Somos una Agencia Digital, especializada en el uso de medios
 						digitales, creatividad y desarrollo de tecnologías de información, cuyo fin es fabricar soluciones que potencialicen los productos, marcas y servicios de nuestros clientes.");
@@ -141,6 +141,11 @@
 	define("CONTACTS_RECEPTION_CONTACT","Recepción");
 
 	define("SOCIAL_NETWORKS_CONTACT","Redes sociales");
+
+	define("VERIFY_HUMAN_FROM_CONTACT","Verifica que eres humano en el recaptcha.");
+	define("EMPTY_FIELDS_FROM_CONTACT","Uno o varios campos están vacíos. Por favor llenalos.");
+	define("INVALID_MAIL_FROM_CONTACT","Ingresa un correo válido.");
+	define("THANKS_TEXT_FROM_CONTACT","Gracias por contactarnos.");
 	/*CONTACT*/
 
 	/*PRIVACY*/

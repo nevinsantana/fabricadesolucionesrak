@@ -331,7 +331,7 @@
 
 					if( !is_email ) {
 						$("#my-alert").addClass("alert-warning");
-						$("#alert-text").text("Ingresa un correo válido.");
+						$("#alert-text").text("<?php echo INVALID_MAIL_FROM_CONTACT; ?>");
 						$("#my-alert").fadeIn(500);
 					} else {
 						$("#my-alert").removeClass("alert-warning");
@@ -370,7 +370,7 @@
 					var recaptcha_response = grecaptcha.getResponse();
 					if( recaptcha_response==0 ) { /*recaptcha verification not passed*/
 						$("#my-alert").addClass("alert-warning");
-						$("#alert-text").text("Verifica que eres humano en el recaptcha.");
+						$("#alert-text").text("<?php echo VERIFY_HUMAN_FROM_CONTACT; ?>");
 						$("#my-alert").fadeIn(500);
 					} else { /*recaptcha verification passed*/
 						var nombre = $("#nombre").val();
@@ -384,11 +384,11 @@
 						var form_data = "nombre="+nombre+"&correo="+correo+"&telefono="+telefono+"&asunto="+asunto+"&mensaje="+mensaje+"'";
 						if( nombre=="" || correo=="" || telefono=="" || asunto=="" || mensaje=="" ) {
 							$("#my-alert").addClass("alert-warning");
-							$("#alert-text").text("Uno o varios campos están vacíos. Por favor llenalos.");
+							$("#alert-text").text("<?php echo EMPTY_FIELDS_FROM_CONTACT; ?>");
 							$("#my-alert").fadeIn(500);
 						} else if( !is_email ) { /*Validate email again*/
 								$("#my-alert").addClass("alert-warning");
-								$("#alert-text").text("Ingresa un correo válido.");
+								$("#alert-text").text("<?php echo INVALID_MAIL_FROM_CONTACT; ?>");
 								$("#my-alert").fadeIn(500);
 						} else { /*Everithing has been validated*/
 							$.ajax({
@@ -404,7 +404,7 @@
 									$("#mensaje").val("");
 									$("#my-alert").addClass("alert-success");
 									$("#my-alert").fadeIn(500);
-									$("#alert-text").text("Gracias por contactarnos.")
+									$("#alert-text").text("<?php echo THANKS_TEXT_FROM_CONTACT; ?>")
 								}, /*ajax success*/
 								error: function(jqXHR, textStatus, errorThrown) {
 									/*Si hay algun error, se mostrará también en un alert*/

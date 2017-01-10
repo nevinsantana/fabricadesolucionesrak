@@ -12,7 +12,7 @@
 	define("FORT_FOOTER","¡OUR STRENGHS!");
 	define("PHONE_FOOTER","P: +52(55) 5016-1705 & 06");
 	define("PRIVACY_00_FOOTER","Privacy policy.");
-	define("PRIVACY_01_FOOTER","COPYRIGHT © MÉXICO 2017. FÁBRICA DE SOLUCIONES RAK, S.A. DE C.V.");
+	define("PRIVACY_01_FOOTER","COPYRIGHT &copy; MÉXICO 2017. FÁBRICA DE SOLUCIONES RAK, S.A. DE C.V.");
 	/*FOOTER*/
 	/*HOME*/
 	define("PORTADA_00_HOME","the creative");
@@ -84,7 +84,7 @@
 	define("PORTADA_TEXT_00_ABOUT","we are a");
 	define("PORTADA_TEXT_01_ABOUT","digital");
 	define("PORTADA_TEXT_02_ABOUT","agency");
-	define("PORTADA_TEXT_03_ABOUT","We have 13 years of personalized attention");
+	define("PORTADA_TEXT_03_ABOUT","We have 14 years of personalized attention");
 
 	define("P1_TEXT_00_ABOUT","We are a Digital Agency, and we specialize in the use of digital media, creativity and development of information technologies. Our aim is to create solutions that boost the products, brands and services of our clients.");
 
@@ -143,10 +143,10 @@
 
 	define("SOCIAL_NETWORKS_CONTACT","Social profiles");
 
-	define("VERIFY_HUMAN_CONTACT","Verify that you are a human in recaptcha.");
-	define("BLANK_FIELDS_CONTACT","One or a lot of fields are empty. Please fill them.");
-	define("INVALID_MAIL_CONTACT","Introduce a valid email.");
-	define("THANKS_MSG_CONTACT","Thanks for contact us.");
+	define("VERIFY_HUMAN_FROM_CONTACT","Verify that you are a human in recaptcha.");
+	define("EMPTY_FIELDS_FROM_CONTACT","One or a lot of fields are empty. Please fill them.");
+	define("INVALID_MAIL_FROM_CONTACT","Introduce a valid email.");
+	define("THANKS_TEXT_FROM_CONTACT","Thanks for contact us.");
 	/*CONTACT*/
 
 	/*PRIVACY*/
