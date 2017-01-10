@@ -1,6 +1,6 @@
 <?php
 	/*NAVBAR*/
-	define("LANG_NAVBAR", "INGLES");
+	define("LANG_NAVBAR", "ENGLISH");
 	define("HOME_NAVBAR", "INICIO");
 	define("SERV_NAVBAR", "SERVICIOS");
 	define("PORTF_NAVBAR", "PORTAFOLIO");
