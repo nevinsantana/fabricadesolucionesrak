@@ -150,7 +150,7 @@
 	/*CONTACT*/
 
 	/*PRIVACY*/
-	
+
 	define("TITPRINC_PRIVACY","Privacy policy");
 	define("PHA1_PRIVACY","Fábrica de Soluciones Rak, S.A de C.V. , residing in Av. Vía Dr. Gustavo Baz Prada No.1024. 3rd floor, Tlalnepantla, Estado de México. Zip Code 54070 under the internet url www.fabricadesoluciones.com, is responsible for the use and protection of your personal data and in this respect we inform you of the following:");
 	define("TITLE1_PRIVACY","Collected information");

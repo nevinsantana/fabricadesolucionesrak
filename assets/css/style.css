@@ -936,10 +936,10 @@ z-index             : 201;
 /*Privacy*/
 .privacy-text { color: #3E3C3C; }
 .p-href { color: #ad655f !important; }
-.privacy-text p, .privacy-text ul, 
+.privacy-text p, .privacy-text ul,
 .p-href { font-size: 14px; font-weight: 300; }
 @media( min-width: 1300px ) {
-	.privacy-text p, .privacy-text ul, 
+	.privacy-text p, .privacy-text ul,
 	.p-href { font-size: 17px; }
 }
 /*Privacy*/
@@ -1220,6 +1220,7 @@ z-index             : 201;
 
 @media (min-width: 1300px) {
 	/*Services*/
+	.top-a-objects .objects-container { width: 90%; left: 5%; top: 45%; }
 	.s-panel-text { font-size: 18px; }
 	.ss-inner     { font-size: 20px; right: 20px; }
 	/*Services*/
@@ -1227,15 +1228,19 @@ z-index             : 201;
 
 @media (min-width: 1448px) {
 
-	.top-a-objects .objects-container { width: 90%; left: 5% }
+	.top-a-objects .objects-container { width: 80%; left: 10%; top: 40%; }
 	.soluciones                       { font-size: 9vw; }
 
 }
 
 @media (min-width: 1748px) {
 
-	.top-a-objects .objects-container { width: 70%; left: 15% }
+	.top-a-objects .objects-container { width: 70%; left: 15%; top: 40%; }
 	.lafabrica                        { font-size: 3vw; }
 	.soluciones                       { font-size: 6vw; }
 
+}
+
+@media (min-width: 2000px) {
+	.top-a-objects .objects-container { width: 55%; left: 22.5%; top: 40%; }
 }
