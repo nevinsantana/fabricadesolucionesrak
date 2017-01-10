@@ -145,4 +145,44 @@
 	define("INVALID_MAIL_CONTACT","Introduce a valid email.");
 	define("THANKS_MSG_CONTACT","Thanks for contact us.");
 	/*CONTACT*/
+
+	/*PRIVACY*/
+	define("TITPRINC_PRIVACY","Información recabada");
+	define("PHA1_PRIVACY","Fábrica de Soluciones Rak, S.A de C.V. , con domicilio en Av. Vía Dr. Gustavo Baz Prada No.1024. Piso 3. Tlalnepantla, Estado de México. CP.54070, y en el portal de internet bajo el dominio www.fabricadesoluciones.com, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:");
+	define("TITLE1_PRIVACY","Información recabada");
+	define("PHA2_PRIVACY","Los Datos Personales que usted proporcione a través de este website o directamente en nuestro negocio, mediante la utilización de nuestros servicios en línea, por escrito y/o vía telefónica, pueden ser los siguientes:");
+	define("LIST1_PRIVACY","Nombre");
+	define("LIST2_PRIVACY","RFC");
+	define("LIST3_PRIVACY","Nacionalidad");
+	define("LIST4_PRIVACY","Domicilio");
+	define("LIST5_PRIVACY","Teléfono particular");
+	define("LIST6_PRIVACY","Teléfono celular");
+	define("LIST7_PRIVACY","Correo electrónico");
+	define("LIST8_PRIVACY","Información fiscal");
+	define("LIST9_PRIVACY","Cuentas bancarias");
+	define("LIST10_PRIVACY","Referencias comerciales");
+	define("TITLE2_PRIVACY","Uso de la información");
+	define("PHA3_PRIVACY","Utilizaremos su información personal para las siguientes finalidades que nos permiten ofrecerle nuestros servicios:");
+	define("LIST11_PRIVACY","Fines de identificación y de verificación");
+	define("LIST12_PRIVACY","Contacto, Mercadotecnia y/o Publicidad");
+	define("LIST13_PRIVACY","Ofrecer nuestros productos y/o servicios");
+	define("LIST14_PRIVACY","Participación en promociones y concursos");
+	define("LIST15_PRIVACY","Proveer productos y/o servicios requeridos por usted");
+	define("LIST16_PRIVACY","Informar sobre cambios o nuevos productos o servicios ofrecidos");
+	define("LIST17_PRIVACY","Evaluar la calidad del servicio");
+	define("LIST18_PRIVACY","Identificar historial o hábitos de consumo");
+	define("TITLE3_PRIVACY","Información compartida");
+	define("PHA4_PRIVACY","Podemos transferir sus Datos Personales a terceros nacionales o extranjeros, a empresas subsidiarias y afiliadas; proveedores de servicios para actividades de promoción y comercialización de nuestros productos y servicios; o por requerimiento de una autoridad. Se entiende que ha otorgado su consentimiento a la transferencia de sus Datos Personales, si no manifiesta oposición a que los mismos sean transferidos.");
+	define("PHA5_PRIVACY","Los Datos Personales que usted proporciona, pueden compilarse y fijarse en una base de datos propiedad exclusiva de Fábrica de Soluciones Rak, S.A de C.V., la cual no es responsable respecto al contenido y políticas de privacidad de empresas terceras.");
+	define("TITLE4_PRIVACY","Tratamiento de sus datos personales");
+	define("PHA6_PRIVACY","Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO. Para el ejercicio de cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través del siguiente medio:");
+	define("PHA7_PRIVACY","Llamando al número telefónico +52 (55) 50161705. Ext. 101.");
+	define("PHA8_PRIVACY","O enviando un correo electrónico a la cuenta");
+	define("LINK1_PRIVACY","contacto@fabricadesoluciones.com");
+	define("PHA9_PRIVACY","Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de sus datos personales. Sin embargo, es importante que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales. Asimismo, usted deberá considerar que para ciertos fines, la revocación de su consentimiento implicará que no le podamos seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros.");
+	define("TITLE5_PRIVACY","Actualización de nuestro aviso de privacidad");
+	define("PHA10_PRIVACY","El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas. Nos comprometemos a mantenerlo informado sobre los cambios que pueda sufrir el presente aviso de privacidad, a través de: la publicación en nuestra pagina de internet:");
+	define("LINK1_PRIVACY","www.fabricadesoluciones.com");
+	define("PHA11_PRIVACY","Última actualización: Marzo 2016");
+	/*PRIVACY*/
 ?>

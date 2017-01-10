@@ -141,4 +141,44 @@
 
 	define("SOCIAL_NETWORKS_CONTACT","Redes sociales");
 	/*CONTACT*/
+
+	/*PRIVACY*/
+	define("TITPRINC_PRIVACY","Aviso de privacidad");
+	define("PHA1_PRIVACY","Fábrica de Soluciones Rak, S.A de C.V. , residing in Av. Vía Dr. Gustavo Baz Prada No.1024. 3rd floor, Tlalnepantla, Estado de México. Zip Code 54070 under the internet url www.fabricadesoluciones.com, is responsible for the use and protection of your personal data and in this respect we inform you of the following:");
+	define("TITLE1_PRIVACY","Collected information");
+	define("PHA2_PRIVACY","The personal data that you provide through this website or directly to our business resulting from your usage of our online services, in written and/or through the phone may be the following:");
+	define("LIST1_PRIVACY","Name");
+	define("LIST2_PRIVACY","RFC (Federal Taxpayers Registry)");
+	define("LIST3_PRIVACY","Nacionality");
+	define("LIST4_PRIVACY","Address");
+	define("LIST5_PRIVACY","Telephone phone");
+	define("LIST6_PRIVACY","Telephone number");
+	define("LIST7_PRIVACY","Email address");
+	define("LIST8_PRIVACY","Tax-related information");
+	define("LIST9_PRIVACY","Bank accounts");
+	define("LIST10_PRIVACY","Commercial references");
+	define("TITLE2_PRIVACY","Use of the information");
+	define("PHA3_PRIVACY","We will make use of your personal information for the following purposes which allow us to offer you our services:");
+	define("LIST11_PRIVACY","Indentification and verification purposes");
+	define("LIST12_PRIVACY","Contact, marketing and/or publicity");
+	define("LIST13_PRIVACY","To offer our products and/or services");
+	define("LIST14_PRIVACY","To allow you to participate in special offers or games");
+	define("LIST15_PRIVACY","To provide products and/or services required by you");
+	define("LIST16_PRIVACY","To inform you about changes or about new products and services offered");
+	define("LIST17_PRIVACY","To evaluate service quality");
+	define("LIST18_PRIVACY","To identify consumption history or habits");
+	define("TITLE3_PRIVACY","Shared information");
+	define("PHA4_PRIVACY","We are entitled to transfer your personal information to national or international third parties; to subsidiary and affiliated enterprises; to service suppliers for activities that serve the purposes of advertisement and marketing of our products and services or in case an authority should require us to do so. It is understood that you consent to the transferring of your personal information if you don't manifest any objection against it.");
+	define("PHA5_PRIVACY","The personal information that you provide may be compiled and registered in a data base which is the exclusive property of Fábrica de Soluciones Rak, S.A de C.V (a variable capital corporation). Fábrica de Soluciones Rak, S.A de C.V is not responsible for the content and privacy policies of third-party enterprises.");
+	define("TITLE4_PRIVACY","Treatment of your personal information");
+	define("PHA6_PRIVACY","You are entitled to know what personal information we possess about you, what we use it for and the use we make of it (access). It is also your right to request the correction of your personal information in case it is not updated, or if it's inaccurate or incomplete (rectification); it is also your right that we eliminate it from our registers of data bases when you consider that it is not being used appropriately (cancellation). You are also entitled to oppose to the use of your personal information for specific purposes (opposition). These are known as the ARCO rights. For exercising any of the ARCO rights you must file the corresponding request through the following means:");
+	define("PHA7_PRIVACY","Calling the telephone number +52 (55) 50161705. Extension number 101.");
+	define("PHA8_PRIVACY","Or you may send an Email to the following address:");
+	define("LINK1_PRIVACY","contacto@fabricadesoluciones.com");
+	define("PHA9_PRIVACY","You have the right to revoke the consent which you may have given to us for the treatment of your personal information. However, you must keep in mind that in some cases we might not be able to meet your request or conclude the use of your personal information in an immediate fashion, since it is possible that we will have to continue to use them due to legal obligations. You must also consider that, for certain purposes, the revoking of your consent will imply that we won't be able to continue providing you with the service you requested, or it may result in the end of your relation to us.");
+	define("TITLE5_PRIVACY","Updating of our privacy notice");
+	define("PHA10_PRIVACY","This privacy notice may suffer modifications, changes or updates resulting from new legal requirements; from our own needs resulting from the products or services that we offer; form our privacy practices; from changes in our business model or from any other causes. We have the commitment to keep you informed about the changes that this privacy notice may be subjected to by publishing the changes in our internet site: ");
+	define("LINK1_PRIVACY","www.fabricadesoluciones.com");
+	define("PHA11_PRIVACY","Last update: March 2016.");
+	/*PRIVACY*/
 ?>
