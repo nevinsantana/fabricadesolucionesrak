@@ -1,11 +1,10 @@
 <?php
 	if( isset($_GET["lang"]) ) {
 		$lang = $_GET["lang"];
-		if( $lang!="es" && $lang!="en" ){
-			if( isset($antilang) )
-				 $lang = $antilang;
-			else
-				$lang = "es";
+		if( $lang!="es" && $lang!="en" ) {
+			$href = $_SERVER["REQUEST_URI"];
+			$href_splitted = explode("/", explode("?",$href)[0] )[2];
+			echo "<script> window.location='".$href_splitted."?lang=es'; </script>";
 		}
 	} else
 		$lang = "es";
