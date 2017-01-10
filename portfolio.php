@@ -29,7 +29,7 @@
 		<div class="allCont"><!--Inicia el contenido de toda la página-->
 			<div class="menu-top3"><!--Menu-->
 				<div class="relativer">
-					<nav class="navbar navbar-default transp">
+					<nav class="navbar navbar-default transp navbar-allh">
 						<div class="container-fluid">
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle collapsed menu-button"

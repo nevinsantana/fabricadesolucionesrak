@@ -344,6 +344,14 @@ z-index             : 201;
 /*-/ top-nuevo -*/
 
 /*-top-a-*/
+.navbar-allh { height: 100% !important; }
+.navbar-allh .container-fluid { height: 100% !important; }
+.navbar-allh .container-fluid .navbar-header { width: auto !important; }
+.navbar-allh .navbar-brand {
+  height: auto;
+  padding: 0;
+  line-height: 20px;
+}
 .soluciones { font-family: PaytoneOne; font-size: 10vw; line-height: 100px;   }
 .creativas  { font-family: PaytoneOne; font-size: 5vw; line-height: 150px;    }
 .creades    { font-family: PlayfairDisplay; font-size: 1.5vw; line-height: 0; }
@@ -354,7 +362,7 @@ z-index             : 201;
 .carouselcont-top-a { height: 85%; margin-top: 110px; }
 .robi               { height: 100%; }
 .robo-w100          { width: 100%; }
-.menu-top3 { position: absolute; width: 100%; height: 75px; z-index: 101; }
+.menu-top3 { position: absolute; width: 100%; height: 80px; z-index: 101; }
 .a-contactanos-menu { padding: 12px 0 !important; }
 .lafabrica, .soluciones, .creativas, .creades, .fdown-section,
 .fdown-section a { text-align: center; color: #fff; }
@@ -1070,7 +1078,7 @@ z-index             : 201;
 	.creativas  { font-size: 8vw; }
 	.creades    { font-size: 2.5vw; }
 	.navbar-nav { font-size: 0.7vw; }
-	.top-a { min-height: 550px; height: auto; }
+	.top-a { min-height: 600px; height: auto; }
 	/*/Home-topa*/
 
 	.tnue-right .tnuevo-container {
@@ -1122,13 +1130,16 @@ z-index             : 201;
 	.zonac-content .zonac-description-container { font-size: 16px; }
 	/*Contact*/
 
+	.lafabrica { margin-top: 100px; }
+	.privacy-title-orange { margin-top: 100px; }
+
 
 }/*/(max-width: 767px)*/
 
-@media (max-width: 846px) {
-	.navbar-nav { font-size: 12px; }
+@media (max-width: 896px) {
+	.navbar-nav { font-size: 11px; }
 	.nav > li > a {
-			padding: 10px !important;
+			padding: 10px 9px !important;
 	}
 }
 
