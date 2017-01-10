@@ -1,28 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<?php
-			if( isset($_GET["lang"]) )
-				$lang = $_GET["lang"];
-			else
-				$lang = "es";
-			if($lang == "es") {
-				$nextLan = "?lang=es";
-				$antilang = "en";
-			}
-			else {
-				$nextLan = "?lang=en";
-				$antilang = "es";
-			}
-			switch($lang) {
-				case "es":
-					include("lang/lang-es.php");
-					break;
-				case "en":
-					include("lang/lang-en-us.php");
-					break;
-			}
-		?>
+		<?php include("structure/lang-switch.php"); ?>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
