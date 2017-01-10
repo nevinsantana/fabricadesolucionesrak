@@ -67,7 +67,6 @@
 							<div class="collapse navbar-collapse navbar-right"
 							id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li><a href="?lang=<?php echo $antilang; ?>" class="menu-sol"><?php echo LANG_NAVBAR; ?></a></li>
 									<li><a href="index.php<?php echo $nextLan; ?>" class="menu-sol"><?php echo HOME_NAVBAR; ?></a></li>
 									<li><a href="services.php<?php echo $nextLan; ?>" class="menu-sol"><?php echo SERV_NAVBAR; ?></a></li>
 									<li><a href="portfolio.php<?php echo $nextLan; ?>" class="menu-sol"><?php echo PORTF_NAVBAR; ?></a></li>
@@ -77,6 +76,7 @@
 											<p class="menucontactanos-topa"><?php echo CONTACT_NAVBAR; ?></p>
 										</a>
 									</li>
+									<li><a href="?lang=<?php echo $antilang; ?>" class="menu-sol"><?php echo LANG_NAVBAR; ?></a></li>
 									<li class="dropdown text-center">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown"
 										role="button" aria-haspopup="true" aria-expanded="false">
@@ -130,12 +130,12 @@
 
 
 		<section class="top-nuevo" id="top-c">
-			<div class="col-sm-8 col-sm-offset-2 privacy-text">
-				<p>Fabrica de soluciones</p>
+			<div class="col-sm-8 col-sm-offset-2 privacy-text text-justify">
+				<p><?php echo PHA1_PRIVACY; ?></p>
 				<p>
-					<strong>Informacion recabada</strong>
+					<strong><?php echo TITLE1_PRIVACY; ?></strong>
 				</p>
-				<p>The personal</p>
+				<p><?php echo PHA2_PRIVACY; ?></p>
 				<p>
 					<ul>
 						<li><?php echo LIST1_PRIVACY; ?></li>
@@ -151,38 +151,39 @@
 					</ul>
 				</p>
 				<p>
-					<strong>otro</strong>
+					<strong><?php echo TITLE2_PRIVACY; ?></strong>
 				</p>
-				<p>para</p>
+				<p><?php echo PHA3_PRIVACY; ?></p>
 				<p>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li><?php echo LIST11_PRIVACY; ?></li>
+						<li><?php echo LIST12_PRIVACY; ?></li>
+						<li><?php echo LIST13_PRIVACY; ?></li>
+						<li><?php echo LIST14_PRIVACY; ?></li>
+						<li><?php echo LIST15_PRIVACY; ?></li>
+						<li><?php echo LIST16_PRIVACY; ?></li>
+						<li><?php echo LIST17_PRIVACY; ?></li>
+						<li><?php echo LIST18_PRIVACY; ?></li>
 					</ul>
 				</p>
 				<p>
-					<strong>otro</strong>
+					<strong><?php echo TITLE3_PRIVACY; ?></strong>
 				</p>
-				<p>p1</p>
-				<p>p2</p>
+				<p><?php echo PHA4_PRIVACY; ?></p>
+				<p><?php echo PHA5_PRIVACY; ?></p>
 				<p>
-					<strong>otro</strong>
+					<strong><?php echo TITLE4_PRIVACY; ?></strong>
 				</p>
-				<p>p1</p>
-				<p>2</p>
-				<p>3 <a class="p-href" href="mailto:contacto@fabricadesoluciones.com">contacto@fabricadesoluciones.com</a></p>
-				<p>4</p>
+				<p><?php echo PHA6_PRIVACY; ?></p>
+				<p><?php echo PHA7_PRIVACY; ?></p>
+				<p><?php echo PHA8_PRIVACY; ?> <a class="p-href" href="mailto:contacto@fabricadesoluciones.com">contacto@fabricadesoluciones.com</a></p>
+				<p><?php echo PHA9_PRIVACY; ?></p>
 				<p>
-					<strong>otro</strong>
+					<strong><?php echo TITLE5_PRIVACY; ?></strong>
 				</p>
-				<p><a class="p-href" href="www.fabricadesoluciones.com">www.fabricadesoluciones.com</a></p>
-				<p>otro</p>
+				<p>
+				 <?php echo PHA10_PRIVACY; ?> <a class="p-href" href="www.fabricadesoluciones.com">www.fabricadesoluciones.com</a></p>
+				<p><?php echo PHA11_PRIVACY; ?></p>
 			</div>
 		</section>
 

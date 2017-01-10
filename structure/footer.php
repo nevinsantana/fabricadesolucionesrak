@@ -81,7 +81,7 @@
 					</div>
 				</div>
 				<div class="advert-foot text-center">
-					<a href="#"><p><?php echo PRIVACY_00_FOOTER; ?></p></a>
+					<a href="privacy.php<?php echo $nextLan; ?>"><p><?php echo PRIVACY_00_FOOTER; ?></p></a>
 					<p>
 						<?php echo PRIVACY_01_FOOTER; ?>
 					</p>
