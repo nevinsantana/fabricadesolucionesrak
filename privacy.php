@@ -121,7 +121,7 @@
 		<section class="top-c-title">
 			<div class="col-md-12">
 				<div class="row">
-					<h2 class="sct">
+					<h2 class="sct privacy-title-orange">
 						<span class="sct1"><?php echo TITPRINC_PRIVACY; ?></span>
 					</h2>
 				</div>

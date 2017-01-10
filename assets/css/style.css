@@ -934,6 +934,9 @@ z-index             : 201;
 
 
 /*Privacy*/
+.privacy-title-orange {
+	margin-top: 70px;
+}
 .privacy-text { color: #3E3C3C; }
 .p-href { color: #ad655f !important; }
 .privacy-text p, .privacy-text ul,
@@ -1117,6 +1120,13 @@ z-index             : 201;
 
 
 }/*/(max-width: 767px)*/
+
+@media (max-width: 846px) {
+	.navbar-nav { font-size: 12px; }
+	.nav > li > a {
+			padding: 10px !important;
+	}
+}
 
 @media (max-width: 861px) {
 	/*Contact*/
