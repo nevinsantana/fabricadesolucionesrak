@@ -1,7 +1,6 @@
 <?php
 	session_start();
 	include("structure/lang-switch.php");
-	$_SESSION["thanks_page"]="ready";
 	if( isset($_SESSION["thanks_page"]) ) {
 		if( $_SESSION["thanks_page"]=="ready" ) {
 ?>
@@ -113,11 +112,16 @@
 					<div class="top-a-0"></div><!--Capa naranja-->
 					<div class="top-a-2"><!--Capa título top-a-->
 						<div class="thanks-msg">
-							<p class="soluciones tit2">
-								<?php echo THANKS_MSG00_FORMCONT; ?><br>
-								<span class="lafabrica tit1 msg-thanks-02"><?php echo THANKS_MSG01_FORMCONT; ?></span>
-								<?php unset($_SESSION["thanks_page"]); ?>
+							<p class="msg-thanks-00 cookie-font"><?php echo THANKS_MSG00_FORMCONT; ?></p>
+							<p class="msg-thanks-01 party-one-font">
+								<?php echo THANKS_MSG01_FORMCONT; ?>
 							</p>
+							<p class="msg-thanks-02 normal-font">
+								<?php echo THANKS_MSG02_FORMCONT; ?>
+							</p>
+						</div>
+						<div class="timg-scrollreveal">
+							<img class="thanks-img" src="assets/img/thanks/thanks.png" alt="">
 						</div>
 					</div><!--/Capa título top-a-->
 				</section><!--/Primera sección-->
@@ -129,16 +133,22 @@
 			<script>//Funciones llamadas en esta página
 				window.sr = ScrollReveal();
 
-				sr.reveal('.thanks-msg .soluciones', {
+				sr.reveal('.thanks-msg p', {
 					duration: 3000,
 					reset: true,
 					viewFactor: 1,
+				});
+				sr.reveal('.timg-scrollreveal', {
+					duration: 3000,
+					reset: true,
+					viewFactor: 0.3,
 				});
 			</script>
 			<script src="assets/js/js.js"></script>
 		</body>
 	</html>
 <?php
+			unset($_SESSION["thanks_page"]);
 		}/*session=ready*/
 	} else { /*session isset*/
 		header("Location: index.php".$nextLan);
