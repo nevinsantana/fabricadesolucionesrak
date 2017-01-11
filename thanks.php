@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	include("structure/lang-switch.php");
+	$_SESSION["thanks_page"]="ready";
 	if( isset($_SESSION["thanks_page"]) ) {
 		if( $_SESSION["thanks_page"]=="ready" ) {
 ?>
