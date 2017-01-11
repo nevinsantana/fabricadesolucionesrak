@@ -149,8 +149,8 @@
 	define("THANKS_TEXT_FROM_CONTACT","Thanks for contact us.");
 
 	define("THANKS_MSG00_FORMCONT","Thank you for");
-	define("THANKS_MSG01_FORMCONT","contact us");
-	define("THANKS_MSG02_FORMCONT","Soon we will contact you");
+	define("THANKS_MSG01_FORMCONT","contacting us");
+	define("THANKS_MSG02_FORMCONT","You will be contacted shortly");
 	/*CONTACT*/
 
 	/*PRIVACY*/
