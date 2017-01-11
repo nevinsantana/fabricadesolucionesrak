@@ -354,29 +354,35 @@
 				$(".tnue-right").css("height",$(".tnue-left").height()+"px");
 				if(parseInt($(window).width()) < 767) { $(".tnue-right").css("height","auto"); }
 			});
-			$(".outer-cuadro").click(function(){
+			$(".outer-cuadro").hover(function(){
 				var numCuadro = $(this).attr("id").substr($(this).attr("id").length - 1);
 				if($(this).parent().parent().attr("class") != "row s2-cuadros-container already") {
 					$(this).parent().parent().attr("class","row s2-cuadros-container already");
-					$("#initial-description").fadeOut('400',function() {
-						$("#description"+numCuadro).fadeIn('400', function() {});
+					$("#initial-description").fadeOut(100,function() {
+						$("#description"+numCuadro).fadeIn(100, function() {});
 						$("#description"+numCuadro).addClass("active");
 					});
 				}
 				if($(this).attr("class") == "outer-cuadro active"){ return; };
-				$(".descriptions-parent .descriptions-container.active").fadeOut('400', function() {
-					$(".descriptions-parent .descriptions-container.active").attr("class","descriptions-container");
-					$("#description"+numCuadro).fadeIn('400', function() {});
-					$("#description"+numCuadro).addClass("active");
+				$(".descriptions-parent .descriptions-container.active").fadeOut(100, function() {
+					$(".descriptions-parent .descriptions-container.active").attr("class","descriptions-container inactive");
+
+					$("#description"+numCuadro).fadeIn(100, function() {
+						if( $(".inactive").css("display")=="block" ){
+						$(".inactive").css("display","none");
+					}
+					});
+					$("#description"+numCuadro).attr("class","descriptions-container active");
+
 				});
 				$(this).parent().parent().find(".outer-cuadro.active").attr("class","outer-cuadro");
 				$(this).addClass("active");
-				setTimeout(function(){
+				$(".outer-cuadro").click(function(){
 					var topbRestant = $(window).height()-$(".top-b").height();
 					$("html,body").animate({
 						scrollTop:($(".top-b").offset().top-topbRestant)
 					}, 500);
-				}, 500);
+				});
 			});
 			popoverer();
 					window.sr = ScrollReveal();

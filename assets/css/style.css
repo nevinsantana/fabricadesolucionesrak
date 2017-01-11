@@ -20,6 +20,10 @@
 	font-family : PlayfairDisplay;
 	src         : url(font/Playfair_Display/PlayfairDisplay-Regular.ttf);
 }
+@font-face {
+	font-family : Comfortaa;
+	src         : url(font/Comfortaa/Comfortaa-Regular.ttf);
+}
 /*/Fonts*/
 
 /*General*/
@@ -78,7 +82,7 @@ a               { color: inherit !important; }
 }
 .cookie-font    { font-family: Cookie }
 .party-one-font { font-family: PaytoneOne; }
-.normal-font    { font-family: PlayfairDisplay; font-weight: 200; }
+.normal-font    { font-family: Comfortaa; font-weight: 200; }
 .tbb-nobackground { background-image: none; }
 .s-title { color: #FFF; font-size: 5vw; text-align: center; margin-top: 60px; }
 .oc-title { color: #FFF; font-size: 5vw; text-align: center; }
@@ -253,6 +257,7 @@ z-index             : 201;
 /*/Footer*/
 
 /*Home*/
+.descriptions-container.inactive { display: none; }
 .top-a, .top-d { height: 800px; min-height: 100%; position: relative; }
 .top-b, .top-d { rgba(0, 0, 0, 0) }
 .top-a {
@@ -329,7 +334,7 @@ z-index             : 201;
 .tnc-link {
 	text-align     : center;
 	color          : #ffa700 !important;
-	font-family    : PlayfairDisplay;
+	font-family    : Comfortaa;
 	width          : 100%;
 }
 .tnue-right .tnuevo-container {
@@ -354,7 +359,7 @@ z-index             : 201;
 }
 .soluciones { font-family: PaytoneOne; font-size: 10vw; line-height: 100px;   }
 .creativas  { font-family: PaytoneOne; font-size: 5vw; line-height: 150px;    }
-.creades    { font-family: PlayfairDisplay; font-size: 1.5vw; line-height: 0; }
+.creades    { font-family: Comfortaa; font-size: 1.3vw; line-height: 0; }
 .fdown-section, .fdown-section a { color: #c75000 !important; margin-top: 25px; }
 .fdown-section i    { font-size: 22px; cursor: pointer; }
 .v-4                { width: 200px; height: 33.3333333%; margin: auto; }
@@ -1058,7 +1063,7 @@ z-index             : 201;
 	/*Home-topa*/
 	.img-catopa { width: 100%; height: auto; left: 0; margin-left: 0; }
 	.creativas  { font-size: 10vw; }
-	.creades    { font-size: 3vw; }
+	.creades    { font-size: 3vw !important; }
 	/*/Home-topa*/
 
 	.top-a               { height: auto; min-height: 500px; position: relative; }
@@ -1134,7 +1139,7 @@ z-index             : 201;
 
 	/*Home-topa*/
 	.creativas  { font-size: 8vw; }
-	.creades    { font-size: 2.5vw; }
+	.creades    { font-size: 2.5vw !important; }
 	.navbar-nav { font-size: 0.7vw; }
 	.top-a { min-height: 600px; height: auto; }
 	/*/Home-topa*/
@@ -1220,6 +1225,7 @@ z-index             : 201;
 		background-size     : 1200px !important;
 		background-position : -550px;
 	}
+	.creades    { font-size: 1.3vw; }
 }
 
 @media (max-width: 1150px) { .cloud-01 { left: 15px; } .cloud-02 { right: 15px; } }

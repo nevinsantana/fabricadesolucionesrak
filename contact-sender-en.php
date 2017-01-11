@@ -7,7 +7,7 @@
 		$msg = $_POST["mensaje"];
 
 		$subject_webmaster = "Recently someone has contacted you.";
-		$subject_usr = "Thanks for contact to Solutions Factory RAK.";
+		$subject_usr = "Thank you for your message!";
 
 		$webmaster_mail = "info@fabricadesoluciones.com";
 		$webmaster_mail_cc = "kreyes@fabricadesoluciones.com";
@@ -16,12 +16,12 @@
 		"
 			<html>
 			<head>
-				<title>Thanks for contact us.</title>
+				<title>Thank you for contacting us.</title>
 			</head>
 			<body>
 				<p>Hello <b>$name</b></p>
-				<p>Thanks for contact to Solutions Factory RAK.</p>
-				<p>Soon we will contact you to answer your questions.</p>
+				<p>Thank you for contacting us.</p>
+				<p>A member of our staff will contact you as soon as possible.</p>
 				<p>Have a nice day.</p>
 			</body>
 			</html>
