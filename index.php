@@ -271,7 +271,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="tnuevo-container">
+					<div class="tnuevo-container margin-top60">
 						<div class="tnc-img-container box-effect"><img src="assets/img/tnc2.png" alt=""></div>
 						<h2 class="tnc-title"><?php echo P2_CLI_HOME; ?></h2>
 						<div class="orange-line"></div>

@@ -35,6 +35,7 @@ a               { color: inherit !important; }
 .no-padding-col { padding-left: 0 !important; padding-right: 0 !important; }
 .m-bottom50     { margin-bottom: 50px; }
 .wh100          { width: 100%; height: 100%; }
+.margin-top60 	{ margin-top: 60px !important; }
 .allCont        { position: absolute; width: 100%; height: 100%; }
 .text-center    { text-align: center; }
 .transp         { background-color: rgba(0, 0, 0, 0) !important; border: none; }
