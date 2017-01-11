@@ -258,7 +258,7 @@ z-index             : 201;
 /*/Footer*/
 
 /*Home*/
-.descriptions-container.inactive { display: none; }
+.descriptions-container.inactive { display: none !important; }
 .top-a, .top-d { height: 800px; min-height: 100%; position: relative; }
 .top-b, .top-d { rgba(0, 0, 0, 0) }
 .top-a {
