@@ -367,11 +367,7 @@
 				$(".descriptions-parent .descriptions-container.active").fadeOut(100, function() {
 					$(".descriptions-parent .descriptions-container.active").attr("class","descriptions-container inactive");
 
-					$("#description"+numCuadro).fadeIn(100, function() {
-						if( $(".inactive").css("display")=="block" ){
-						$(".inactive").css("display","none");
-					}
-					});
+					$("#description"+numCuadro).fadeIn(100, function() {});
 					$("#description"+numCuadro).attr("class","descriptions-container active");
 
 				});
