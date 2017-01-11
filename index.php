@@ -371,11 +371,12 @@
 				});
 				$(this).parent().parent().find(".outer-cuadro.active").attr("class","outer-cuadro");
 				$(this).addClass("active");
-				if(parseInt($(window).width()) < 931) {
-				$("html,body").animate({
-					scrollTop:($(".descriptions-parent").offset().top-($(".outer-cuadro").height()))
+				setTimeout(function(){
+					var topbRestant = $(window).height()-$(".top-b").height();
+					$("html,body").animate({
+						scrollTop:($(".top-b").offset().top-topbRestant)
+					}, 500);
 				}, 500);
-				}
 			});
 			popoverer();
 					window.sr = ScrollReveal();
