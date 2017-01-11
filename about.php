@@ -21,6 +21,15 @@
 		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 		crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-90100522-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 	</head>
 	<body>
 		<div class="allCont"><!--Inicia el contenido de toda la página-->
@@ -104,7 +113,7 @@
 								<?php echo PORTADA_TEXT_00_ABOUT; ?>
 							</div>
 							 <div class="party-one-font text-uppercase oc-title oc-title-2">
-							 	<?php echo PORTADA_TEXT_01_ABOUT; ?>
+								<?php echo PORTADA_TEXT_01_ABOUT; ?>
 							 </div>
 
 							<div class="party-one-font oc-title-3 oc-title">

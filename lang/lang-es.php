@@ -146,6 +146,9 @@
 	define("EMPTY_FIELDS_FROM_CONTACT","Uno o varios campos están vacíos. Por favor llenalos.");
 	define("INVALID_MAIL_FROM_CONTACT","Ingresa un correo válido.");
 	define("THANKS_TEXT_FROM_CONTACT","Gracias por contactarnos.");
+
+	define("THANKS_MSG00_FORMCONT","Muchas gracias por contactarnos,");
+	define("THANKS_MSG01_FORMCONT","en breve nos comunicaremos contigo");
 	/*CONTACT*/
 
 	/*PRIVACY*/

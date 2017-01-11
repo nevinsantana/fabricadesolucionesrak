@@ -35,6 +35,15 @@
 			};
 		</script>
 		<!-- Google reCaptcha -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-90100522-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 	</head>
 	<body>
 		<div class="allCont"><!--Inicia el contenido de toda la página-->
@@ -373,17 +382,19 @@
 							$.ajax({
 								url: 'contact-sender-<?php echo $lang; ?>.php',
 								type: 'POST',
+								dataType: 'json',
 								data: form_data,
-								success: function() {
+								success: function(response) {
 									grecaptcha.reset();
 									$("#nombre").val("");
 									$("#correo").val("");
 									$("#telefono").val("");
 									$("#asunto").val("");
 									$("#mensaje").val("");
-									$("#my-alert").addClass("alert-success");
-									$("#my-alert").fadeIn(500);
-									$("#alert-text").text("<?php echo THANKS_TEXT_FROM_CONTACT; ?>")
+									
+									if( response.status=="ready" ) {
+										window.location = "thanks.php<?php echo $nextLan; ?>";
+									}
 								}, /*ajax success*/
 								error: function(jqXHR, textStatus, errorThrown) {
 									/*Si hay algun error, se mostrará también en un alert*/
