@@ -351,13 +351,13 @@
 				});
 				$(this).parent().parent().find(".outer-cuadro.active").attr("class","outer-cuadro");
 				$(this).addClass("active");
+			});
 				$(".outer-cuadro").click(function(){
 					var topbRestant = $(window).height()-$(".top-b").height();
 					$("html,body").animate({
 						scrollTop:($(".top-b").offset().top-topbRestant)
-					}, 500);
+					}, 200);
 				});
-			});
 			popoverer();
 					window.sr = ScrollReveal();
 
