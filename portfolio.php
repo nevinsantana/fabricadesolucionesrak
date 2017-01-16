@@ -141,114 +141,104 @@
 					<div class="col-md-12 no-padding-col">
 						<div class="col-md-10 col-md-offset-1 logos-parent">
 
-								<div class="row">
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo01.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo02.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo03.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo04.svg" alt="">
-											</div>
-										</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo01.svg" alt="">
 									</div>
 								</div>
-
-								<div class="row">
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo05.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo06.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo07.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo08.svg" alt="">
-											</div>
-										</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo02.svg" alt="">
 									</div>
 								</div>
-
-								<div class="row">
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo09.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo10.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo11.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo12.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo13.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="portfolio-partec-outer-cuadro">
-											<div class="portfolio-inner-cuadro">
-												<img src="assets/img/portfolio/logo14.svg" alt="">
-											</div>
-										</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo14.svg" alt="">
 									</div>
 								</div>
-
-
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo03.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo04.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo05.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo06.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo07.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo08.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo09.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo10.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo11.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo12.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo13.svg" alt="">
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
