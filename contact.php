@@ -217,6 +217,7 @@
 						<div class="col-md-12 zona-c-tcontainer">
 							<span class="zona-c-t1"><?php echo P2_T00_ORANGE_CONTACT; ?></span>
 							<span class="zona-c-t2"><?php echo P2_T01_ORANGE_CONTACT; ?></span>
+							<p class="ob-phone"><?php echo PHONE_FOOTER; ?></p>
 						</div>
 					</div>
 				</section>
