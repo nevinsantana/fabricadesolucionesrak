@@ -235,6 +235,13 @@
 							<div class="col-sm-3">
 								<div class="portfolio-partec-outer-cuadro">
 									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/imagenes-34.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
 										<img src="assets/img/portfolio/logo13.svg" alt="">
 									</div>
 								</div>
