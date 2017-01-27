@@ -12,17 +12,69 @@
 		$webmaster_mail = "info@fabricadesoluciones.com";
 		$webmaster_mail_cc = "kreyes@fabricadesoluciones.com";
 
+		$url="http://www.fabricadesoluciones.com/assets/css/";
 		$body_msg_user =
 		"
 			<html>
 			<head>
 				<title>Gracias por contactarnos.</title>
+				<meta charset='utf-8'>
+				<style>
+					@import url('https://fonts.googleapis.com/css?family=Cookie|Open+Sans');
+					@font-face {
+						font-family: Cookie;
+						src: url(".$url."font/Cookie/Cookie-Regular.ttf);
+					}
+					.cookie-font { font-family: 'Cookie', cursive; }
+					.open-sans { font-family: 'Open Sans', sans-serif; }
+					.arial { font-family: 'Arial', sans-serif; }
+
+					body { margin: 0; }
+					table {
+						width: 100%;
+						height: 100%;
+					}
+					.table-thanks {
+						width: 100%;
+						background-color: #F88E39;
+						text-align: center;
+						padding: 30px 15px;
+					}
+					.img-thanks { width: 100%; }
+					.usr-name { font-size: 40px; }
+					.thanks { font-size: 4.5vw; font-weight: 800; }
+					.text-2 { font-size: 16px; }
+					.text-3 { font-size: 3vw; }
+					@media(max-width:990px) {
+						.usr-name { font-size: 30px; }
+						.thanks, .text-3 { font-size: 40px; }
+					}
+				</style>
 			</head>
 			<body>
-				<p>Hola <b>$name</b></p>
-				<p>Gracias por contactar a Fabrica de Soluciones RAK.</p>
-				<p>Pronto nos pondremos en contacto contigo para resolver tus dudas.</p>
-				<p>Buen día.</p>
+
+				<table class='table-thanks'>
+					<tbody>
+						<tr>
+						</tr>
+
+						<tr>
+							<td style='color: white;'>
+								<div class='usr-name cookie-font'>¡Hola $name!</div>
+								<div class='open-sans thanks'>GRACIAS</div>
+								<div class='arial text-2'>por contactar a Fábrica de Soluciones RAK</div>
+								<img class='img-thanks' src='http://www.fabricadesoluciones.com/assets/img/thanks/thanks-mail.png'>
+								<div class='open-sans text-2'>
+									Pronto nos pondremos en contacto contigo para resolver tus 
+									dudas
+								</div>
+								<p></p>
+								<div class='text-3 open-sans thanks'>¡BUEN D&Iacute;A!</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
 			</body>
 			</html>
 		";
