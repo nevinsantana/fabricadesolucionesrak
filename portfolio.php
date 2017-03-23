@@ -179,14 +179,21 @@
 							<div class="col-sm-3">
 								<div class="portfolio-partec-outer-cuadro">
 									<div class="portfolio-inner-cuadro">
-										<img src="assets/img/portfolio/logo05.svg" alt="">
+										<img src="assets/img/portfolio/logo15.svg" alt="">
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="portfolio-partec-outer-cuadro">
 									<div class="portfolio-inner-cuadro">
-										<img src="assets/img/portfolio/logo06.svg" alt="">
+										<img src="assets/img/portfolio/logo16.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-partec-outer-cuadro">
+									<div class="portfolio-inner-cuadro">
+										<img src="assets/img/portfolio/logo05.svg" alt="">
 									</div>
 								</div>
 							</div>
