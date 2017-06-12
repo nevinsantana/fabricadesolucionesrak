@@ -217,77 +217,80 @@
 						<div class="col-md-12 zona-c-tcontainer">
 							<span class="zona-c-t1"><?php echo P2_T00_ORANGE_CONTACT; ?></span>
 							<span class="zona-c-t2"><?php echo P2_T01_ORANGE_CONTACT; ?></span>
+							<p class="ob-phone"><?php echo PHONE_FOOTER; ?></p>
 						</div>
 					</div>
 				</section>
 
 				<div class="col-md-12 contacts-container">
 					<div class="cust-container contact-info">
-						<div class="row">
-							<div class="col-xs-4 col-xs-custom text-center">
-								<div class="ci-schedule">
-									<?php echo SCHEDULE_00_CONTACT; ?>
-								</div><br>
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-xs-4 col-xs-custom text-center">
+									<div class="ci-schedule">
+										<?php echo SCHEDULE_00_CONTACT; ?>
+									</div><br>
 
 
-								<div class="ci-info pr-custom">
-									<div class="row">
-										<div class="col-xs-6 text-right orange-contact"><?php echo SCHEDULE_01_CONTACT; ?></div>
-										<div class="col-xs-6 text-left">9 - 19 Hrs.</div>
+									<div class="ci-info pr-custom">
+										<div class="row">
+											<div class="col-xs-6 text-right orange-contact"><?php echo SCHEDULE_01_CONTACT; ?></div>
+											<div class="col-xs-6 text-left">9 - 19 Hrs.</div>
+										</div>
+
+										<div class="row">
+											<div class="col-xs-6 text-right orange-contact"><?php echo SCHEDULE_02_CONTACT; ?></div>
+											<div class="col-xs-6 text-left"><?php echo SCHEDULE_03_CONTACT; ?></div>
+										</div>
+										<hr class="orange-bar">
+									</div>
+								</div>
+
+								<div class="col-xs-4 col-xs-custom left-orange-bar right-orange-bar">
+									<div class="ci-schedule text-center">
+										<?php echo CONTACTS_00_CONTACT; ?>
+									</div><br>
+									<div class="text-center ci-info pl-custom">
+										<p><span class="orange-contact"><?php echo CONTACTS_PHONE_CONTACT; ?></span> +52 (55) 5016-1705 & 06</p>
+										<p><span class="orange-contact"><?php echo CONTACTS_RECEPTION_CONTACT; ?></span> 100</p>
+										<p><span class="orange-contact"><?php echo CONTACTS_DEV_CONTACT; ?></span> 101</p>
+										<p><span class="orange-contact"><?php echo CONTACTS_SALES_CONTACT; ?></span> 102</p>
+										<p><span class="orange-contact"><?php echo CONTACTS_DESIGN_CONTACT; ?></span> 103</p>
+										<p><span class="orange-contact"><?php echo CONTACTS_MKT_CONTACT; ?></span> 108</p>
+										<p><span class="orange-contact">E-mail</span> info@fabricadesoluciones.com</p>
 									</div>
 
-									<div class="row">
-										<div class="col-xs-6 text-right orange-contact"><?php echo SCHEDULE_02_CONTACT; ?></div>
-										<div class="col-xs-6 text-left"><?php echo SCHEDULE_03_CONTACT; ?></div>
-									</div>
 									<hr class="orange-bar">
 								</div>
-							</div>
 
-							<div class="col-xs-4 col-xs-custom left-orange-bar right-orange-bar">
-								<div class="ci-schedule text-center">
-									<?php echo CONTACTS_00_CONTACT; ?>
-								</div><br>
-								<div class="text-center ci-info pl-custom">
-									<p><span class="orange-contact"><?php echo CONTACTS_PHONE_CONTACT; ?></span> +52 (55) 5016-1705 & 06</p>
-									<p><span class="orange-contact"><?php echo CONTACTS_RECEPTION_CONTACT; ?></span> 100</p>
-									<p><span class="orange-contact"><?php echo CONTACTS_DEV_CONTACT; ?></span> 101</p>
-									<p><span class="orange-contact"><?php echo CONTACTS_SALES_CONTACT; ?></span> 102</p>
-									<p><span class="orange-contact"><?php echo CONTACTS_DESIGN_CONTACT; ?></span> 103</p>
-									<p><span class="orange-contact"><?php echo CONTACTS_MKT_CONTACT; ?></span> 108</p>
-									<p><span class="orange-contact">E-mail</span> info@fabricadesoluciones.com</p>
+								<div class="col-xs-4 col-xs-custom text-center ci-social">
+									<div class="ci-schedule text-center">
+										<?php echo SOCIAL_NETWORKS_CONTACT; ?>
+									</div><br>
+
+									<a href="https://www.facebook.com/FabricaDeSolucionesRak/?fref=ts"
+									target="_blank">
+										<span class="fa-stack fa-lg social-icon-foot">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+
+									<a href="https://twitter.com/fabricarak" target="_blank">
+										<span class="fa-stack fa-lg social-icon-foot">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+
+									<a href="https://www.linkedin.com/company/2019418?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2019418%2Cidx%3A3-1-3%2CtarId%3A1480464427766%2Ctas%3Afabrica%20de%20sol"
+									target="_blank">
+										<span class="fa-stack fa-lg social-icon-foot">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
 								</div>
-
-								<hr class="orange-bar">
-							</div>
-
-							<div class="col-xs-4 col-xs-custom text-center ci-social">
-								<div class="ci-schedule text-center">
-									<?php echo SOCIAL_NETWORKS_CONTACT; ?>
-								</div><br>
-
-								<a href="https://www.facebook.com/FabricaDeSolucionesRak/?fref=ts"
-								target="_blank">
-									<span class="fa-stack fa-lg social-icon-foot">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-									</span>
-								</a>
-
-								<a href="https://twitter.com/fabricarak" target="_blank">
-									<span class="fa-stack fa-lg social-icon-foot">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-									</span>
-								</a>
-
-								<a href="https://www.linkedin.com/company/2019418?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2019418%2Cidx%3A3-1-3%2CtarId%3A1480464427766%2Ctas%3Afabrica%20de%20sol"
-								target="_blank">
-									<span class="fa-stack fa-lg social-icon-foot">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-									</span>
-								</a>
 							</div>
 						</div>
 					</div>

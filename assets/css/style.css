@@ -42,6 +42,7 @@ a               { color: inherit !important; }
 .dir-cont       { width: 100%; }
 .relativer      { position: relative; width: 100%; height: 100%; }
 .all-height     { height: 100%; }
+.color-white    { color: #FFF; }
 .centrar        {
 	position          : absolute;
 	top               : 50%;
@@ -236,7 +237,7 @@ z-index             : 201;
 .social-foot                  { color: #4b4b4b; }
 .vs-line                      { height: 170px; width: 3px; background: #525252; }
 .black-space-foot             { height: 50px; }
-.tels-foot                    { text-align: center; }
+.tels-foot                    { text-align: center; font-size: 20px; }
 .social-icon-foot             { font-size: 18px; }
 .advert-foot                  {
 	margin-left : 15px;
@@ -790,11 +791,19 @@ z-index             : 201;
 	-o-transform      : translate(-50%,-50%);
 	transform         : translate(-50%,-50%);
 }
+.ob-phone {
+	font-family: PaytoneOne;
+	font-size: 4vw;
+	font-weight: bold;
+	color: #FFF;
+	margin-top: 20px;
+}
 @media (min-width: 1300px) {
 	.thanks-msg    { line-height: 85px; }
 	.msg-thanks-00 { font-size: 65px; }
 	.msg-thanks-01 { font-size: 120px; }
 	.msg-thanks-02 { font-size: 30px;  }
+	.ob-phone      { font-size: 50px; }
 }
 @media (max-width: 1020px) {
 	.thanks-msg    { line-height: 60px; }

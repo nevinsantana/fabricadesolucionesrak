@@ -15,7 +15,7 @@
 				<div class="row">
 					<div class="col-md-1"></div>
 					<div class="col-md-10 cont-tels-foot">
-						<p class="tels-foot"><?php echo PHONE_FOOTER; ?></p>
+						<p></p>
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -84,6 +84,10 @@
 					<a href="privacy.php<?php echo $nextLan; ?>"><p><?php echo PRIVACY_00_FOOTER; ?></p></a>
 					<p>
 						<?php echo PRIVACY_01_FOOTER; ?>
+					</p>
+
+					<p class="tels-foot color-white">
+						<?php echo PHONE_FOOTER; ?>
 					</p>
 				</div>
 			</div>
