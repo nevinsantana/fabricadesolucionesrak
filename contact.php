@@ -391,7 +391,7 @@
 									$("#telefono").val("");
 									$("#asunto").val("");
 									$("#mensaje").val("");
-									
+
 									if( response.status=="ready" ) {
 										window.location = "thanks.php<?php echo $nextLan; ?>";
 									}
