@@ -225,79 +225,74 @@
 						</div>
 					</div>
 			</section><!--/Segunda sección-->
-
-		<section class="top-c-title">
-			<div class="col-md-12">
+			<section class="top-c-title">
+				<div class="col-md-12">
+					<div class="row">
+						<h2 class="sct">
+							<span class="sct1"><?php echo P2_T00_ORANGE_SERV; ?></span>
+							<span class="sct2"><?php echo P2_T01_ORANGE_SERV; ?></span>
+						</h2>
+					</div>
+				</div>
+			</section>
+			<section class="top-nuevo" id="top-c">
 				<div class="row">
-					<h2 class="sct">
-						<span class="sct1"><?php echo P2_T00_ORANGE_SERV; ?></span>
-						<span class="sct2"><?php echo P2_T01_ORANGE_SERV; ?></span>
-					</h2>
-				</div>
-			</div>
-		</section>
+					<div class="col-sm-12 last-sec">
+						<div class="col-sm-4">
+							<div class="row">
+								<div class="col-sm-8 col-sm-offset-2">
+									<img src="assets/img/services/valor1.png" alt="000">
+								</div>
+							</div>
+							<h2 class="tnc-title bench"><?php echo P2_BENCH_HOME; ?></h2>
+							<div class="orange-line"></div>
 
-
-		<section class="top-nuevo" id="top-c">
-
-		<div class="row">
-			<div class="col-sm-12 last-sec">
-				<div class="col-sm-4">
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
-							<img src="assets/img/services/valor1.png" alt="000">
-						</div>
-					</div>
-					<h2 class="tnc-title bench"><?php echo P2_BENCH_HOME; ?></h2>
-					<div class="orange-line"></div>
-
-					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1">
-							<p class="tnc-description tnc-center">
-								<?php echo P2_BENCH_TEXT_HOME; ?>
+							<div class="row">
+								<div class="col-sm-10 col-sm-offset-1">
+									<p class="tnc-description tnc-center">
+										<?php echo P2_BENCH_TEXT_HOME; ?>
+									</p>
+								</div>
+							</div>
 							</p>
 						</div>
-					</div>
-					</p>
-				</div>
-				<div class="col-sm-4">
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
-							<img src="assets/img/services/valor3.png" alt="000">
-						</div>
-					</div>
-					<h2 class="tnc-title"><?php echo P2_CLI_HOME; ?></h2>
-					<div class="orange-line"></div>
+						<div class="col-sm-4">
+							<div class="row">
+								<div class="col-sm-8 col-sm-offset-2">
+									<img src="assets/img/services/valor3.png" alt="000">
+								</div>
+							</div>
+							<h2 class="tnc-title"><?php echo P2_CLI_HOME; ?></h2>
+							<div class="orange-line"></div>
 
-					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1">
-							<p class="tnc-description tnc-center">
-								<?php echo P2_CLI_TEXT_HOME; ?>
-							</p>
+							<div class="row">
+								<div class="col-sm-10 col-sm-offset-1">
+									<p class="tnc-description tnc-center">
+										<?php echo P2_CLI_TEXT_HOME; ?>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="row">
+								<div class="col-sm-8 col-sm-offset-2">
+									<img src="assets/img/services/valor2.png" alt="000">
+								</div>
+							</div>
+							<h2 class="tnc-title"><?php echo P2_COFFEY_HOME; ?></h2>
+							<div class="orange-line"></div>
+
+							<div class="row">
+								<div class="col-sm-10 col-sm-offset-1">
+									<p class="tnc-description tnc-center">
+										<?php echo P2_COFFEY_TEXT_HOME; ?>
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-4">
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
-							<img src="assets/img/services/valor2.png" alt="000">
-						</div>
-					</div>
-					<h2 class="tnc-title"><?php echo P2_COFFEY_HOME; ?></h2>
-					<div class="orange-line"></div>
-
-					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1">
-							<p class="tnc-description tnc-center">
-								<?php echo P2_COFFEY_TEXT_HOME; ?>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		</section>
+			</section>
 
 
 

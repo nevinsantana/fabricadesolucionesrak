@@ -141,189 +141,184 @@
 					</div><!--/Carousel-->
 				</div><!--/Capa menu y carousel-->
 			</section><!--/Primera sección-->
-		<section class="top-b" id="top-b"><!--Segunda sección-->
-			<div class="top-b-back"></div><!--Fondo fixed-->
-			<div class="col-md-12 top-b-content"><!--Contenido top-b-->
-				<div class="row">
-					<h2 class="s2-title">
-						<span class="s2t1"><?php echo P1_T00_HOME; ?></span>
-						<span class="s2t2"><?php echo P1_T01_HOME; ?></span>
-						<span class="s2t1"><?php echo P1_T02_HOME; ?></span>
-					</h2>
-				</div>
-				<div class="row s2-cuadros-container">
-					<div class="col-xs-3 cuadro-contenedor">
-						<div class="outer-cuadro" id="s2t1">
-							<div class="inner-cuadro">
-								<div class="s2-cuadros-title">
-									<h2><?php echo P1_C01_HOME; ?></h2>
+			<section class="top-b" id="top-b"><!--Segunda sección-->
+				<div class="top-b-back"></div><!--Fondo fixed-->
+				<div class="col-md-12 top-b-content"><!--Contenido top-b-->
+					<div class="row">
+						<h2 class="s2-title">
+							<span class="s2t1"><?php echo P1_T00_HOME; ?></span>
+							<span class="s2t2"><?php echo P1_T01_HOME; ?></span>
+							<span class="s2t1"><?php echo P1_T02_HOME; ?></span>
+						</h2>
+					</div>
+					<div class="row s2-cuadros-container">
+						<div class="col-xs-3 cuadro-contenedor">
+							<div class="outer-cuadro" id="s2t1">
+								<div class="inner-cuadro">
+									<div class="s2-cuadros-title">
+										<h2><?php echo P1_C01_HOME; ?></h2>
+									</div>
+									<div class="orange-line"></div>
+									<div class="image-container">
+										<img src="assets/img/desarrolloweb.png" alt="">
+									</div>
 								</div>
-								<div class="orange-line"></div>
-								<div class="image-container">
-									<img src="assets/img/desarrolloweb.png" alt="">
+							</div>
+						</div>
+						<div class="col-xs-3 cuadro-contenedor">
+							<div class="outer-cuadro" id="s2t2">
+								<div class="inner-cuadro">
+									<div class="s2-cuadros-title">
+										<h2><?php echo P1_C02_HOME; ?></h2>
+									</div>
+									<div class="orange-line"></div>
+									<div class="image-container">
+										<img src="assets/img/marketing.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 cuadro-contenedor">
+							<div class="outer-cuadro" id="s2t3">
+								<div class="inner-cuadro">
+									<div class="s2-cuadros-title">
+										<h2><?php echo P1_C03_HOME; ?></h2>
+									</div>
+									<div class="orange-line"></div>
+									<div class="image-container">
+										<img src="assets/img/disenodigital.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 cuadro-contenedor">
+							<div class="outer-cuadro" id="s2t4">
+								<div class="inner-cuadro">
+									<div class="s2-cuadros-title">
+										<h2><?php echo P1_C04_HOME; ?></h2>
+									</div>
+									<div class="orange-line"></div>
+									<div class="image-container">
+										<img src="assets/img/socialmedia.png" alt="">
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-3 cuadro-contenedor">
-						<div class="outer-cuadro" id="s2t2">
-							<div class="inner-cuadro">
-								<div class="s2-cuadros-title">
-									<h2><?php echo P1_C02_HOME; ?></h2>
-								</div>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 descriptions-parent">
+							<div class="descriptions-container" id="initial-description">
+								<p class="description">
+									<?php echo P1_C01_T01_HOME; ?>
+								</p>
+							</div>
+
+							<div class="descriptions-container" id="description1">
+								<p class="description">
+									<?php echo P1_C02_T02_HOME; ?>
+								</p>
+							</div>
+							<div class="descriptions-container" id="description2">
+								<p class="description">
+									<?php echo P1_C03_T03_HOME; ?>
+								</p>
+							</div>
+							<div class="descriptions-container" id="description3">
+								<p class="description">
+									<?php echo P1_C04_T04_HOME; ?>
+								</p>
+							</div>
+							<div class="descriptions-container" id="description4">
+								<p class="description">
+									<?php echo P1_C05_T05_HOME; ?>
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-2 col-sm-offset-5 s2-btn-container m-bottom50">
+							<a href="services.php<?php echo $nextLan; ?>"><button class="btn btn-default index-vermas"><?php echo P1_BTN_MORE_HOME; ?></button></a>
+						</div>
+					</div>
+			</section><!--/Segunda sección-->
+
+			<section class="top-c-title">
+				<div class="col-md-12">
+					<div class="row">
+						<h2 class="sct">
+							<span class="sct1"><?php echo P2_T00_ORANGE_HOME; ?></span>
+							<span class="sct2"><?php echo P2_T01_ORANGE_HOME; ?></span>
+						</h2>
+					</div>
+				</div>
+			</section>
+
+			<section class="top-nuevo" id="top-c">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-sm-5 tnue-left">
+							<div class="tnuevo-container">
+								<div class="tnc-img-container tv-effect"><img src="assets/img/tnc1.png" alt=""></div>
+								<h2 class="tnc-title bench"><?php echo P2_BENCH_HOME; ?></h2>
 								<div class="orange-line"></div>
-								<div class="image-container">
-									<img src="assets/img/marketing.png" alt="">
+								<p class="tnc-description">
+									<?php echo P2_BENCH_TEXT_HOME; ?>
+								</p>
+								<div class="tnc-link-container">
+									<a href="about.php<?php echo $nextLan; ?>" class="tnc-link">
+										<?php echo P2_BENCH_LINK_HOME; ?>
+										<i class="fa fa-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+							<div class="tnuevo-container margin-top60">
+								<div class="tnc-img-container box-effect"><img src="assets/img/tnc2.png" alt=""></div>
+								<h2 class="tnc-title"><?php echo P2_CLI_HOME; ?></h2>
+								<div class="orange-line"></div>
+								<p class="tnc-description">
+									<?php echo P2_CLI_TEXT_HOME; ?>
+								</p>
+								<div class="tnc-link-container">
+									<a href="services.php<?php echo $nextLan; ?>" class="tnc-link">
+										<?php echo P2_CLI_LINK_HOME; ?>
+										<i class="fa fa-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-5 col-sm-offset-2 tnue-right">
+							<div class="tnuevo-container">
+								<div class="tnc-img-container cafeina-effect"><img src="assets/img/tnc3.png" alt=""></div>
+								<h2 class="tnc-title"><?php echo P2_COFFEY_HOME; ?></h2>
+								<div class="orange-line"></div>
+								<p class="tnc-description">
+									<?php echo P2_COFFEY_TEXT_HOME; ?>
+								</p>
+								<div class="tnc-link-container">
+									<a href="portfolio.php<?php echo $nextLan; ?>" class="tnc-link">
+										<?php echo P2_COFFEY_LINK_HOME; ?>
+										<i class="fa fa-arrow-right"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-3 cuadro-contenedor">
-						<div class="outer-cuadro" id="s2t3">
-							<div class="inner-cuadro">
-								<div class="s2-cuadros-title">
-									<h2><?php echo P1_C03_HOME; ?></h2>
-								</div>
-								<div class="orange-line"></div>
-								<div class="image-container">
-									<img src="assets/img/disenodigital.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-3 cuadro-contenedor">
-						<div class="outer-cuadro" id="s2t4">
-							<div class="inner-cuadro">
-								<div class="s2-cuadros-title">
-									<h2><?php echo P1_C04_HOME; ?></h2>
-								</div>
-								<div class="orange-line"></div>
-								<div class="image-container">
-									<img src="assets/img/socialmedia.png" alt="">
-								</div>
-							</div>
-						</div>
+				</div>
+			</section>
+			<div class="top-c"><!--Tercera sección-->
+				<div class="tit-top-c">
+					<div class="dir-cont">
+						<p><span class="tit3"><?php echo P3_T00_HOME; ?></span><span class="tit4 tc-t2"><?php echo P3_T01_HOME; ?></span></p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 descriptions-parent">
-						<div class="descriptions-container" id="initial-description">
-							<p class="description">
-								<?php echo P1_C01_T01_HOME; ?>
-							</p>
-						</div>
-
-						<div class="descriptions-container" id="description1">
-							<p class="description">
-								<?php echo P1_C02_T02_HOME; ?>
-							</p>
-						</div>
-						<div class="descriptions-container" id="description2">
-							<p class="description">
-								<?php echo P1_C03_T03_HOME; ?>
-							</p>
-						</div>
-						<div class="descriptions-container" id="description3">
-							<p class="description">
-								<?php echo P1_C04_T04_HOME; ?>
-							</p>
-						</div>
-						<div class="descriptions-container" id="description4">
-							<p class="description">
-								<?php echo P1_C05_T05_HOME; ?>
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-2 col-sm-offset-5 s2-btn-container m-bottom50">
-						<a href="services.php<?php echo $nextLan; ?>"><button class="btn btn-default index-vermas"><?php echo P1_BTN_MORE_HOME; ?></button></a>
-					</div>
-				</div>
-		</section><!--/Segunda sección-->
-
-		<section class="top-c-title">
-			<div class="col-md-12">
-				<div class="row">
-					<h2 class="sct">
-						<span class="sct1"><?php echo P2_T00_ORANGE_HOME; ?></span>
-						<span class="sct2"><?php echo P2_T01_ORANGE_HOME; ?></span>
-					</h2>
+				<div>
+					<?php
+						echo "
+							<img src='assets/img/".$bomba_lang.".png' alt='' id='bomb-img'>
+						";
+					?>
 				</div>
 			</div>
-		</section>
 
-
-		<section class="top-nuevo" id="top-c">
-
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-sm-5 tnue-left">
-					<div class="tnuevo-container">
-						<div class="tnc-img-container tv-effect"><img src="assets/img/tnc1.png" alt=""></div>
-						<h2 class="tnc-title bench"><?php echo P2_BENCH_HOME; ?></h2>
-						<div class="orange-line"></div>
-						<p class="tnc-description">
-							<?php echo P2_BENCH_TEXT_HOME; ?>
-						</p>
-						<div class="tnc-link-container">
-							<a href="about.php<?php echo $nextLan; ?>" class="tnc-link">
-								<?php echo P2_BENCH_LINK_HOME; ?>
-								<i class="fa fa-arrow-right"></i>
-							</a>
-						</div>
-					</div>
-					<div class="tnuevo-container margin-top60">
-						<div class="tnc-img-container box-effect"><img src="assets/img/tnc2.png" alt=""></div>
-						<h2 class="tnc-title"><?php echo P2_CLI_HOME; ?></h2>
-						<div class="orange-line"></div>
-						<p class="tnc-description">
-							<?php echo P2_CLI_TEXT_HOME; ?>
-						</p>
-						<div class="tnc-link-container">
-							<a href="services.php<?php echo $nextLan; ?>" class="tnc-link">
-								<?php echo P2_CLI_LINK_HOME; ?>
-								<i class="fa fa-arrow-right"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-5 col-sm-offset-2 tnue-right">
-					<div class="tnuevo-container">
-						<div class="tnc-img-container cafeina-effect"><img src="assets/img/tnc3.png" alt=""></div>
-						<h2 class="tnc-title"><?php echo P2_COFFEY_HOME; ?></h2>
-						<div class="orange-line"></div>
-						<p class="tnc-description">
-							<?php echo P2_COFFEY_TEXT_HOME; ?>
-						</p>
-						<div class="tnc-link-container">
-							<a href="portfolio.php<?php echo $nextLan; ?>" class="tnc-link">
-								<?php echo P2_COFFEY_LINK_HOME; ?>
-								<i class="fa fa-arrow-right"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		</section>
-
-
-		<div class="top-c"><!--Tercera sección-->
-			<div class="tit-top-c">
-				<div class="dir-cont">
-					<p><span class="tit3"><?php echo P3_T00_HOME; ?></span><span class="tit4 tc-t2"><?php echo P3_T01_HOME; ?></span></p>
-				</div>
-			</div>
-			<div>
-				<?php
-					echo "
-						<img src='assets/img/".$bomba_lang.".png' alt='' id='bomb-img'>
-					";
-				?>
-			</div>
-		</div>
-
-		<?php include("structure/footer.php") ?>
+			<?php include("structure/footer.php") ?>
 
 		</div><!--/Inicia el contenido de toda la página-->
 		<script src="assets/js/script.js"></script>
