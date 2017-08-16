@@ -86,7 +86,10 @@
 				<title>Notification.</title>
 			</head>
 			<body>
-				<p>The user <b>$name</b> contacted you..</p>
+				<p>
+					The user <b>$name</b> contacted you
+					from the webpage www.fabricadesoluciones.com.
+				</p>
 				<b>Message:</b>
 				<p>\"$msg\"</p>
 				<b>Contact data:</b>

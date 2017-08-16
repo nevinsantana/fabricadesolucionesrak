@@ -87,7 +87,10 @@
 				<title>Notificacion de contacto.</title>
 			</head>
 			<body>
-				<p>El usuario <b>$name</b> se puso en contacto contigo.</p>
+				<p>
+					El usuario <b>$name</b> se puso en contacto contigo 
+					desde la página www.fabricadesoluciones.com.
+				</p>
 				<b>Mensaje:</b>
 				<p>\"$msg\"</p>
 				<b>Datos de contacto</b>
