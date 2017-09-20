@@ -30,6 +30,8 @@
 			ga('create', 'UA-90100522-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+
+		<?php include("structure/fbpixel.php"); ?>
 	</head>
 	<body>
 		<div class="allCont"><!--Inicia el contenido de toda la página-->
