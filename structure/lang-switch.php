@@ -1,4 +1,5 @@
 <?php
+	ini_set('display_errors', 'Off');
 	if( isset($_GET["lang"]) ) {
 		$lang = $_GET["lang"];
 		if( $lang!="es" && $lang!="en" ) {
