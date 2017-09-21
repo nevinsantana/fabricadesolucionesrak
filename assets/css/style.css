@@ -1344,10 +1344,7 @@ z-index             : 201;
 	.top-a-objects .objects-container { width: 60%; left: 20%; top: 40%; }
 }
 
-iframe[id*="twitter-widget-"] {
-	display: block !important;
-	margin: auto;
-}
+iframe[id*="twitter-widget-"] { display: block !important; margin: auto; }
 .tel2 { top: 200px !important; }
 .w100 { width: 100%; }
 .mr0 { margin-right: 0px; }
@@ -1365,14 +1362,8 @@ iframe[id*="twitter-widget-"] {
 .pt30 { padding-top: 30px; }
 .h600 { height: 600px; }
 .s-title2 { color: #FFF; text-align: center; }
-.s-text2 {
-	color: #FFF;
-	text-align: center;
-	z-index: 99999;
-}
-.b-tshadow {
-	text-shadow: 0 0 10px #000;
-}
+.s-text2 { color: #FFF; text-align: center; z-index: 99999; }
+.b-tshadow { text-shadow: 0 0 10px #000; }
 .centerer {
 	position: absolute;
 	width: 100%;
@@ -1382,9 +1373,7 @@ iframe[id*="twitter-widget-"] {
 }
 .z-front { z-index: 9999999999; }
 .tel2 img { display: none; }
-.zona-b-tdesc.list {
-	text-align: left;
-}
+.zona-b-tdesc.list { text-align: left; }
 .zona-b-tdesc.list a:link, .zona-b-tdesc.list a:visited {
 	text-decoration: underline;
 	color: #ffa700 !important;
@@ -1398,10 +1387,16 @@ iframe[id*="twitter-widget-"] {
 	margin: auto;
 	width: 150px;
 }
-.graytext {
-	font-size: 20px;
-	color: #929292;
+.graytext { font-size: 20px; color: #929292; }
+.td-title { width: 100%; font-weight: 600; color: #636363; }
+.sismo-map {
+	width: 90%;
+	height: 480px;
+	display: block;
+	margin: auto;
+	border: none;
 }
+.sismo-bar { bottom: -5px; }
 @media(min-width: 1200px) {
 	.s-title2 { font-size: 5vw; }
 	.s-text2 {
@@ -1410,6 +1405,7 @@ iframe[id*="twitter-widget-"] {
 		padding-left: 120px;
 	}
 	.tel2 img { width: 900px; }
+	#map-section p { font-size: 2vw; }
 }
 @media(max-width: 1199px) {
 	.s-title2 { font-size: 50px; }
@@ -1475,4 +1471,30 @@ iframe[id*="twitter-widget-"] {
 		max-width: 90%;
 	}
 	.tel2 img { max-width: 100%; }
+}
+
+/*==========================
+MAP-SECTION
+==========================*/
+.map-section, #map-section, .map-section iframe { width: 100%; height: 480px; }
+.map-section2 { height: 600px !important; }
+.map-section iframe { position: absolute; z-index: 1; }
+#map-section {
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(84, 84, 84, 0.3);
+}
+#map-section p {
+	color: #FFF;
+	text-shadow: 0 0 10px #000;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: 900;
+	cursor: default;
+}
+@media( max-width: 767px ) {
+	#map-section, .map-section iframe, .map-section { height: 300px; }
 }
