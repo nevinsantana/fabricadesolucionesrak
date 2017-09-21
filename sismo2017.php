@@ -3,6 +3,21 @@
 	<head><?php $title="#FuerzaMéxico"; include("structure/head.php"); ?></head>
 	<body>
 		<div class="allCont">
+			<div class="menu-selecter">
+				<div class="fa fa-bars active"></div>
+				<div class="fa fa-times"></div>
+			</div>
+			<div class="menu-modal">
+				<div class="menu-elements">
+					<ul>
+						<li id="to1">¿Necesitas Ayuda?</li>
+						<li id="to2">Teléfonos de Emergencia</li>
+						<li id="to3">Mapa del sismo CDMX</li>
+						<li id="to4">¿Quieres Ayudar?</li>
+						<li id="to5">Últimas Noticias</li>
+					</ul>
+				</div>
+			</div>
 			<section class="top-a top-a-contact">
 				<div class="centerer">
 					<h1 class="party-one-font s-title2 b-tshadow">#FuerzaMéxico</h1>
@@ -12,7 +27,7 @@
 			<section class="top-b">
 				<div class="top-b-back tbb-nobackground"></div>
 				<div class="row mr0 ml-15">
-					<div class="col-md-12 top-b-content pr0">
+					<div class="col-md-12 top-b-content pr0" data-scroll="to1">
 						<h2 class="s2-title">
 							<span class="s2t1">¿Necesitas</span>
 							<span class="s2t2">Ayuda?</span>
@@ -35,7 +50,7 @@
 									</tr>
 								</tbody>
 							</table>
-							<table class="table table-responsive table-striped mb0">
+							<table class="table table-responsive table-striped mb0" data-scroll="to2">
 								<tbody>
 									<tr>
 										<td class="graytext td-title text-center">Teléfonos de Emergencia</td>
@@ -100,7 +115,7 @@
 									</tr>
 								</tbody>
 							</table>
-							<p class="zona-b-tdesc">Derrumbes, albergues, hospitales y voluntariado sismo CDMX</p>
+							<p class="zona-b-tdesc" data-scroll="to3">Derrumbes, albergues, hospitales y voluntariado sismo CDMX</p>
 							<section class="map-section relativer">
 								<div id="map-section">
 									<p>Click para habilitar</p>
@@ -108,7 +123,7 @@
 								<iframe class="sismo-map" src="https://goo.gl/B1N9fc"></iframe>
 							</section>
 						</div>
-		      	<div class="col-sm-10 col-sm-offset-1">
+		      	<div class="col-sm-10 col-sm-offset-1" data-scroll="to4">
 			      	<h2 class="s2-title mt15">
 								<span class="s2t2">¿Quieres</span>
 								<span class="s2t1">Ayudar?</span>
